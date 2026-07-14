@@ -86,7 +86,6 @@ Evidentiary and position papers that the design basis series draw upon.
 |---|---|---|
 | [GenAI Risk in ICS](papers/GenAI_Risk_ICS.pdf) | V29 | GenAI risk analysis for industrial control systems. Foundational evidentiary reference for the AI governance design basis across the DBA-EN series. |
 | [GenMix Optimization Whitepaper](papers/GenMix_Optimization_Whitepaper.pdf) | v0.3 | Origin of the RT_HVLLC metric. Table 1 RT_HVLLC values for all generation types. |
-| [Predictive UFLS Ride-Through](papers/Predictive_UFLS_Ride_Through.pdf) | v0.3 | PMU and under-frequency load shedding position paper. |
 | [UA Grid Defense: Cyber-Kinetic](papers/UA_Grid_Defense_Cyber_Kinetic.pdf) | v1.0 | Ukrainian grid defense analysis. Primary evidentiary anchor for DBA-ES kinetic attack scenarios. CANONICAL COPY — the one cited in published work. |
 | [Powering the Always-On Economy](papers/Powering_the_Always_On_Economy.pdf) | v0.4 | Energy sector policy context. |
 | [Fuel Cell Position Paper](papers/Fuel_Cell_Position_Paper.pdf) | v0.1 | Fuel cell generation technology position. |

@@ -38,7 +38,6 @@ Replacement table for `index.html` in `scubanuke/dba-en-navigation`. Each Drive 
 | DBA-MA-UxS-NA: Nuclear Annex | `1VuPjcN9bln--Ly9Cza9Rmm6A0BAfE_F_` | https://scubanuke.github.io/publications/dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf |
 | GenAI Risk in ICS | `1GZteXYkofS_hgdl02pzzwfH7T13u7oZc` | https://scubanuke.github.io/publications/papers/GenAI_Risk_ICS.pdf |
 | GenMix Optimization Whitepaper | `1TbGmIgAs8dYHoZyB72qS71k3gCoj6xOA` | https://scubanuke.github.io/publications/papers/GenMix_Optimization_Whitepaper.pdf |
-| Predictive UFLS Ride-Through | `15rflXYm9seL_KIRgFN16KLMbxCzt6hKd` | https://scubanuke.github.io/publications/papers/Predictive_UFLS_Ride_Through.pdf |
 | Powering the Always-On Economy | `10JhIhSG2X0y-JdTkmvqJPfUG0PcHWY9k` | https://scubanuke.github.io/publications/papers/Powering_the_Always_On_Economy.pdf |
 | Fuel Cell Position Paper | `1jQVJG6ejX5cLFlllQpkbuTv6t2581q-1` | https://scubanuke.github.io/publications/papers/Fuel_Cell_Position_Paper.pdf |
 
@@ -47,3 +46,5 @@ Replacement table for `index.html` in `scubanuke/dba-en-navigation`. Each Drive 
 **DBA-DC: Hyperscale Data Center.** The card currently points at `1bujz44…`, which is a second copy of the Command Broker Implementation Guide. It is re-pointed at `https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf`.
 
 **UA Grid Defense: Cyber-Kinetic.** The card currently points at `1S9Rc3…`, the Energy-sector copy. The canonical artifact is the "Reports " copy `1W1lzZ…`, which is what appears in published citations. The mirror carries the canonical copy; the card resolves to it.
+
+**Withheld.** Predictive UFLS Ride-Through v0.3 is under submission to IEEE Power and Energy Magazine and its cover reads "DRAFT — For reviewer circulation. Not for distribution." It has been removed from the mirror and its card removed from the navigation site.
