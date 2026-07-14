@@ -1,0 +1,44 @@
+series,file,title,version,drive_id,bytes,url
+dba-en,DBA-EN_Series_Introduction.pdf,DBA-EN Series Introduction,v0.1,1W9OlluogFWIyjuoMFCDHDFoCsWFjQizX,243950,https://scubanuke.github.io/publications/dba-en/DBA-EN_Series_Introduction.pdf
+dba-en,DBA-EN-SF_Energy_Sector_Framework.pdf,DBA-EN-SF: Energy Sector Framework,v0.3,1n8lexGm6Im7m2KO2YlshmEWcYXHEphGP,274276,https://scubanuke.github.io/publications/dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf
+dba-en,DBA-ES_Sector_Framework.pdf,DBA-ES Sector Framework,v0.8,1aG_b1OK-KVnpzvqgjRyxVscvy_pjqAKV,306671,https://scubanuke.github.io/publications/dba-en/DBA-ES_Sector_Framework.pdf
+dba-en,DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,DBA-ES-HY-FC1: Large Hydroelectric Storage,v0.4,1lZ6cW8IswgR26gNn2nGw4Mw3MlEYdDNh,359105,https://scubanuke.github.io/publications/dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf
+dba-en,DBA-ES-TX-FC2_EHV_Substation.pdf,DBA-ES-TX-FC2: EHV Transmission Substation,v0.1,1qhl49bJMPZOOERGvlbnRpDaTXprQCTwa,266339,https://scubanuke.github.io/publications/dba-en/DBA-ES-TX-FC2_EHV_Substation.pdf
+dba-en,DBA-ES-TX-FC3_HVDC_Interconnect.pdf,DBA-ES-TX-FC3: HVDC Interconnect,v0.1,1LE8u-fFlCDJSJYm5mKHRoak9ypuyO5Ah,261504,https://scubanuke.github.io/publications/dba-en/DBA-ES-TX-FC3_HVDC_Interconnect.pdf
+dba-en,DBA-ES-GC-FC4_Compressor_Station.pdf,DBA-ES-GC-FC4: Gas-Electric Cascade Compressor Station,v0.2,1QoL4hYdgVePfVrWjngPC_S1vSHHCPnB1,264202,https://scubanuke.github.io/publications/dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf
+dba-en,DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,DBA-ES-DI-FC5: Distribution Substation with Edge Generation,v0.1 DB layer only,1NZreyGDVZBuWZnlkdFr7aLxwCckn1IZV,232508,https://scubanuke.github.io/publications/dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf
+dba-en,DBA-ES-CntlCo_Control_Company.pdf,DBA-ES-CntlCo: Control-Company Functional Class,v0.1 DB layer only,1l6B8VAeqPITD_UhPuQO0ApixmTlmfcwO,219373,https://scubanuke.github.io/publications/dba-en/DBA-ES-CntlCo_Control_Company.pdf
+dba-en,DBA-ES-GN-FC6_Coal_Generation.pdf,DBA-ES-GN-FC6: Coal-Fired Generation,v0.1,1CPdrBhJj-ufWYhdEqStOj3D8erHzN2xO,250214,https://scubanuke.github.io/publications/dba-en/DBA-ES-GN-FC6_Coal_Generation.pdf
+dba-en,DBA-ES-GN-FC7_Oil_Fired_Generation.pdf,DBA-ES-GN-FC7: Oil-Fired Generation and Peakers,v0.1,1xLjgseOUn8I30iIsn2NohzbDIV1EQtQf,254927,https://scubanuke.github.io/publications/dba-en/DBA-ES-GN-FC7_Oil_Fired_Generation.pdf
+dba-en,DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,DBA-ES-GN-FC8: Renewable Generation and BESS,v0.1,1NgUt7SIB7jjfRpcC832tzE_k1POJ9Naj,262594,https://scubanuke.github.io/publications/dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf
+dba-en,DBA-GAS_Sector_Framework.pdf,DBA-GAS Sector Framework,v1.6,1McnnMedMg6Q5HhEBIcyH75iYCHb2oeEx,330217,https://scubanuke.github.io/publications/dba-en/DBA-GAS_Sector_Framework.pdf
+dba-en,DBA-GAS-FC1_Natural_Gas_Transmission.pdf,DBA-GAS-FC1: Natural Gas Transmission,v1.5,1pqUBSoCe9AxS_05I-1vxncPT9XQRA5Vu,338789,https://scubanuke.github.io/publications/dba-en/DBA-GAS-FC1_Natural_Gas_Transmission.pdf
+dba-en,DBA-GAS-FC2_Natural_Gas_Processing.pdf,DBA-GAS-FC2: Natural Gas Processing,v0.1,19NZCqBGEjndE5tFM27LrZMw48qfeVVlo,248632,https://scubanuke.github.io/publications/dba-en/DBA-GAS-FC2_Natural_Gas_Processing.pdf
+dba-en,DBA-GAS-FC3_Underground_Storage.pdf,DBA-GAS-FC3: Underground Storage,v0.1,16RwH-sSfOeUXEnp5EvSj9ifEkalWa3Pf,258690,https://scubanuke.github.io/publications/dba-en/DBA-GAS-FC3_Underground_Storage.pdf
+dba-en,DBA-GAS-FC4_Local_Distribution.pdf,DBA-GAS-FC4: Local Distribution,v0.1,13MEOT2ExV5AUYUF4VW3A8dLPtVopgi0Y,257097,https://scubanuke.github.io/publications/dba-en/DBA-GAS-FC4_Local_Distribution.pdf
+dba-en,DBA-GAS-UC-LNG_LNG_Terminal.pdf,DBA-GAS-UC-LNG: LNG Terminal Use Case,v1.1,1ybqx9mqGpII61-zhzXhNZ3rdVmEDj7y_,403818,https://scubanuke.github.io/publications/dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf
+dba-en,DBA-GAS-POL_Deterrence.pdf,DBA-GAS-POL-Deterrence,v1.2,1wwJObJdgqNZRp7snU9atkmLQyT6gMxS7,325383,https://scubanuke.github.io/publications/dba-en/DBA-GAS-POL_Deterrence.pdf
+dba-en,DBA-OIL_Sector_Framework.pdf,DBA-OIL Sector Framework,v1.6,1E119HsMuqbhX6Q6_FMM3L3Yh6ZzjOBK4,310056,https://scubanuke.github.io/publications/dba-en/DBA-OIL_Sector_Framework.pdf
+dba-en,DBA-OIL-FC1_Petroleum_Refining.pdf,DBA-OIL-FC1: Petroleum Refining,v1.2,1pUgIJk8AxrWNoq0pXCKU5O_8gJkMzBHL,236935,https://scubanuke.github.io/publications/dba-en/DBA-OIL-FC1_Petroleum_Refining.pdf
+dba-en,DBA-OIL-FC2_Offshore_Crude_Production.pdf,DBA-OIL-FC2: Offshore Crude Production,v0.1,1pGnMJu5mBrD_EKewbhZqZTQtrlI_Yfa2,242033,https://scubanuke.github.io/publications/dba-en/DBA-OIL-FC2_Offshore_Crude_Production.pdf
+dba-en,DBA-OIL-FC3_Terminals_Storage.pdf,DBA-OIL-FC3: Terminals and Storage,v0.1,1ZasxQS2xxf8RBv6kYnoPRYDasxoiiFjq,249596,https://scubanuke.github.io/publications/dba-en/DBA-OIL-FC3_Terminals_Storage.pdf
+dba-en,DBA-OIL-FC4_Crude_Product_Transport.pdf,DBA-OIL-FC4: Crude and Product Transport,v0.1,1pyTkkbjNjg10S_NdLS2oGcvFiQftSpmk,256111,https://scubanuke.github.io/publications/dba-en/DBA-OIL-FC4_Crude_Product_Transport.pdf
+dba-ma,DBA-MA_Introduction.pdf,DBA-MA Introduction,v1.9,1TxtRl0V2-tiqPI5tWePR8L-u5a0fzeqh,230261,https://scubanuke.github.io/publications/dba-ma/DBA-MA_Introduction.pdf
+dba-ma,DBA-MA_ONG_Series_Introduction.pdf,DBA-MA ONG Series Introduction,v1.0 FINAL,1BPDU3PlLUw0M2tIJU2LtTwvvg8HdrXCY,236661,https://scubanuke.github.io/publications/dba-ma/DBA-MA_ONG_Series_Introduction.pdf
+dba-dc,DBA-DC-FC1_Hyperscale_Design_Basis.pdf,DBA-DC-FC1: Hyperscale Data Center,v1.1,1XhNqjcRt67GOHmgC3NWrCAPOpF6jp6sL,304190,https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf
+command-broker,CB-Framework_Cross_Sector.pdf,CB-Framework: Cross-Sector,v0.1,1zlQYtMI_UnqgUOcCpPu1gTrNkmpRiEgT,185301,https://scubanuke.github.io/publications/command-broker/CB-Framework_Cross_Sector.pdf
+command-broker,CB_Implementation_Guide.pdf,Command Broker Implementation Guide,v0.1,1AyxrW_U09msZRC4qZ3z-Ar66j4oSw6Dq,214037,https://scubanuke.github.io/publications/command-broker/CB_Implementation_Guide.pdf
+command-broker,CB-IB_Qualification_Standard.pdf,CB-IB Qualification Standard,v0.1,1YeZa9RQ-jKEeMaIoXA7-aDE6McH_Zu30,243872,https://scubanuke.github.io/publications/command-broker/CB-IB_Qualification_Standard.pdf
+command-broker,CB-UC-1_BA_Integrated_Interface.pdf,CB-UC-1: BA Integrated Interface,v0.1,1TvGEpY89GcvcIwDMtscS7xFil9hXL-2o,225997,https://scubanuke.github.io/publications/command-broker/CB-UC-1_BA_Integrated_Interface.pdf
+dba-uxs,DBA-UxS_Cross_Sector.pdf,DBA-UxS: Cross-Sector Uncrewed Systems,v1.1,1X8bCPK6zguTq7JmJ1z0cZGTbE26etBff,228969,https://scubanuke.github.io/publications/dba-uxs/DBA-UxS_Cross_Sector.pdf
+dba-uxs,DBA-MA-UxS-NA_Nuclear_Annex.pdf,DBA-MA-UxS-NA: Nuclear Annex,v1.1,1VuPjcN9bln--Ly9Cza9Rmm6A0BAfE_F_,233054,https://scubanuke.github.io/publications/dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf
+papers,GenAI_Risk_ICS.pdf,GenAI Risk in ICS,V29,1GZteXYkofS_hgdl02pzzwfH7T13u7oZc,232763,https://scubanuke.github.io/publications/papers/GenAI_Risk_ICS.pdf
+papers,GenMix_Optimization_Whitepaper.pdf,GenMix Optimization Whitepaper,v0.3,1TbGmIgAs8dYHoZyB72qS71k3gCoj6xOA,400665,https://scubanuke.github.io/publications/papers/GenMix_Optimization_Whitepaper.pdf
+papers,Predictive_UFLS_Ride_Through.pdf,Predictive UFLS Ride-Through,v0.3,15rflXYm9seL_KIRgFN16KLMbxCzt6hKd,310466,https://scubanuke.github.io/publications/papers/Predictive_UFLS_Ride_Through.pdf
+papers,UA_Grid_Defense_Cyber_Kinetic.pdf,UA Grid Defense: Cyber-Kinetic,v1.0,1W1lzZWYXGXvKiHhAvODnfuWOYhKXBBbb,481236,https://scubanuke.github.io/publications/papers/UA_Grid_Defense_Cyber_Kinetic.pdf
+papers,Powering_the_Always_On_Economy.pdf,Powering the Always-On Economy,v0.4,10JhIhSG2X0y-JdTkmvqJPfUG0PcHWY9k,229095,https://scubanuke.github.io/publications/papers/Powering_the_Always_On_Economy.pdf
+papers,Fuel_Cell_Position_Paper.pdf,Fuel Cell Position Paper,v0.1,1jQVJG6ejX5cLFlllQpkbuTv6t2581q-1,173430,https://scubanuke.github.io/publications/papers/Fuel_Cell_Position_Paper.pdf
+awb,Tiered_Assessment_Framework.pdf,Tiered Assessment Framework,v2.5,1K039vZxQU7JrMLio4RW1iW_vNxo5KptC,235331,https://scubanuke.github.io/publications/awb/Tiered_Assessment_Framework.pdf
+awb,ERT_Companion_Proposal.pdf,ERT Companion Proposal,v5.3,1F-ZYDirHKbwtMkpSmzdPpM_whxLoKF-t,401177,https://scubanuke.github.io/publications/awb/ERT_Companion_Proposal.pdf
+awb,SCRM_Companion_Agent.pdf,SCRM Companion Agent,v1.0,1WC1RjC0F5VIpGiwKHXJQrnsQiHpF-hdf,154922,https://scubanuke.github.io/publications/awb/SCRM_Companion_Agent.pdf
+awb,BES_Asset_Nomenclature_Specification.pdf,BES Asset Nomenclature Specification,v1.0,15gHhHNU5ZqLCRw-i98ID1vEnXwnTY1eF,451229,https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf
