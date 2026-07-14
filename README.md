@@ -97,10 +97,10 @@ Assessment instruments and companion agent specifications.
 
 | Document | Version | Description |
 |---|---|---|
-| [Tiered Assessment Framework](awb/Tiered_Assessment_Framework.pdf) | v2.5 | TODO — one-line abstract. |
-| [ERT Companion Proposal](awb/ERT_Companion_Proposal.pdf) | v5.3 | TODO — one-line abstract. |
-| [SCRM Companion Agent](awb/SCRM_Companion_Agent.pdf) | v1.0 | TODO — one-line abstract. |
-| [BES Asset Nomenclature Specification](awb/BES_Asset_Nomenclature_Specification.pdf) | v1.0 | TODO — one-line abstract. |
+| [Tiered Assessment Framework](awb/Tiered_Assessment_Framework.pdf) | v2.5 | Quality assurance methodology for cognitive errors in generative AI systems used in industrial control. Tiered criticality model, testing methodology, and statistical acceptance criteria — the cognitive-error layer of the two-layer hybrid QA architecture, paired with formal verification for deterministic components. Written against ASME NQA-1, IEEE 1012, IEC 61508, ISA/IEC 62443, and the NIST AI RMF. |
+| [ERT Companion Proposal](awb/ERT_Companion_Proposal.pdf) | v5.3 | Pilot proposal for an AI-enhanced Evidence Request Tool for NERC CIP compliance audits. Automates population of the ERO Enterprise CIP ERT workbook rather than replacing it: automated data extraction, traceable evidence packages, natural-language querying, and human-reviewed narrative responses. Validated by mock audit with volunteer utility and Regional Entity auditors before production deployment. |
+| [SCRM Companion Agent](awb/SCRM_Companion_Agent.pdf) | v1.0 | Multi-agent AI architecture for supply chain risk management in the bulk power system. Six specialized agents integrate with existing procurement, inventory, configuration management, and O&M platforms to give continuous hardware and software bill-of-materials visibility across OT environments, reducing vulnerability assessment from weeks to minutes. Includes pilot structure and governance framework. |
+| [BES Asset Nomenclature Specification](awb/BES_Asset_Nomenclature_Specification.pdf) | v1.0 | A comprehensive identification framework for Bulk Electric System assets. Human-comprehensible identifiers that encode hierarchical relationships, spanning control system, computing platform, network, protection, and communication assets — the common naming convention the assessment and SCRM instruments assume. |
 
 ---
 
