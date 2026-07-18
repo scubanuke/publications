@@ -40,6 +40,8 @@ Replacement table for `index.html` in `scubanuke/dba-en-navigation`. Each Drive 
 | GenMix Optimization Whitepaper | `1TbGmIgAs8dYHoZyB72qS71k3gCoj6xOA` | https://scubanuke.github.io/publications/papers/GenMix_Optimization_Whitepaper.pdf |
 | Powering the Always-On Economy | `10JhIhSG2X0y-JdTkmvqJPfUG0PcHWY9k` | https://scubanuke.github.io/publications/papers/Powering_the_Always_On_Economy.pdf |
 | Fuel Cell Position Paper | `1jQVJG6ejX5cLFlllQpkbuTv6t2581q-1` | https://scubanuke.github.io/publications/papers/Fuel_Cell_Position_Paper.pdf |
+| DBA-MA-SMR-FC1: SMR Facility-Class Design Basis | — working draft, no Drive ID | https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf |
+| DBA-MA-SMR-FC1-TB1: Multi-Module Simultaneous ASSC Adequacy | — working draft, no Drive ID | https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf |
 
 ## Corrections applied in this map
 
