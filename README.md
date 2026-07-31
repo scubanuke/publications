@@ -10,6 +10,16 @@ Each document below has a stable URL that does not change when the document is r
 
 ---
 
+## Start here — the series map
+
+An orientation to the whole series before the individual instruments.
+
+| Document | Version | Description |
+|---|---|---|
+| [Design Basis for AI Governance: An Overview](AI_Governance_Series_Overview.pdf) | v0.1 | The map of the entire AI Governance series — the design-basis method applied to AI governance, the gap it fills, and the full document inventory (ISA Parent Framework, Tiered Assessment Framework, the Command Broker corpus, the DBA sector series) and how the pieces relate. New readers start here. |
+
+---
+
 ## DBA-EN — Energy Sector Design Basis
 
 Sector frameworks and facility classes across electric, gas, and oil.
@@ -64,10 +74,12 @@ The Bright Line governance architecture and its implementation instruments.
 
 | Document | Version | Description |
 |---|---|---|
-| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.1 | Bright Line principle, three-tier criticality framework, Command Broker / Influencer Broker distinction. The foundational governance architecture document. |
-| [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | v0.1 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
-| [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.1 | Influencer Broker qualification requirements for above-Bright-Line advisory functions. |
+| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.2 | Bright Line principle, criticality-band framework, Command Broker / Influencer Broker distinction. The foundational governance architecture document. |
+| [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | V0.2 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
+| [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.1 | Command Broker / Influencer Broker qualification and onboarding standard for above-Bright-Line roles. |
 | [CB-UC-1: BA Integrated Interface](command-broker/CB-UC-1_BA_Integrated_Interface.pdf) | v0.1 | Command Broker use case for Balancing Authority integrated interface operations. |
+| [CB-CT: Commissioning and Joint Training](command-broker/CB-CT_Commissioning_and_Joint_Training.pdf) | v0.2 | The commissioning-time and lifecycle procedure for standing up a Command Broker on a specific product at a facility — the vendor–AOO seam, gates, joint training, and re-qualification triggers. |
+| [DBA-VC: Vendor Companion](command-broker/DBA-VC_Vendor_Companion.pdf) | v0.8 | The vendor product-conformance companion — product-specification obligations, Bright Line architectural separation, operator independence, and the vendor-supplied artifacts an asset owner needs. |
 
 ## DBA-UxS — Uncrewed Systems
 

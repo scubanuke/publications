@@ -26,10 +26,10 @@ dba-en,DBA-OIL-FC4_Crude_Product_Transport.pdf,DBA-OIL-FC4: Crude and Product Tr
 dba-ma,DBA-MA_Introduction.pdf,DBA-MA Introduction,v1.9,1TxtRl0V2-tiqPI5tWePR8L-u5a0fzeqh,230261,https://scubanuke.github.io/publications/dba-ma/DBA-MA_Introduction.pdf
 dba-ma,DBA-MA_ONG_Series_Introduction.pdf,DBA-MA ONG Series Introduction,v1.0 FINAL,1BPDU3PlLUw0M2tIJU2LtTwvvg8HdrXCY,236661,https://scubanuke.github.io/publications/dba-ma/DBA-MA_ONG_Series_Introduction.pdf
 dba-dc,DBA-DC-FC1_Hyperscale_Design_Basis.pdf,DBA-DC-FC1: Hyperscale Data Center,v1.1,1XhNqjcRt67GOHmgC3NWrCAPOpF6jp6sL,304190,https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf
-command-broker,CB-Framework_Cross_Sector.pdf,CB-Framework: Cross-Sector,v0.1,1zlQYtMI_UnqgUOcCpPu1gTrNkmpRiEgT,185301,https://scubanuke.github.io/publications/command-broker/CB-Framework_Cross_Sector.pdf
-command-broker,CB_Implementation_Guide.pdf,Command Broker Implementation Guide,v0.1,1AyxrW_U09msZRC4qZ3z-Ar66j4oSw6Dq,214037,https://scubanuke.github.io/publications/command-broker/CB_Implementation_Guide.pdf
-command-broker,CB-IB_Qualification_Standard.pdf,CB-IB Qualification Standard,v0.1,1YeZa9RQ-jKEeMaIoXA7-aDE6McH_Zu30,243872,https://scubanuke.github.io/publications/command-broker/CB-IB_Qualification_Standard.pdf
-command-broker,CB-UC-1_BA_Integrated_Interface.pdf,CB-UC-1: BA Integrated Interface,v0.1,1TvGEpY89GcvcIwDMtscS7xFil9hXL-2o,225997,https://scubanuke.github.io/publications/command-broker/CB-UC-1_BA_Integrated_Interface.pdf
+command-broker,CB-Framework_Cross_Sector.pdf,CB-Framework: Cross-Sector,v0.2,1zlQYtMI_UnqgUOcCpPu1gTrNkmpRiEgT,110486,https://scubanuke.github.io/publications/command-broker/CB-Framework_Cross_Sector.pdf
+command-broker,CB_Implementation_Guide.pdf,Command Broker Implementation Guide,V0.2,1AyxrW_U09msZRC4qZ3z-Ar66j4oSw6Dq,150355,https://scubanuke.github.io/publications/command-broker/CB_Implementation_Guide.pdf
+command-broker,CB-IB_Qualification_Standard.pdf,CB-IB Qualification Standard,v0.1,1YeZa9RQ-jKEeMaIoXA7-aDE6McH_Zu30,147743,https://scubanuke.github.io/publications/command-broker/CB-IB_Qualification_Standard.pdf
+command-broker,CB-UC-1_BA_Integrated_Interface.pdf,CB-UC-1: BA Integrated Interface,v0.1,1TvGEpY89GcvcIwDMtscS7xFil9hXL-2o,162583,https://scubanuke.github.io/publications/command-broker/CB-UC-1_BA_Integrated_Interface.pdf
 dba-uxs,DBA-UxS_Cross_Sector.pdf,DBA-UxS: Cross-Sector Uncrewed Systems,v1.1,1X8bCPK6zguTq7JmJ1z0cZGTbE26etBff,228969,https://scubanuke.github.io/publications/dba-uxs/DBA-UxS_Cross_Sector.pdf
 dba-uxs,DBA-MA-UxS-NA_Nuclear_Annex.pdf,DBA-MA-UxS-NA: Nuclear Annex,v1.1,1VuPjcN9bln--Ly9Cza9Rmm6A0BAfE_F_,233054,https://scubanuke.github.io/publications/dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf
 papers,GenAI_Risk_ICS.pdf,GenAI Risk in ICS,V29,1GZteXYkofS_hgdl02pzzwfH7T13u7oZc,232763,https://scubanuke.github.io/publications/papers/GenAI_Risk_ICS.pdf
@@ -43,3 +43,6 @@ awb,SCRM_Companion_Agent.pdf,SCRM Companion Agent,v1.0,1WC1RjC0F5VIpGiwKHXJQrnsQ
 awb,BES_Asset_Nomenclature_Specification.pdf,BES Asset Nomenclature Specification,v1.0,15gHhHNU5ZqLCRw-i98ID1vEnXwnTY1eF,451229,https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf
 dba-ma-smr,DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,DBA-MA-SMR-FC1: SMR Facility-Class Design Basis,v0.4,,247665,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf
 dba-ma-smr,DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,DBA-MA-SMR-FC1-TB1: Multi-Module Simultaneous ASSC Adequacy,v0.1,,199554,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf
+overview,AI_Governance_Series_Overview.pdf,Design Basis for AI Governance: An Overview,v0.1,1Za8G5mtX2dP76S5mdG2bRBPBzH2lVnpI,83385,https://scubanuke.github.io/publications/AI_Governance_Series_Overview.pdf
+command-broker,CB-CT_Commissioning_and_Joint_Training.pdf,CB-CT: Commissioning and Joint Training,v0.2,,115062,https://scubanuke.github.io/publications/command-broker/CB-CT_Commissioning_and_Joint_Training.pdf
+command-broker,DBA-VC_Vendor_Companion.pdf,DBA-VC: Vendor Companion,v0.8,,264808,https://scubanuke.github.io/publications/command-broker/DBA-VC_Vendor_Companion.pdf
