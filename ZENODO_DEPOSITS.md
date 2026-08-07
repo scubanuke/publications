@@ -4,6 +4,15 @@ Copy-paste source for the five deposit forms. Create each as a draft, **reserve 
 the reserved DOI into the table at the bottom and send it to me. The cover/citation edits happen after
 that, so each document is exported exactly once.
 
+> **Reconciliation update (August 2026).** The FD-BL corpus reconciliation conformed the corpus to the
+> governing stack — **FD-BL** (definition), **FD-LD**, and the determinations **FD-BL-D1** (mode of
+> discharge), **FD-BL-D2** (indication integrity), and **FD-EV** (envelope). Of the five records below,
+> only **#1 Tiered Assessment Framework** changed as a result (an FD-BL by-reference conformance);
+> **#2–#5 are unchanged** by the reconciliation. One deposit **outside this batch — the SMR Facility-Class
+> Design Basis (DBA-MA-SMR-FC1)** — also changed and needs a new version; it is recorded in
+> *Reconciliation re-versions* below. The published PDFs for the changed documents have been
+> regenerated from the conformed sources.
+
 **Applies to all five records:**
 
 - **Creator:** Roxey, Timothy E. — ORCID `0009-0002-9482-8679`
@@ -21,9 +30,10 @@ that, so each document is exported exactly once.
 - **Resource type:** Publication → Report
 - **Version:** v2.5
 - **Publication date:** 2026-02
+- **Reconciliation status:** **Changed** — conformed to FD-BL by reference (placement is consequence, per action; the tier framing is an application of it). Re-export the regenerated PDF; publish as a **new version** under the existing concept DOI.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/Tiered_Assessment_Framework.pdf`
-- **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line
+- **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line; FD-BL
 
 **Description:**
 A quality assurance methodology for cognitive errors in generative AI systems deployed in industrial
@@ -32,7 +42,8 @@ acceptance criteria. It is the cognitive-error layer of a two-layer hybrid quali
 architecture, paired with formal verification for deterministic infrastructure components. Written
 against ASME NQA-1, NRC Regulatory Guides, NERC CIP, IEEE 1012, IEC 61508, ISA/IEC 62443, and the
 NIST AI Risk Management Framework, with the intent of converting framework content into enforceable
-standards.
+standards. Placement of the Bright Line is governed by FD-BL (consequence, per action), with the
+criticality-tier framing an application of that definition.
 
 ---
 
@@ -42,6 +53,7 @@ standards.
 - **Resource type:** Publication → Report
 - **Version:** v1.0
 - **Publication date:** 2026-02
+- **Reconciliation status:** Unchanged.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf`
 - **Keywords:** bulk electric system; asset identification; nomenclature; control systems; protection systems; NERC; critical infrastructure
@@ -60,6 +72,7 @@ downstream assessment and supply-chain instruments assume.
 - **Resource type:** Publication → Report
 - **Version:** v1.0
 - **Publication date:** 2026-06
+- **Reconciliation status:** Unchanged.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/papers/UA_Grid_Defense_Cyber_Kinetic.pdf`
 - **Keywords:** Ukraine; grid defense; cyber-kinetic attack; electric infrastructure; design basis; military action
@@ -78,6 +91,7 @@ evidentiary anchor for kinetic attack scenarios throughout the DBA-ES electric s
 - **Resource type:** Publication → Preprint *(alternatively: Working paper)*
 - **Version:** v5.3
 - **Publication date:** 2026-03
+- **Reconciliation status:** Unchanged.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/ERT_Companion_Proposal.pdf`
 - **Keywords:** NERC CIP; compliance audit; evidence request tool; generative AI; regulatory automation; electric utilities
@@ -99,6 +113,7 @@ auditors before production deployment.
 - **Resource type:** Publication → Preprint *(alternatively: Working paper)*
 - **Version:** v1.0
 - **Publication date:** 2026-03
+- **Reconciliation status:** Unchanged.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/SCRM_Companion_Agent.pdf`
 - **Keywords:** supply chain risk management; SBOM; HBOM; bulk power system; generative AI; multi-agent systems; procurement; vulnerability assessment
@@ -114,6 +129,23 @@ weeks to minutes. Includes operational use cases, pilot structure, and governanc
 
 ---
 
+## Reconciliation re-versions (post-conformance)
+
+These deposits carry content the reconciliation **changed**, so each needs a **new version** published
+under its **existing concept DOI** (the concept DOI is stable; Zenodo mints a fresh version DOI on upload).
+The regenerated PDFs are already in the `publications` repo at the paths below.
+
+| Document | Existing concept DOI | Prior version DOI | Action | Regenerated PDF |
+|---|---|---|---|---|
+| Tiered Assessment Framework (v2.5, conformed) | `10.5281/zenodo.21363865` | `10.5281/zenodo.21363866` | New version → reserve DOI, upload regenerated PDF, publish | `awb/Tiered_Assessment_Framework.pdf` |
+| SMR Facility-Class Design Basis — DBA-MA-SMR-FC1 (v0.4, conformed) | `10.5281/zenodo.21430410` | `10.5281/zenodo.21430411` | New version → reserve DOI, upload regenerated PDF, publish | `dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf` |
+
+**Per-version steps (Zenodo UI — manual):** open the concept DOI → **New version** → reserve the version
+DOI → confirm the citation block in the source reflects the reserved DOI → upload the regenerated PDF →
+publish. Record the new version DOI in the table below.
+
+---
+
 ## Reserved DOIs — fill in and return
 
 | Document | Reserved version DOI | Concept DOI (after publish) |
@@ -123,6 +155,8 @@ weeks to minutes. Includes operational use cases, pilot structure, and governanc
 | UA Grid Defense: Cyber-Kinetic v1.0 | 10.5281/zenodo.21365171 | 10.5281/zenodo.21365170 |
 | ERT Companion Proposal v5.3 | 10.5281/zenodo.21365218 | 10.5281/zenodo.21365217 |
 | SCRM Companion Agent v1.0 | 10.5281/zenodo.21365262 | 10.5281/zenodo.21365261 |
+| **TAF — reconciliation re-version** | *(reserve on New version)* | 10.5281/zenodo.21363865 |
+| **DBA-MA-SMR-FC1 — reconciliation re-version** | *(reserve on New version)* | 10.5281/zenodo.21430410 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
