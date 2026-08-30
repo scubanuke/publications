@@ -28,9 +28,9 @@ that, so each document is exported exactly once.
 
 - **Title:** Tiered Assessment Framework for Cognitive Errors in Generative AI Systems: A Quality Assurance Methodology for Industrial Control Systems
 - **Resource type:** Publication → Report
-- **Version:** v2.5
-- **Publication date:** 2026-02
-- **Reconciliation status:** **Changed** — conformed to FD-BL by reference (placement is consequence, per action; the tier framing is an application of it). Re-export the regenerated PDF; publish as a **new version** under the existing concept DOI.
+- **Version:** v2.6
+- **Publication date:** 2026-08
+- **Reconciliation status:** **Done** — conformed to FD-BL by reference; re-versioned and published as v2.6 (version DOI `10.5281/zenodo.21813691`, 5 Aug 2026). Supersedes v2.5 (`10.5281/zenodo.21363866`).
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/Tiered_Assessment_Framework.pdf`
 - **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line; FD-BL
@@ -51,9 +51,9 @@ criticality-tier framing an application of that definition.
 
 - **Title:** BES Asset Nomenclature Specification: A Comprehensive Framework for Bulk Electric System Asset Identification
 - **Resource type:** Publication → Report
-- **Version:** v1.0
-- **Publication date:** 2026-02
-- **Reconciliation status:** Unchanged.
+- **Version:** v1.0 published; **v1.1 rendered and NOT YET REGISTERED**
+- **Publication date:** 2026-02 (v1.0)
+- **Reconciliation status:** Unchanged by the FD-BL pass. Separate issue: a v1.1 render (Aug 2026, TOC removed) was placed in the mirror ahead of its Zenodo New Version, so the served PDF's version-DOI line still reads the placeholder `[reserved on New Version]`. Outstanding — see "Reconciliation re-versions" below.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf`
 - **Keywords:** bulk electric system; asset identification; nomenclature; control systems; protection systems; NERC; critical infrastructure
@@ -135,10 +135,11 @@ These deposits carry content the reconciliation **changed**, so each needs a **n
 under its **existing concept DOI** (the concept DOI is stable; Zenodo mints a fresh version DOI on upload).
 The regenerated PDFs are already in the `publications` repo at the paths below.
 
-| Document | Existing concept DOI | Prior version DOI | Action | Regenerated PDF |
+| Document | Existing concept DOI | Prior version DOI | Status | PDF |
 |---|---|---|---|---|
-| Tiered Assessment Framework (v2.5, conformed) | `10.5281/zenodo.21363865` | `10.5281/zenodo.21363866` | New version → reserve DOI, upload regenerated PDF, publish | `awb/Tiered_Assessment_Framework.pdf` |
-| SMR Facility-Class Design Basis — DBA-MA-SMR-FC1 (v0.4, conformed) | `10.5281/zenodo.21430410` | `10.5281/zenodo.21430411` | New version → reserve DOI, upload regenerated PDF, publish | `dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf` |
+| Tiered Assessment Framework → **v2.6** | `10.5281/zenodo.21363865` | `10.5281/zenodo.21363866` | **DONE** — published, version DOI `10.5281/zenodo.21813691` | `awb/Tiered_Assessment_Framework.pdf` |
+| SMR Facility-Class Design Basis — DBA-MA-SMR-FC1 → **v0.5** | `10.5281/zenodo.21430410` | `10.5281/zenodo.21430411` | **DONE** — published, version DOI `10.5281/zenodo.21814883` | `dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf` |
+| BES Asset Nomenclature Specification → **v1.1** | `10.5281/zenodo.21365014` | `10.5281/zenodo.21365015` | **OPEN** — New Version never completed; the mirror PDF carries a `[reserved on New Version]` placeholder where its version DOI belongs | `awb/BES_Asset_Nomenclature_Specification.pdf` |
 
 **Per-version steps (Zenodo UI — manual):** open the concept DOI → **New version** → reserve the version
 DOI → confirm the citation block in the source reflects the reserved DOI → upload the regenerated PDF →
@@ -155,8 +156,9 @@ publish. Record the new version DOI in the table below.
 | UA Grid Defense: Cyber-Kinetic v1.0 | 10.5281/zenodo.21365171 | 10.5281/zenodo.21365170 |
 | ERT Companion Proposal v5.3 | 10.5281/zenodo.21365218 | 10.5281/zenodo.21365217 |
 | SCRM Companion Agent v1.0 | 10.5281/zenodo.21365262 | 10.5281/zenodo.21365261 |
-| **TAF — reconciliation re-version** | *(reserve on New version)* | 10.5281/zenodo.21363865 |
-| **DBA-MA-SMR-FC1 — reconciliation re-version** | *(reserve on New version)* | 10.5281/zenodo.21430410 |
+| **TAF v2.6 — reconciliation re-version** | 10.5281/zenodo.21813691 | 10.5281/zenodo.21363865 |
+| **DBA-MA-SMR-FC1 v0.5 — reconciliation re-version** | 10.5281/zenodo.21814883 | 10.5281/zenodo.21430410 |
+| **BES v1.1 — TOC-removal re-version** | *(reserve on New version — OUTSTANDING)* | 10.5281/zenodo.21365014 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
