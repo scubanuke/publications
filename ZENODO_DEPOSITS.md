@@ -51,9 +51,9 @@ criticality-tier framing an application of that definition.
 
 - **Title:** BES Asset Nomenclature Specification: A Comprehensive Framework for Bulk Electric System Asset Identification
 - **Resource type:** Publication → Report
-- **Version:** v1.0 published; **v1.1 rendered and NOT YET REGISTERED**
-- **Publication date:** 2026-02 (v1.0)
-- **Reconciliation status:** Unchanged by the FD-BL pass. Separate issue: a v1.1 render (Aug 2026, TOC removed) was placed in the mirror ahead of its Zenodo New Version, so the served PDF's version-DOI line still reads the placeholder `[reserved on New Version]`. Outstanding — see "Reconciliation re-versions" below.
+- **Version:** v1.1
+- **Publication date:** 2026-08
+- **Reconciliation status:** Unchanged by the FD-BL pass. Separately re-versioned to v1.1 (TOC removed) and published 30 Aug 2026 — version DOI `10.5281/zenodo.22178898`, superseding v1.0 (`10.5281/zenodo.21365015`). Mirror, Zenodo file and master are the same artifact.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf`
 - **Keywords:** bulk electric system; asset identification; nomenclature; control systems; protection systems; NERC; critical infrastructure
@@ -139,7 +139,7 @@ The regenerated PDFs are already in the `publications` repo at the paths below.
 |---|---|---|---|---|
 | Tiered Assessment Framework → **v2.6** | `10.5281/zenodo.21363865` | `10.5281/zenodo.21363866` | **DONE** — published, version DOI `10.5281/zenodo.21813691` | `awb/Tiered_Assessment_Framework.pdf` |
 | SMR Facility-Class Design Basis — DBA-MA-SMR-FC1 → **v0.5** | `10.5281/zenodo.21430410` | `10.5281/zenodo.21430411` | **DONE** — published, version DOI `10.5281/zenodo.21814883` | `dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf` |
-| BES Asset Nomenclature Specification → **v1.1** | `10.5281/zenodo.21365014` | `10.5281/zenodo.21365015` | **OPEN** — New Version never completed; the mirror PDF carries a `[reserved on New Version]` placeholder where its version DOI belongs | `awb/BES_Asset_Nomenclature_Specification.pdf` |
+| BES Asset Nomenclature Specification → **v1.1** | `10.5281/zenodo.21365014` | `10.5281/zenodo.21365015` | **DONE** — published 30 Aug 2026, version DOI `10.5281/zenodo.22178898`; TOC removed, placeholder replaced with the real DOI | `awb/BES_Asset_Nomenclature_Specification.pdf` |
 
 **Per-version steps (Zenodo UI — manual):** open the concept DOI → **New version** → reserve the version
 DOI → confirm the citation block in the source reflects the reserved DOI → upload the regenerated PDF →
@@ -158,7 +158,7 @@ publish. Record the new version DOI in the table below.
 | SCRM Companion Agent v1.0 | 10.5281/zenodo.21365262 | 10.5281/zenodo.21365261 |
 | **TAF v2.6 — reconciliation re-version** | 10.5281/zenodo.21813691 | 10.5281/zenodo.21363865 |
 | **DBA-MA-SMR-FC1 v0.5 — reconciliation re-version** | 10.5281/zenodo.21814883 | 10.5281/zenodo.21430410 |
-| **BES v1.1 — TOC-removal re-version** | *(reserve on New version — OUTSTANDING)* | 10.5281/zenodo.21365014 |
+| **BES v1.1 — TOC-removal re-version** | 10.5281/zenodo.22178898 | 10.5281/zenodo.21365014 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
