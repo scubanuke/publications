@@ -46,3 +46,10 @@ dba-ma-smr,DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,DBA-MA-SMR-FC1-TB1:
 overview,AI_Governance_Series_Overview.pdf,Design Basis for AI Governance: An Overview,v0.1,1Za8G5mtX2dP76S5mdG2bRBPBzH2lVnpI,166824,https://scubanuke.github.io/publications/AI_Governance_Series_Overview.pdf
 command-broker,CB-CT_Commissioning_and_Joint_Training.pdf,CB-CT: Commissioning and Joint Training,v0.2,,118734,https://scubanuke.github.io/publications/command-broker/CB-CT_Commissioning_and_Joint_Training.pdf
 command-broker,DBA-VC_Vendor_Companion.pdf,DBA-VC: Vendor Companion,v0.8,,263708,https://scubanuke.github.io/publications/command-broker/DBA-VC_Vendor_Companion.pdf
+fd,00_FD_Foundational_Definitions_August_2026_Edition.pdf,"FD — Foundational Definitions, August 2026 Edition",August 2026 Edition,,125837,https://scubanuke.github.io/publications/fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf
+fd,01_FD-BL_The_Bright_Line_v0_3.pdf,FD-BL: The Bright Line,v0.3,,203815,https://scubanuke.github.io/publications/fd/01_FD-BL_The_Bright_Line_v0_3.pdf
+fd,02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf,FD-LD: Layer Decomposition and Determinism,v0.1,,152186,https://scubanuke.github.io/publications/fd/02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf
+fd,03_FD-EV_The_Envelope_v0_1.pdf,FD-EV: The Envelope,v0.1,,175634,https://scubanuke.github.io/publications/fd/03_FD-EV_The_Envelope_v0_1.pdf
+fd,04_FD-BR_The_Broker_v0_1.pdf,FD-BR: The Broker,v0.1,,179855,https://scubanuke.github.io/publications/fd/04_FD-BR_The_Broker_v0_1.pdf
+fd,05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,FD-BL-D1: Mode of Discharge,v0.3,,178915,https://scubanuke.github.io/publications/fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf
+fd,06_FD-BL-D2_Indication_Integrity_v0_2.pdf,FD-BL-D2: Indication Integrity,v0.2,,180555,https://scubanuke.github.io/publications/fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf

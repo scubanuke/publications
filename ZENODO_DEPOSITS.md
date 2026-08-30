@@ -129,6 +129,48 @@ weeks to minutes. Includes operational use cases, pilot structure, and governanc
 
 ---
 
+## 6. FD — Foundational Definitions, August 2026 Edition
+
+- **Title:** FD — Foundational Definitions, August 2026 Edition
+- **Resource type:** Publication → Report
+- **Version:** August 2026 Edition
+- **Publication date:** 2026-08-30
+- **Version DOI:** `10.5281/zenodo.22181029` · **Concept DOI:** `10.5281/zenodo.22181028`
+- **Status:** **PUBLISHED** 30 Aug 2026. Seven files; MD5s verified byte-identical to the mirror at
+  `fd/` and to the production masters.
+- **Related identifiers:**
+  - *is referenced by* → `10.5281/zenodo.21813691` (TAF v2.6)
+  - *is referenced by* → `10.5281/zenodo.21814883` (DBA-MA-SMR-FC1 v0.5)
+  - Reciprocal *references* → `10.5281/zenodo.22181029` added to both of those records
+    (metadata-only edit; no new version minted).
+- **Keywords:** Bright Line; foundational definition; command broker; determinism; critical
+  infrastructure; AI governance; ICS/OT
+
+**Contents (six instruments plus front matter):**
+
+| File | Instrument | Version |
+|---|---|---|
+| `00_FD_Foundational_Definitions_August_2026_Edition.pdf` | Front matter | August 2026 Edition |
+| `01_FD-BL_The_Bright_Line_v0_3.pdf` | FD-BL — The Bright Line | v0.3 |
+| `02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf` | FD-LD — Layer Decomposition and Determinism | v0.1 |
+| `03_FD-EV_The_Envelope_v0_1.pdf` | FD-EV — The Envelope | v0.1 |
+| `04_FD-BR_The_Broker_v0_1.pdf` | FD-BR — The Broker | v0.1 |
+| `05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf` | FD-BL-D1 — Mode of Discharge | v0.3 |
+| `06_FD-BL-D2_Indication_Integrity_v0_2.pdf` | FD-BL-D2 — Indication Integrity | v0.2 |
+
+**Note on the *is identical to* convention.** The five Batch 1 records each carry one
+*is identical to* → mirror-URL row. That convention does not transfer to this record: it holds seven
+files, so nothing is byte-identical to a single URL. The file-to-mirror mapping is carried in
+`MANIFEST.csv` (series `fd`) instead.
+
+**Which DOI to propagate.** The **version DOI** (`…22181029`) is the dated coherence claim — it is
+what the citation block inside each of the seven PDFs prints, and what a conformed document should
+cite when the claim is "reconciled against the August 2026 edition." The **concept DOI**
+(`…22181028`) always resolves to the current edition and is what the publications index and
+narrative references use.
+
+---
+
 ## Reconciliation re-versions (post-conformance)
 
 These deposits carry content the reconciliation **changed**, so each needs a **new version** published
