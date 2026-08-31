@@ -1,3 +1,6 @@
 .DS_Store
 *.docx
 ~$*
+
+# generated text cache for scripts/build_designations.py
+.designations-cache/

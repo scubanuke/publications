@@ -1,0 +1,334 @@
+#!/usr/bin/env python3
+"""Build the designation register from the corpus itself.
+
+    python3 scripts/build_designations.py
+
+Sweeps every PDF in the mirror, extracts each designation in use, and resolves
+an expansion for it where the corpus states one. Writes:
+
+    DESIGNATIONS.csv          the register data
+    designations/index.html   the reader-facing page
+
+WHY THIS IS GENERATED
+The corpus carries several hundred designations. A register maintained by hand
+alongside the documents would drift from them within one revision cycle, which
+is the same failure the Foundational Definitions were written to prevent
+(FD front matter, section 3: propagation is by reference, not by restatement).
+So this register is derived FROM the documents. Re-run it after any change to
+the mirror; never hand-edit the outputs.
+
+WHAT IT CANNOT DO
+It reports what the corpus says, not what the author meant. A designation the
+corpus never expands comes out as "unresolved" and needs a human. That list is
+the point of the exercise as much as the resolved rows are: an unresolved
+designation is one a reader cannot decode either.
+
+CONFIDENCE
+  manifest    expansion taken from the document's own title in MANIFEST.csv
+  defined     an in-text definition whose initials reconstruct the designation
+  candidate   a definition-shaped construction that did NOT verify — a machine
+              guess, shown so a human can confirm or reject it, never relied on
+  unresolved  the corpus never expands it
+
+Requires: pdftotext (Poppler).
+"""
+import csv, html, os, re, subprocess, sys
+from collections import defaultdict, Counter
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+OUT_CSV = os.path.join(ROOT, 'DESIGNATIONS.csv')
+OUT_DIR = os.path.join(ROOT, 'designations')
+
+# Hyphenated instrument designations: DBA-ES-GC-FC4, FD-BL-D1, CB-IB
+RE_HYPHEN = re.compile(r'\b[A-Z][A-Z0-9]{1,6}(?:-[A-Z0-9]{1,6}){1,3}\b')
+# Bare acronyms: ASSC, SCADA, NERC
+RE_BARE = re.compile(r'(?<![A-Za-z0-9-])[A-Z]{2,6}(?![A-Za-z0-9-])')
+
+# Ordinary capitalised English and layout noise that is not a designation.
+STOP = set("""THE AND FOR NOT ALL ANY USE ARE WAS ONE TWO SIX TEN NEW OLD OWN PER VIA
+YES NOT BUT CAN MAY OUT OFF WHO WHY HOW ITS SEE ADD SET GET RUN TOP END BOX KEY
+DRAFT PAGE NOTE TABLE FIGURE ANNEX PART SECTION APPENDIX VERSION STATUS TITLE
+THIS THAT THEN THAN THEY THEM THERE WHERE WHICH WHILE WOULD SHALL MUST BEEN HAVE
+FROM INTO ONLY ALSO EACH BOTH SUCH MORE MOST LESS SAME OTHER UNDER ABOVE BELOW
+WITH WITHIN ACROSS AFTER BEFORE DURING FIRST SECOND THIRD FOURTH FIFTH SIXTH
+UNCLASSIFIED ANALYTICAL PUBLIC OPEN CLOSED TRUE FALSE HIGH LOW YEAR MONTH WEEK
+CC BY ID OK NO IF IS IT IN ON AT TO OF AS AN OR BE BY DO GO HE ME MY SO UP US WE
+""".split())
+
+
+def pdf_text(path):
+    try:
+        return subprocess.run(['pdftotext', path, '-'], capture_output=True,
+                              text=True, timeout=120).stdout
+    except Exception as e:
+        print('  ! %s: %s' % (path, e), file=sys.stderr)
+        return ''
+
+
+def manifest_titles():
+    """designation -> (title, file) taken from the document's own filename."""
+    out = {}
+    mpath = os.path.join(ROOT, 'MANIFEST.csv')
+    if not os.path.exists(mpath):
+        return out
+    with open(mpath, newline='', encoding='utf-8') as fh:
+        for row in csv.DictReader(fh):
+            stem = os.path.splitext(row['file'])[0]
+            if '_' not in stem:
+                continue
+            code, _, rest = stem.partition('_')
+            if RE_HYPHEN.fullmatch(code) and '-' in code:
+                title = row['title'].strip()
+                # Prefer the manifest title's own gloss after a colon.
+                gloss = title.split(':', 1)[1].strip() if ':' in title else title
+                if gloss.upper().replace(' ', '').startswith(code.upper().replace('-', '')):
+                    gloss = gloss.split(':', 1)[-1].strip()
+                if code.upper() not in gloss.upper() or len(gloss.split()) > 2:
+                    out.setdefault(code, (gloss, row['file']))
+    return out
+
+
+def initials(phrase):
+    words = [w for w in re.findall(r"[A-Za-z][A-Za-z'\-]*", phrase)
+             if w.lower() not in ('of', 'the', 'and', 'for', 'a', 'an', 'in', 'to', 'on')]
+    return ''.join(w[0].upper() for w in words)
+
+
+TITLE_W = r"(?:[A-Z][\w'\-]*|and|of|the|for|in|to|on|a|an)"
+CODE_T  = r"[A-Z][A-Z0-9]{1,6}(?:-[A-Z0-9]{1,6}){0,3}"
+
+# One pass over the whole corpus harvests every definition-shaped construction,
+# bucketed by the designation it defines. Scanning per designation instead is
+# O(designations x corpus) and takes minutes; this takes seconds.
+PAT_PAREN_AFTER = re.compile(r"((?:%s[ \n]+){1,9}%s)\s*\((%s)\)" % (TITLE_W, TITLE_W, CODE_T))
+PAT_PAREN_IN    = re.compile(r"\b(%s)\s*\(((?:%s[ \n]+){1,9}%s)\)" % (CODE_T, TITLE_W, TITLE_W))
+PAT_DASH        = re.compile(r"(?<![A-Za-z0-9-])(%s)(?![A-Za-z0-9-])[ ]+[\u2014\u2013][ ]+((?:%s[ \n]+){1,9}%s)" % (CODE_T, TITLE_W, TITLE_W))
+
+
+ARTICLE = re.compile(r"^(?:a|an|the)\s+", re.I)
+
+
+def clean(phrase):
+    return ARTICLE.sub("", phrase).strip(" ,;:")
+
+
+def grade(code, phrase):
+    """defined when the phrase's initials reconstruct the code; else a guess."""
+    bare = code.replace("-", "")
+    ini = initials(clean(phrase))
+    return "defined" if (ini == bare or ini.endswith(bare) or bare.endswith(ini[-len(bare):] if len(ini) >= len(bare) else "\x00")) else "candidate"
+
+
+def harvest(text):
+    """code -> Counter({expansion: (weight, hits)}) from one corpus pass."""
+    found = defaultdict(list)
+    for m in PAT_PAREN_AFTER.finditer(text):
+        phrase, code = " ".join(m.group(1).split()), m.group(2)
+        conf = grade(code, phrase)
+        found[code].append((phrase, conf))
+    for m in PAT_PAREN_IN.finditer(text):
+        code, phrase = m.group(1), " ".join(m.group(2).split())
+        if len(phrase.split()) >= 2:
+            found[code].append((phrase, grade(code, phrase)))
+    for m in PAT_DASH.finditer(text):
+        code, phrase = m.group(1), " ".join(m.group(2).split())
+        if len(phrase.split()) >= 2:
+            found[code].append((phrase, grade(code, phrase)))
+    return found
+
+
+def rank(entries):
+    """[(phrase, conf)] -> [(phrase, conf)] best first, deduped."""
+    entries = [(clean(p), c) for p, c in entries if len(clean(p).split()) >= 2]
+    counts = Counter(p for p, _ in entries)
+    best = {}
+    for phrase, conf in entries:
+        r = {"defined": 0, "candidate": 1}.get(conf, 1)
+        if phrase not in best or r < best[phrase][0]:
+            best[phrase] = (r, conf)
+    ordered = sorted(best.items(), key=lambda kv: (kv[1][0], -counts[kv[0]], len(kv[0])))
+    return [(p, c) for p, (_, c) in ordered]
+
+
+def main():
+    pdfs = []
+    for dirpath, _, names in os.walk(ROOT):
+        if '.git' in dirpath:
+            continue
+        for n in sorted(names):
+            if n.lower().endswith('.pdf'):
+                pdfs.append(os.path.join(dirpath, n))
+    print('reading %d PDFs' % len(pdfs))
+
+    cache = os.path.join(ROOT, '.designations-cache')
+    os.makedirs(cache, exist_ok=True)
+    texts = {}
+    for p in pdfs:
+        rel = os.path.relpath(p, ROOT).replace('\\', '/')
+        cf = os.path.join(cache, rel.replace('/', '__') + '.txt')
+        if os.path.exists(cf) and os.path.getmtime(cf) >= os.path.getmtime(p):
+            texts[rel] = open(cf, encoding='utf-8', errors='replace').read()
+        else:
+            texts[rel] = pdf_text(p)
+            open(cf, 'w', encoding='utf-8').write(texts[rel])
+    corpus = '\n'.join(texts.values())
+
+    uses = defaultdict(Counter)      # code -> {file: count}
+    for rel, txt in texts.items():
+        for m in RE_HYPHEN.finditer(txt):
+            uses[m.group(0)][rel] += 1
+        for m in RE_BARE.finditer(txt):
+            tok = m.group(0)
+            if tok not in STOP and not tok.isdigit():
+                uses[tok][rel] += 1
+
+    MIN_BARE = 8
+    codes = {c: f for c, f in uses.items()
+             if '-' in c or sum(f.values()) >= MIN_BARE}
+    print('%d designations above threshold' % len(codes))
+
+    print('harvesting definitions')
+    harvested = harvest(corpus)
+    titles = manifest_titles()
+    rows = []
+    for code in sorted(codes):
+        files = codes[code]
+        total = sum(files.values())
+        owner = max(files.items(), key=lambda kv: kv[1])[0]
+
+        expansion, confidence, alternates = '', 'unresolved', ''
+        if code in titles:
+            expansion, owner_file = titles[code]
+            confidence = 'manifest'
+            owner = owner_file if owner_file in texts or True else owner
+        elif code in harvested:
+            found = rank(harvested[code])
+            if found:
+                expansion, confidence = found[0]
+                others = [p for p, _ in found[1:4] if p.lower() != expansion.lower()]
+                alternates = ' | '.join(others)
+
+        rows.append({
+            'designation': code,
+            'expansion': expansion,
+            'confidence': confidence,
+            'uses': total,
+            'documents': len(files),
+            'principal_document': owner,
+            'alternate_expansions': alternates,
+        })
+
+    with open(OUT_CSV, 'w', newline='', encoding='utf-8') as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    print('wrote %s (%d rows)' % (os.path.relpath(OUT_CSV, ROOT), len(rows)))
+
+    write_page(rows)
+
+    by_conf = Counter(r['confidence'] for r in rows)
+    print('  ' + ' · '.join('%s %d' % (k, by_conf[k])
+                            for k in ('manifest', 'defined', 'candidate', 'unresolved')))
+    coll = [r for r in rows if r['alternate_expansions']]
+    print('  %d designations with more than one expansion in the corpus' % len(coll))
+
+
+def write_page(rows):
+    os.makedirs(OUT_DIR, exist_ok=True)
+    tpl_head = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+    style = tpl_head.split('<style>')[1].split('</style>')[0]
+    nav = tpl_head.split('<!-- ===== Eclectic Technologies cross-site switcher')[1]
+    nav = '<nav class="etnav"' + nav.split('<nav class="etnav"')[1].split('</nav>')[0] + '</nav>'
+    nav = nav.replace('href="https://scubanuke.github.io/publications/" aria-current="page"',
+                      'href="https://scubanuke.github.io/publications/"')
+
+    unresolved = [r for r in rows if r['confidence'] == 'unresolved']
+    body = []
+    for r in rows:
+        exp = html.escape(r['expansion']) or '<span class="unres">not expanded anywhere in the corpus</span>'
+        alt = ('<div class="alt">also written as: %s</div>' % html.escape(r['alternate_expansions'])) \
+              if r['alternate_expansions'] else ''
+        body.append(
+            '<tr data-s="%s">'
+            '<td class="code">%s</td><td>%s%s</td>'
+            '<td class="c c-%s">%s</td><td class="n">%d</td><td class="n">%d</td>'
+            '<td class="src">%s</td></tr>' % (
+                html.escape((r['designation'] + ' ' + r['expansion']).lower()),
+                html.escape(r['designation']), exp, alt,
+                r['confidence'], r['confidence'], r['uses'], r['documents'],
+                html.escape(r['principal_document'])))
+
+    page = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designation Register — Eclectic Technologies</title>
+<style>%s
+  main{max-width:1180px}
+  .tools{margin:0 0 18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  #q{flex:1 1 320px;padding:10px 13px;font:inherit;border:1px solid var(--faint);border-radius:7px;background:var(--panel)}
+  .pill{font-size:12px;border:1px solid var(--faint);background:var(--panel);border-radius:20px;padding:5px 13px;cursor:pointer;font-weight:600;color:var(--muted)}
+  .pill[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+  table{width:100%%;border-collapse:collapse;background:var(--panel);border:1px solid var(--faint);border-radius:8px;overflow:hidden;font-size:14px}
+  th{text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:11px 14px;border-bottom:1px solid var(--faint);white-space:nowrap}
+  td{padding:11px 14px;border-bottom:1px solid #eef1f2;vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  .code{font-family:var(--mono);font-weight:600;color:var(--navy);white-space:nowrap}
+  .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+  .src{font-family:var(--mono);font-size:11.5px;color:var(--muted);word-break:break-all}
+  .c{font-size:11px;font-weight:600;white-space:nowrap}
+  .c-manifest{color:#1d6b3f}.c-defined{color:#1d6b3f}.c-candidate{color:#8a6100}.c-unresolved{color:#a02b2b}
+  .unres{color:#a02b2b;font-style:italic}
+  .alt{font-size:12px;color:#8a6100;margin-top:3px}
+  .count{font-size:13px;color:var(--muted);margin:0 0 14px}
+  .wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+%s
+<header class="hero"><div class="hero__in">
+<p class="eyebrow">Eclectic Technologies</p>
+<h1>Designation Register</h1>
+<p>Every designation the published corpus uses, with its expansion where the corpus
+states one. Generated from the documents themselves, not maintained beside them &mdash;
+re-run after any change to the mirror. A designation marked
+<em>not expanded anywhere in the corpus</em> is one a reader cannot decode either;
+that list is a work item, not a gap in this page.</p>
+</div></header>
+<main>
+<div class="tools">
+  <input id="q" type="search" placeholder="Filter &mdash; type a designation or a word from its expansion">
+  <button class="pill" id="only" aria-pressed="false">Show only unexpanded (%d)</button>
+</div>
+<p class="count" id="count"></p>
+<div class="wrap">
+<table>
+<thead><tr><th>Designation</th><th>Expansion</th><th>Source</th><th>Uses</th><th>Docs</th><th>Principal document</th></tr></thead>
+<tbody id="tb">
+%s
+</tbody></table></div>
+<p class="browse">Back to <a href="../">Publications</a>.</p>
+</main>
+<footer>Eclectic Technologies &middot; generated by <code>scripts/build_designations.py</code> &middot; CC BY 4.0</footer>
+<script>
+var rows=[].slice.call(document.querySelectorAll('#tb tr'));
+var q=document.getElementById('q'),only=document.getElementById('only'),cnt=document.getElementById('count');
+function draw(){var t=q.value.trim().toLowerCase(),u=only.getAttribute('aria-pressed')==='true',n=0;
+ rows.forEach(function(r){var ok=(!t||r.dataset.s.indexOf(t)>-1)&&(!u||r.querySelector('.c-unresolved'));
+  r.style.display=ok?'':'none';if(ok)n++;});
+ cnt.textContent=n+' of '+rows.length+' designations';}
+q.addEventListener('input',draw);
+only.addEventListener('click',function(){only.setAttribute('aria-pressed',only.getAttribute('aria-pressed')==='true'?'false':'true');draw();});
+draw();
+</script>
+</body>
+</html>
+""" % (style, nav, len(unresolved), '\n'.join(body))
+    with open(os.path.join(OUT_DIR, 'index.html'), 'w', encoding='utf-8') as fh:
+        fh.write(page)
+    print('wrote designations/index.html')
+
+
+if __name__ == '__main__':
+    main()
