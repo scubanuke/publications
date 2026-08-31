@@ -18,3 +18,11 @@ NGL,natural gas liquids,accepted,Expanded in the ONG series
 LDC,,accepted,Standard in the field (local distribution company)
 IBR,inverter-based resource,accepted,Expanded in DBA-ES-GN-FC8
 CCR,coal combustion residual,accepted,Expanded in DBA-ES-GN-FC6
+MA,Military Action,accepted,
+RT_HVLLC,Recovery Timeline for High-Value Long-Lead Components,accepted,Was split into phantom RT and HVLLC before the underscore fix
+SCRM,Supply Chain Risk Management,accepted,
+DBA-ES-MA-QB,Electric Sector - Military Action - Quantitative Design Basis,accepted,
+DBA-ES-MA-SF,Electric Sector - Military Action - Sector Framework,accepted,
+FC,Facility Class,accepted,
+IAEA,International Atomic Energy Agency,accepted,
+IEC,,accepted,Standards body; appears in the corpus alongside ISA as ISA/IEC

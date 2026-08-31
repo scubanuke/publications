@@ -51,12 +51,12 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUT_CSV = os.path.join(ROOT, 'DESIGNATIONS.csv')
 OUT_DIR = os.path.join(ROOT, 'designations')
 OVERRIDES = os.path.join(ROOT, 'DESIGNATION_OVERRIDES.csv')
-MIN_HYPHEN = 2   # a hyphenated token used once is an equipment tag, not a designation
+MIN_HYPHEN = 2   # a compound token used once is an equipment tag, not a designation
 
 # Hyphenated instrument designations: DBA-ES-GC-FC4, FD-BL-D1, CB-IB
-RE_HYPHEN = re.compile(r'\b[A-Z][A-Z0-9]{1,6}(?:-[A-Z0-9]{1,6}){1,3}\b')
+RE_HYPHEN = re.compile(r'(?<![A-Za-z0-9_-])[A-Z][A-Z0-9]{1,6}(?:[-_][A-Z0-9]{1,6}){1,3}(?![A-Za-z0-9_-])')
 # Bare acronyms: ASSC, SCADA, NERC
-RE_BARE = re.compile(r'(?<![A-Za-z0-9-])[A-Z]{2,6}(?![A-Za-z0-9-])')
+RE_BARE = re.compile(r'(?<![A-Za-z0-9_-])[A-Z]{2,6}(?![A-Za-z0-9_-])')
 
 # Ordinary capitalised English and layout noise that is not a designation.
 STOP = set("""THE AND FOR NOT ALL ANY USE ARE WAS ONE TWO SIX TEN NEW OLD OWN PER VIA
@@ -124,14 +124,14 @@ def initials(phrase):
 
 
 TITLE_W = r"(?:[A-Z][\w'\-]*|and|of|the|for|in|to|on|a|an)"
-CODE_T  = r"[A-Z][A-Z0-9]{1,6}(?:-[A-Z0-9]{1,6}){0,3}"
+CODE_T  = r"[A-Z][A-Z0-9]{1,6}(?:[-_][A-Z0-9]{1,6}){0,3}"
 
 # One pass over the whole corpus harvests every definition-shaped construction,
 # bucketed by the designation it defines. Scanning per designation instead is
 # O(designations x corpus) and takes minutes; this takes seconds.
 PAT_PAREN_AFTER = re.compile(r"((?:%s[ \n]+){1,9}%s)\s*\((%s)\)" % (TITLE_W, TITLE_W, CODE_T))
 PAT_PAREN_IN    = re.compile(r"\b(%s)\s*\(((?:%s[ \n]+){1,9}%s)\)" % (CODE_T, TITLE_W, TITLE_W))
-PAT_DASH        = re.compile(r"(?<![A-Za-z0-9-])(%s)(?![A-Za-z0-9-])[ ]+[\u2014\u2013][ ]+((?:%s[ \n]+){1,9}%s)" % (CODE_T, TITLE_W, TITLE_W))
+PAT_DASH        = re.compile(r"(?<![A-Za-z0-9_-])(%s)(?![A-Za-z0-9_-])[ ]+[\u2014\u2013][ ]+((?:%s[ \n]+){1,9}%s)" % (CODE_T, TITLE_W, TITLE_W))
 
 
 ARTICLE = re.compile(r"^(?:a|an|the)\s+", re.I)
@@ -213,7 +213,8 @@ def main():
 
     MIN_BARE = 8
     codes = {c: f for c, f in uses.items()
-             if (sum(f.values()) >= MIN_HYPHEN if '-' in c else sum(f.values()) >= MIN_BARE)}
+             if (sum(f.values()) >= MIN_HYPHEN if ('-' in c or '_' in c)
+                 else sum(f.values()) >= MIN_BARE)}
     print('%d designations above threshold' % len(codes))
 
     over = overrides()
