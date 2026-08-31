@@ -29,8 +29,8 @@ IEC,,accepted,Standards body; appears in the corpus alongside ISA as ISA/IEC
 MW,megawatts,accepted,Unit of power; used throughout as a facility-class threshold
 AC,alternating current,accepted,Standard term
 ETL,"extract, transform, load",accepted,Standard data-engineering term; ERT and SCRM companions
-CB-1,ComBackup-1 — backup communications channel,accepted,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComBackup-1"
-CB-5,ComDegradeMode-5 — degraded-mode procedures,accepted,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComDegradeMode-5"
-CB-2,Local authority (Communications Design Basis),candidate,Same CB- collision; author naming not yet supplied
-CB-3,Command Broker continuity (Communications Design Basis),candidate,"Same CB- collision; author naming not yet supplied. Note this one genuinely concerns the Command Broker, which is why the collision is easy to miss"
-CB-4,Verification cadence (Communications Design Basis),candidate,Same CB- collision; author naming not yet supplied
+CB-1,ComBackup-1 — backup communications channel,accepted,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-5,ComDegradeMode-5 — degraded-communications procedures,accepted,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-2,ComLocalAuth-2 — pre-authorized local authority,accepted,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-3,ComBrokerContinuity-3 — Command Broker obligation survives comms degradation,accepted,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-4,ComVerifyCadence-4 — backup channel test cadence,accepted,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."

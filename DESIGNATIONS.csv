@@ -28,11 +28,11 @@ BWR,term,,,,,unresolved,8,2,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,
 BWRX-300,term,,global,,"approximately 300 MWe per module, a boiling-water variant",defined,3,1,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,
 CA,term,,,,,unresolved,12,2,awb/ERT_Companion_Proposal.pdf,,
 CB,term,,,,Command Broker,defined,122,10,command-broker/CB-IB_Qualification_Standard.pdf,for the Command Broker,
-CB-1,term,,global,,ComBackup-1 — backup communications channel,accepted,57,14,dba-en/DBA-ES-TX-FC3_HVDC_Interconnect.pdf,,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComBackup-1"
-CB-2,term,,global,,Local authority (Communications Design Basis),candidate,22,9,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,Same CB- collision; author naming not yet supplied
-CB-3,term,,global,,Command Broker continuity (Communications Design Basis),candidate,21,9,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,"Same CB- collision; author naming not yet supplied. Note this one genuinely concerns the Command Broker, which is why the collision is easy to miss"
-CB-4,term,,global,,Verification cadence (Communications Design Basis),candidate,9,9,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,Same CB- collision; author naming not yet supplied
-CB-5,term,,global,,ComDegradeMode-5 — degraded-mode procedures,accepted,47,14,dba-en/DBA-ES-GN-FC7_Oil_Fired_Generation.pdf,,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComDegradeMode-5"
+CB-1,term,,global,,ComBackup-1 — backup communications channel,accepted,57,14,dba-en/DBA-ES-TX-FC3_HVDC_Interconnect.pdf,,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-2,term,,global,,ComLocalAuth-2 — pre-authorized local authority,accepted,22,9,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-3,term,,global,,ComBrokerContinuity-3 — Command Broker obligation survives comms degradation,accepted,21,9,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-4,term,,global,,ComVerifyCadence-4 — backup channel test cadence,accepted,9,9,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
+CB-5,term,,global,,ComDegradeMode-5 — degraded-communications procedures,accepted,47,14,dba-en/DBA-ES-GN-FC7_Oil_Fired_Generation.pdf,,"COLLISION: CB- here is the MA Communications Design Basis (DBA-ES-MA-QB §5), not the Command Broker. Author's naming, 31 Aug 2026."
 CB-CT,term,,,,Commissioning and Joint Training,manifest,16,7,CB-CT_Commissioning_and_Joint_Training.pdf,,
 CB-IB,term,,,,CB-IB Qualification Standard,manifest,31,6,CB-IB_Qualification_Standard.pdf,,
 CB-UC,term,,,,,unresolved,7,2,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,
