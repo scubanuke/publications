@@ -507,7 +507,7 @@ def write_page(rows):
         if r.get('scope') == 'per-document':
             exp = ('<span class="unres">meaning is set by each document</span>'
                    '<div class="alt scoped">%s</div>'
-                   % html.escape(r['meanings_by_document'].replace(' | ', ' &middot; ')))
+                   % html.escape(r['meanings_by_document']).replace(' | ', ' &middot; '))
         fam = ('<span class="fam">%s</span>' % html.escape(r['family'])) if r.get('family') else \
               ('<span class="famhead">family</span>' if r.get('kind') == 'family' else '')
         body.append(
