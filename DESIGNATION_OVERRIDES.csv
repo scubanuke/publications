@@ -26,3 +26,11 @@ DBA-ES-MA-SF,Electric Sector - Military Action - Sector Framework,accepted,
 FC,Facility Class,accepted,
 IAEA,International Atomic Energy Agency,accepted,
 IEC,,accepted,Standards body; appears in the corpus alongside ISA as ISA/IEC
+MW,megawatts,accepted,Unit of power; used throughout as a facility-class threshold
+AC,alternating current,accepted,Standard term
+ETL,"extract, transform, load",accepted,Standard data-engineering term; ERT and SCRM companions
+CB-1,ComBackup-1 — backup communications channel,accepted,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComBackup-1"
+CB-5,ComDegradeMode-5 — degraded-mode procedures,accepted,"COLLISION: CB- here is Communications Design Basis, not Command Broker. Author's naming: ComDegradeMode-5"
+CB-2,Local authority (Communications Design Basis),candidate,Same CB- collision; author naming not yet supplied
+CB-3,Command Broker continuity (Communications Design Basis),candidate,"Same CB- collision; author naming not yet supplied. Note this one genuinely concerns the Command Broker, which is why the collision is easy to miss"
+CB-4,Verification cadence (Communications Design Basis),candidate,Same CB- collision; author naming not yet supplied

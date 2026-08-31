@@ -32,6 +32,8 @@ the point of the exercise as much as the resolved rows are: an unresolved
 designation is one a reader cannot decode either.
 
 CONFIDENCE
+  candidate   also settable by hand in DESIGNATION_OVERRIDES.csv, for a reading
+              taken from the corpus that the author has not yet ratified
   accepted    a hand decision in DESIGNATION_OVERRIDES.csv — either an expansion
               the corpus never states, or a judgement that a term is standard
               enough in the field that expanding it adds nothing. Accepted rows
@@ -230,7 +232,7 @@ def main():
         expansion, confidence, alternates, note = '', 'unresolved', '', ''
         if code in over:
             expansion, status, note = over[code]
-            confidence = 'accepted'
+            confidence = status or 'accepted'
         elif code in titles:
             expansion, owner_file = titles[code]
             confidence = 'manifest'
