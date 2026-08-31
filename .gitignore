@@ -4,3 +4,6 @@
 
 # generated text cache for scripts/build_designations.py
 .designations-cache/
+
+# local-only register produced by the master sweep (may name unpublished work)
+DESIGNATIONS_WORKING.csv

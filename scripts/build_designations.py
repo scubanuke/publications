@@ -9,6 +9,25 @@ an expansion for it where the corpus states one. Writes:
     DESIGNATIONS.csv          the register data
     designations/index.html   the reader-facing page
 
+TWO REGISTERS, AND WHY
+The published mirror and the author's working documents are swept into two
+separate registers, and only one of them is public.
+
+  DESIGNATIONS.csv + designations/index.html   published corpus only. PUBLIC.
+  DESIGNATIONS_WORKING.csv                     published + working masters.
+                                               Gitignored. Local only.
+
+The reason is not tidiness. A designation that exists only in a working
+document can disclose work that is not ready to be public - that an instrument
+exists, what sub-sector it addresses, sometimes its subject. Publishing the
+full sweep to a GitHub Pages site would leak the shape of unreleased work by
+listing its names. So the public page keeps exactly the scope it had before the
+master sweep existed, and the master sweep produces a local register for the
+author's own lookup.
+
+The working roots are listed in DESIGNATION_SOURCES.txt. Absent that file, this
+script behaves exactly as it did before: published mirror only.
+
 WHY THIS IS GENERATED
 The corpus carries several hundred designations. A register maintained by hand
 alongside the documents would drift from them within one revision cycle, which
@@ -46,13 +65,16 @@ CONFIDENCE
 
 Requires: pdftotext (Poppler).
 """
-import csv, html, os, re, subprocess, sys
+import csv, hashlib, html, os, re, subprocess, sys
 from collections import defaultdict, Counter
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUT_CSV = os.path.join(ROOT, 'DESIGNATIONS.csv')
 OUT_DIR = os.path.join(ROOT, 'designations')
 OVERRIDES = os.path.join(ROOT, 'DESIGNATION_OVERRIDES.csv')
+SOURCES = os.path.join(ROOT, 'DESIGNATION_SOURCES.txt')
+OUT_CSV_WORKING = os.path.join(ROOT, 'DESIGNATIONS_WORKING.csv')
+SKIP_DIRS = ('_archive', '_superseded', '_to_delete', 'UPLOAD_STAGING', '.git')
 MIN_HYPHEN = 2   # a compound token used once is an equipment tag, not a designation
 
 # Hyphenated instrument designations: DBA-ES-GC-FC4, FD-BL-D1, CB-IB
@@ -95,6 +117,36 @@ def normalise(text, families):
 def family_of(code, families):
     head = re.split(r"[-_]", code)[0]
     return head if head in families and head != code else ''
+
+
+def working_roots():
+    """Absolute paths of the author's working-document roots, if configured."""
+    if not os.path.exists(SOURCES):
+        return []
+    out = []
+    for line in open(SOURCES, encoding='utf-8'):
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+        p = os.path.expandvars(os.path.expanduser(line))
+        if os.path.isdir(p):
+            out.append(p)
+    if not out:
+        print('  ! no working root resolved from %s; sweeping the published '
+              'mirror only' % os.path.basename(SOURCES))
+    return out
+
+
+def docx_text(path):
+    """Working masters are .docx. Third-party material in these folders is
+    overwhelmingly PDF, so restricting the working sweep to .docx keeps
+    downloaded standards and testimony out of the register for free."""
+    try:
+        return subprocess.run(['pandoc', '-t', 'plain', path], capture_output=True,
+                              text=True, timeout=90).stdout
+    except Exception as e:
+        print('  ! %s: %s' % (os.path.basename(path), e), file=sys.stderr)
+        return ''
 
 
 def pdf_text(path):
@@ -228,6 +280,17 @@ def main():
                 pdfs.append(os.path.join(dirpath, n))
     print('reading %d PDFs' % len(pdfs))
 
+    roots = working_roots()
+    work_files = []
+    for r in roots:
+        for dp, dn, fns in os.walk(r):
+            dn[:] = [d for d in dn if not any(k in d for k in SKIP_DIRS)]
+            for fn in fns:
+                if fn.lower().endswith('.docx') and not fn.startswith('~$'):
+                    work_files.append(os.path.join(dp, fn))
+    if roots:
+        print('%d working masters across %d roots' % (len(work_files), len(roots)))
+
     cache = os.path.join(ROOT, '.designations-cache')
     os.makedirs(cache, exist_ok=True)
     texts = {}
@@ -240,6 +303,20 @@ def main():
             texts[rel] = pdf_text(p)
             open(cf, 'w', encoding='utf-8').write(texts[rel])
     corpus = '\n'.join(texts.values())
+
+    wcache = os.path.join(ROOT, '.designations-cache', 'working')
+    os.makedirs(wcache, exist_ok=True)
+    wtexts = {}
+    for i, fp in enumerate(work_files):
+        key = hashlib.md5(fp.encode('utf-8')).hexdigest()
+        cf = os.path.join(wcache, key + '.txt')
+        if os.path.exists(cf) and os.path.getmtime(cf) >= os.path.getmtime(fp):
+            wtexts[fp] = open(cf, encoding='utf-8', errors='replace').read()
+        else:
+            wtexts[fp] = docx_text(fp)
+            open(cf, 'w', encoding='utf-8').write(wtexts[fp])
+        if work_files and (i + 1) % 50 == 0:
+            print('  ...%d/%d masters read' % (i + 1, len(work_files)))
 
     fam_decl = {}
     for m in FAMILY_DECL.finditer(corpus):
@@ -265,6 +342,17 @@ def main():
             tok = m.group(0)
             if tok not in STOP and not tok.isdigit():
                 uses[tok][rel] += 1
+
+    wuses = defaultdict(Counter)
+    wnorm = {k: normalise(v, families) for k, v in wtexts.items()}
+    for fp, txt in wnorm.items():
+        label = os.path.basename(fp)
+        for m in RE_HYPHEN.finditer(txt):
+            wuses[m.group(0)][label] += 1
+        for m in RE_BARE.finditer(txt):
+            tok = m.group(0)
+            if tok not in STOP and not tok.isdigit():
+                wuses[tok][label] += 1
 
     MIN_BARE = 8
     def keep(c, f):
@@ -331,16 +419,58 @@ def main():
             'note': note,
         })
 
-    stale = sorted(set(over) - set(codes))
+    stale = sorted(set(over) - set(codes) - set(wuses))
     if stale:
         print('  ! %d override(s) name designations not in the corpus: %s'
               % (len(stale), ', '.join(stale)))
 
+    # PUBLIC register: published corpus only, exactly as before the master sweep.
+    pub_fields = [k for k in rows[0].keys() if k != 'working_uses']
     with open(OUT_CSV, 'w', newline='', encoding='utf-8') as fh:
-        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w = csv.DictWriter(fh, fieldnames=pub_fields, extrasaction='ignore')
         w.writeheader()
         w.writerows(rows)
-    print('wrote %s (%d rows)' % (os.path.relpath(OUT_CSV, ROOT), len(rows)))
+    print('wrote %s (%d rows, published only - PUBLIC)'
+          % (os.path.relpath(OUT_CSV, ROOT), len(rows)))
+
+    # LOCAL register: adds every designation seen only in working masters.
+    if work_files:
+        pub_names = {r['designation'] for r in rows}
+        extra = []
+        for code, files in sorted(wuses.items()):
+            if code in pub_names:
+                continue
+            n = sum(files.values())
+            if not ('-' in code or '_' in code) and n < MIN_BARE:
+                continue
+            if ('-' in code or '_' in code) and n < MIN_HYPHEN and not family_of(code, families):
+                continue
+            exp, conf, note = '', 'unresolved', ''
+            if code in over:
+                exp, st, note = over[code]
+                conf = st or 'accepted'
+            elif code in fam_decl:
+                exp, conf = fam_decl[code], 'defined'
+            extra.append({'designation': code, 'kind': 'term', 'family': family_of(code, families),
+                          'scope': '', 'meanings_by_document': '', 'expansion': exp,
+                          'confidence': conf, 'uses': 0, 'documents': 0,
+                          'principal_document': max(files.items(), key=lambda kv: kv[1])[0],
+                          'alternate_expansions': '', 'note': note,
+                          'side': 'working only', 'working_uses': n})
+        for r in rows:
+            n = sum(wuses.get(r['designation'], {}).values())
+            r['working_uses'] = n
+            r['side'] = 'both' if n else 'published only'
+        allrows = rows + extra
+        allrows.sort(key=lambda r: r['designation'])
+        with open(OUT_CSV_WORKING, 'w', newline='', encoding='utf-8') as fh:
+            w = csv.DictWriter(fh, fieldnames=list(allrows[0].keys()))
+            w.writeheader(); w.writerows(allrows)
+        sides = Counter(r['side'] for r in allrows)
+        print('wrote %s (%d rows, published + working - LOCAL, gitignored)'
+              % (os.path.relpath(OUT_CSV_WORKING, ROOT), len(allrows)))
+        print('  ' + ' | '.join('%s %d' % (k, sides[k])
+              for k in ('both', 'published only', 'working only')))
 
     write_page(rows)
 

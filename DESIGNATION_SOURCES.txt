@@ -1,0 +1,44 @@
+# Working-document roots for the designation register's master sweep.
+#
+# One absolute path per line. Blank lines and # comments ignored.
+# Absent or empty: the sweep reads the published mirror only, as it did
+# before the master sweep existed.
+#
+# WHY THIS FILE IS NOT THE PUBLIC REGISTER'S SOURCE
+# Designations found only in working documents are NOT written to
+# designations/index.html or DESIGNATIONS.csv, both of which are public.
+# An unpublished instrument's designation can reveal work that is not
+# ready to be public — its existence, its scope, sometimes its subject.
+# The master sweep therefore produces a separate, gitignored local
+# register for the author's own lookup. See scripts/build_designations.py,
+# "TWO REGISTERS".
+#
+# TWO SPELLINGS PER ROOT, DELIBERATELY
+# The same folder is reached by different paths depending on where this script
+# runs: directly on the machine (~/OneDrive/Desktop/...) or inside the desktop
+# workspace, where connected folders are mounted under $HOME/mnt/. Both are
+# listed; whichever resolves is used, and paths that do not resolve are skipped
+# without complaint. Only a run where NO root resolves is reported.
+
+~/OneDrive/Desktop/Temporary folder Project 0 - Cross Project Alignment
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 0 - Cross Project Alignment
+~/OneDrive/Desktop/Temporary folder Project 1 - Democratic Safeguards
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 1 - Democratic Safeguards
+~/OneDrive/Desktop/Temporary folder Project 2 - Industrial QA
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 2 - Industrial QA
+~/OneDrive/Desktop/Temporary folder Project 3 -Analysis WorkBench
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 3 -Analysis WorkBench
+~/OneDrive/Desktop/Temporary folder Project 4 - Consulting Services
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 4 - Consulting Services
+~/OneDrive/Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
+~/OneDrive/Desktop/Temporary folder Project 6 - DBA-MA
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 6 - DBA-MA
+~/OneDrive/Desktop/Temporary folder Project 7 -Foundational Synthesis
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 7 -Foundational Synthesis
+~/OneDrive/Desktop/Temporary folder Project 8 - DBA Energy Sector
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 8 - DBA Energy Sector
+~/OneDrive/Desktop/Temporary folder Project 9 - DBA CIKR Sectors
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 9 - DBA CIKR Sectors
+~/OneDrive/Desktop/Temporary folder Project 10 - Utility Companion Tools
+$HOME/mnt/OneDrive--Desktop/Temporary folder Project 10 - Utility Companion Tools
