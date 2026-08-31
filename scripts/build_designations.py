@@ -72,6 +72,31 @@ CC BY ID OK NO IF IS IT IN ON AT TO OF AS AN OR BE BY DO GO HE ME MY SO UP US WE
 """.split())
 
 
+# This corpus organises many designations as FAMILY / member: an event-code
+# family (PE, EF, NH, OE, MT, XC) with numbered members whose meaning is set by
+# the document that instantiates them. Families are declared in text as
+# "PE - Power Supply and Grid Interface Events"; members appear as "PE-SS-3".
+FAMILY_DECL = re.compile(
+    r"(?<![A-Za-z0-9_-])([A-Z]{2,4})(?![A-Za-z0-9_-])\s*(?:[\u2014\u2013]|\()\s*"
+    r"([A-Z][A-Za-z /-]{4,60}?Events)\b")
+
+# pdftotext drops the hyphen when a designation breaks across a line, so PE-SS-2
+# arrives as PESS-2 and PE-SS-3 as PE-SS3. Repair those before tokenising, or the
+# same designation is counted three times and resolved none.
+def normalise(text, families):
+    for fam in families:
+        text = re.sub(r"(?<![A-Za-z0-9_-])%s([A-Z]{2,4})(-?\d)" % fam,
+                      r"%s-\1\2" % fam, text)
+        text = re.sub(r"(?<![A-Za-z0-9_-])(%s-[A-Z]{2,4})(\d)" % fam,
+                      r"\1-\2", text)
+    return text
+
+
+def family_of(code, families):
+    head = re.split(r"[-_]", code)[0]
+    return head if head in families and head != code else ''
+
+
 def pdf_text(path):
     try:
         return subprocess.run(['pdftotext', path, '-'], capture_output=True,
@@ -168,6 +193,18 @@ def harvest(text):
     return found
 
 
+def member_labels(code, texts):
+    """{document: label} from 'CODE (Label)' occurrences, per document."""
+    pat = re.compile(r"(?<![A-Za-z0-9_-])%s\s*\(([^)]{3,60})\)" % re.escape(code))
+    out = {}
+    for rel, txt in texts.items():
+        labs = [" ".join(m.group(1).split()) for m in pat.finditer(txt)]
+        labs = [l for l in labs if not l[0].isdigit() and len(l.split()) <= 9]
+        if labs:
+            out[rel] = Counter(labs).most_common(1)[0][0]
+    return out
+
+
 def rank(entries):
     """[(phrase, conf)] -> [(phrase, conf)] best first, deduped."""
     entries = [(clean(p), c) for p, c in entries if len(clean(p).split()) >= 2]
@@ -204,6 +241,22 @@ def main():
             open(cf, 'w', encoding='utf-8').write(texts[rel])
     corpus = '\n'.join(texts.values())
 
+    fam_decl = {}
+    for m in FAMILY_DECL.finditer(corpus):
+        fam_decl.setdefault(m.group(1), ' '.join(m.group(2).split()))
+    heads = Counter()
+    for m in RE_HYPHEN.finditer(corpus):
+        head = re.split(r'[-_]', m.group(0))[0]
+        if 2 <= len(head) <= 4 and head.isalpha():
+            heads[head] += 1
+    structural = {h for h, n in heads.items() if n >= 2}
+    families = set(fam_decl) | (structural & {'EF', 'NH', 'OE', 'PE', 'MT', 'XC', 'CE', 'SE', 'TAS'})
+    print('%d event-code families declared: %s'
+          % (len(families), ', '.join(sorted(families)) or '(none)'))
+
+    texts = {k: normalise(v, families) for k, v in texts.items()}
+    corpus = '\n'.join(texts.values())
+
     uses = defaultdict(Counter)      # code -> {file: count}
     for rel, txt in texts.items():
         for m in RE_HYPHEN.finditer(txt):
@@ -214,9 +267,16 @@ def main():
                 uses[tok][rel] += 1
 
     MIN_BARE = 8
-    codes = {c: f for c, f in uses.items()
-             if (sum(f.values()) >= MIN_HYPHEN if ('-' in c or '_' in c)
-                 else sum(f.values()) >= MIN_BARE)}
+    def keep(c, f):
+        n = sum(f.values())
+        if c in families:
+            return True
+        if '-' in c or '_' in c:
+            return n >= MIN_HYPHEN or family_of(c, families) != ''
+        return n >= MIN_BARE
+    codes = {c: f for c, f in uses.items() if keep(c, f)}
+    for fam in families:
+        codes.setdefault(fam, uses.get(fam) or Counter({'(declared)': 0}))
     print('%d designations above threshold' % len(codes))
 
     over = overrides()
@@ -230,7 +290,9 @@ def main():
         owner = max(files.items(), key=lambda kv: kv[1])[0]
 
         expansion, confidence, alternates, note = '', 'unresolved', '', ''
-        if code in over:
+        if code in fam_decl and code not in over:
+            expansion, confidence = fam_decl[code], 'defined'
+        elif code in over:
             expansion, status, note = over[code]
             confidence = status or 'accepted'
         elif code in titles:
@@ -244,8 +306,22 @@ def main():
                 others = [p for p, _ in found[1:4] if p.lower() != expansion.lower()]
                 alternates = ' | '.join(others)
 
+        fam = family_of(code, families)
+        labels = member_labels(code, texts) if (fam or '-' in code) else {}
+        distinct = sorted(set(labels.values()))
+        scope = 'per-document' if len(distinct) > 1 else ('global' if distinct else '')
+        if not expansion and distinct and confidence == 'unresolved':
+            expansion = distinct[0] if len(distinct) == 1 else ''
+            confidence = 'defined' if len(distinct) == 1 else 'unresolved'
+
         rows.append({
             'designation': code,
+            'kind': 'family' if code in families else ('member' if fam else 'term'),
+            'family': fam,
+            'scope': scope,
+            'meanings_by_document': ' | '.join(
+                '%s = %s' % (os.path.basename(k), v) for k, v in sorted(labels.items())
+            ) if scope == 'per-document' else '',
             'expansion': expansion,
             'confidence': confidence,
             'uses': total,
@@ -298,13 +374,19 @@ def write_page(rows):
             exp += '<div class="alt note">%s</div>' % html.escape(r['note'])
         alt = ('<div class="alt">also written as: %s</div>' % html.escape(r['alternate_expansions'])) \
               if r['alternate_expansions'] else ''
+        if r.get('scope') == 'per-document':
+            exp = ('<span class="unres">meaning is set by each document</span>'
+                   '<div class="alt scoped">%s</div>'
+                   % html.escape(r['meanings_by_document'].replace(' | ', ' &middot; ')))
+        fam = ('<span class="fam">%s</span>' % html.escape(r['family'])) if r.get('family') else \
+              ('<span class="famhead">family</span>' if r.get('kind') == 'family' else '')
         body.append(
             '<tr data-s="%s">'
-            '<td class="code">%s</td><td>%s%s</td>'
+            '<td class="code">%s %s</td><td>%s%s</td>'
             '<td class="c c-%s">%s</td><td class="n">%d</td><td class="n">%d</td>'
             '<td class="src">%s</td></tr>' % (
-                html.escape((r['designation'] + ' ' + r['expansion']).lower()),
-                html.escape(r['designation']), exp, alt,
+                html.escape((r['designation'] + ' ' + r['expansion'] + ' ' + r.get('family', '')).lower()),
+                html.escape(r['designation']), fam, exp, alt,
                 r['confidence'], r['confidence'], r['uses'], r['documents'],
                 html.escape(r['principal_document'])))
 
@@ -332,6 +414,9 @@ def write_page(rows):
   .unres{color:#a02b2b;font-style:italic}
   .acc{color:var(--muted);font-style:italic}
   .note{color:var(--muted);font-style:normal}
+  .fam{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.08em;color:#8a6100;background:#fdf6e8;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:middle}
+  .famhead{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.08em;color:#1d6b3f;background:#eaf5ee;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:middle}
+  .scoped{color:#a02b2b;font-style:normal;font-size:12px}
   .acc{color:var(--muted);font-style:italic}
   .note{color:var(--muted)}
   .alt{font-size:12px;color:#8a6100;margin-top:3px}
@@ -349,7 +434,7 @@ states one. Generated from the documents themselves, not maintained beside them 
 re-run after any change to the mirror. A designation marked
 <em>never expanded in the corpus</em> is one a reader cannot decode either &mdash;
 that list is a work item, not a gap in this page. A designation marked
-<em>accepted</em> has been ruled on by hand and is settled.</p>
+<em>accepted</em> has been ruled on by hand and is settled. Designations belonging to an event-code family carry the family tag; where a family member means something different in each document that instantiates it, the register says so rather than picking one.</p>
 </div></header>
 <main>
 <div class="tools">
