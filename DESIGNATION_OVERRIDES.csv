@@ -3,3 +3,18 @@ AI,Gen AI,accepted,Author's call — used throughout in the generative-AI sense
 SCADA,,accepted,Universally known in the field; expansion adds nothing
 LNG,,accepted,Universally known in the field
 ML,,accepted,Universally known in the field
+DCS,distributed control system,accepted,Corpus writes 'control system (DCS)'; expansion is the standard one
+HVDC,high-voltage direct current,accepted,Expanded in DBA-ES-TX-FC3
+BES,bulk electric system,accepted,Expanded in the BES Asset Nomenclature Specification
+EHV,extra-high-voltage,accepted,Expanded in DBA-ES-TX-FC2
+NATO,,accepted,Standard term; corpus never expands it
+CFR,,accepted,Standard citation form (Code of Federal Regulations)
+SIS,safety instrumented system,accepted,Expanded in DBA-GAS-FC2
+ISA,,accepted,Standards body; standard in the field
+EPA,,accepted,Standard term; agency name
+NRC,,accepted,Standard term; agency name
+IEEE,,accepted,Standards body; standard in the field
+NGL,natural gas liquids,accepted,Expanded in the ONG series
+LDC,,accepted,Standard in the field (local distribution company)
+IBR,inverter-based resource,accepted,Expanded in DBA-ES-GN-FC8
+CCR,coal combustion residual,accepted,Expanded in DBA-ES-GN-FC6
