@@ -17,6 +17,14 @@ is the same failure the Foundational Definitions were written to prevent
 So this register is derived FROM the documents. Re-run it after any change to
 the mirror; never hand-edit the outputs.
 
+THE ONE FILE YOU DO EDIT BY HAND
+DESIGNATION_OVERRIDES.csv. Columns: designation, expansion, status, note.
+Status "accepted" means the row needs no further work — either because the
+expansion there is authoritative, or because the term is standard enough that
+expanding it would be noise. This keeps the register generated while leaving
+the editorial judgements where they belong, with a person. An override naming
+a designation the corpus no longer uses is reported as stale, not silently kept.
+
 WHAT IT CANNOT DO
 It reports what the corpus says, not what the author meant. A designation the
 corpus never expands comes out as "unresolved" and needs a human. That list is
@@ -24,6 +32,10 @@ the point of the exercise as much as the resolved rows are: an unresolved
 designation is one a reader cannot decode either.
 
 CONFIDENCE
+  accepted    a hand decision in DESIGNATION_OVERRIDES.csv — either an expansion
+              the corpus never states, or a judgement that a term is standard
+              enough in the field that expanding it adds nothing. Accepted rows
+              are not work items and are excluded from the unexpanded count.
   manifest    expansion taken from the document's own title in MANIFEST.csv
   defined     an in-text definition whose initials reconstruct the designation
   candidate   a definition-shaped construction that did NOT verify — a machine
@@ -38,6 +50,8 @@ from collections import defaultdict, Counter
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUT_CSV = os.path.join(ROOT, 'DESIGNATIONS.csv')
 OUT_DIR = os.path.join(ROOT, 'designations')
+OVERRIDES = os.path.join(ROOT, 'DESIGNATION_OVERRIDES.csv')
+MIN_HYPHEN = 2   # a hyphenated token used once is an equipment tag, not a designation
 
 # Hyphenated instrument designations: DBA-ES-GC-FC4, FD-BL-D1, CB-IB
 RE_HYPHEN = re.compile(r'\b[A-Z][A-Z0-9]{1,6}(?:-[A-Z0-9]{1,6}){1,3}\b')
@@ -63,6 +77,21 @@ def pdf_text(path):
     except Exception as e:
         print('  ! %s: %s' % (path, e), file=sys.stderr)
         return ''
+
+
+def overrides():
+    """designation -> (expansion, status, note) from the hand-maintained file."""
+    out = {}
+    if not os.path.exists(OVERRIDES):
+        return out
+    with open(OVERRIDES, newline='', encoding='utf-8') as fh:
+        for row in csv.DictReader(fh):
+            code = (row.get('designation') or '').strip()
+            if code:
+                out[code] = ((row.get('expansion') or '').strip(),
+                             (row.get('status') or 'accepted').strip(),
+                             (row.get('note') or '').strip())
+    return out
 
 
 def manifest_titles():
@@ -184,9 +213,10 @@ def main():
 
     MIN_BARE = 8
     codes = {c: f for c, f in uses.items()
-             if '-' in c or sum(f.values()) >= MIN_BARE}
+             if (sum(f.values()) >= MIN_HYPHEN if '-' in c else sum(f.values()) >= MIN_BARE)}
     print('%d designations above threshold' % len(codes))
 
+    over = overrides()
     print('harvesting definitions')
     harvested = harvest(corpus)
     titles = manifest_titles()
@@ -196,8 +226,11 @@ def main():
         total = sum(files.values())
         owner = max(files.items(), key=lambda kv: kv[1])[0]
 
-        expansion, confidence, alternates = '', 'unresolved', ''
-        if code in titles:
+        expansion, confidence, alternates, note = '', 'unresolved', '', ''
+        if code in over:
+            expansion, status, note = over[code]
+            confidence = 'accepted'
+        elif code in titles:
             expansion, owner_file = titles[code]
             confidence = 'manifest'
             owner = owner_file if owner_file in texts or True else owner
@@ -216,7 +249,13 @@ def main():
             'documents': len(files),
             'principal_document': owner,
             'alternate_expansions': alternates,
+            'note': note,
         })
+
+    stale = sorted(set(over) - set(codes))
+    if stale:
+        print('  ! %d override(s) name designations not in the corpus: %s'
+              % (len(stale), ', '.join(stale)))
 
     with open(OUT_CSV, 'w', newline='', encoding='utf-8') as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
@@ -228,7 +267,7 @@ def main():
 
     by_conf = Counter(r['confidence'] for r in rows)
     print('  ' + ' · '.join('%s %d' % (k, by_conf[k])
-                            for k in ('manifest', 'defined', 'candidate', 'unresolved')))
+                            for k in ('accepted', 'manifest', 'defined', 'candidate', 'unresolved')))
     coll = [r for r in rows if r['alternate_expansions']]
     print('  %d designations with more than one expansion in the corpus' % len(coll))
 
@@ -243,9 +282,17 @@ def write_page(rows):
                       'href="https://scubanuke.github.io/publications/"')
 
     unresolved = [r for r in rows if r['confidence'] == 'unresolved']
+    accepted = [r for r in rows if r['confidence'] == 'accepted']
     body = []
     for r in rows:
-        exp = html.escape(r['expansion']) or '<span class="unres">not expanded anywhere in the corpus</span>'
+        if r['expansion']:
+            exp = html.escape(r['expansion'])
+        elif r['confidence'] == 'accepted':
+            exp = '<span class="acc">standard term &mdash; expansion adds nothing</span>'
+        else:
+            exp = '<span class="unres">never expanded in the corpus</span>'
+        if r.get('note'):
+            exp += '<div class="alt note">%s</div>' % html.escape(r['note'])
         alt = ('<div class="alt">also written as: %s</div>' % html.escape(r['alternate_expansions'])) \
               if r['alternate_expansions'] else ''
         body.append(
@@ -278,8 +325,12 @@ def write_page(rows):
   .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
   .src{font-family:var(--mono);font-size:11.5px;color:var(--muted);word-break:break-all}
   .c{font-size:11px;font-weight:600;white-space:nowrap}
-  .c-manifest{color:#1d6b3f}.c-defined{color:#1d6b3f}.c-candidate{color:#8a6100}.c-unresolved{color:#a02b2b}
+  .c-manifest{color:#1d6b3f}.c-defined{color:#1d6b3f}.c-candidate{color:#8a6100}.c-unresolved{color:#a02b2b}.c-accepted{color:#1d6b3f}
   .unres{color:#a02b2b;font-style:italic}
+  .acc{color:var(--muted);font-style:italic}
+  .note{color:var(--muted);font-style:normal}
+  .acc{color:var(--muted);font-style:italic}
+  .note{color:var(--muted)}
   .alt{font-size:12px;color:#8a6100;margin-top:3px}
   .count{font-size:13px;color:var(--muted);margin:0 0 14px}
   .wrap{overflow-x:auto}
@@ -293,8 +344,9 @@ def write_page(rows):
 <p>Every designation the published corpus uses, with its expansion where the corpus
 states one. Generated from the documents themselves, not maintained beside them &mdash;
 re-run after any change to the mirror. A designation marked
-<em>not expanded anywhere in the corpus</em> is one a reader cannot decode either;
-that list is a work item, not a gap in this page.</p>
+<em>never expanded in the corpus</em> is one a reader cannot decode either &mdash;
+that list is a work item, not a gap in this page. A designation marked
+<em>accepted</em> has been ruled on by hand and is settled.</p>
 </div></header>
 <main>
 <div class="tools">
