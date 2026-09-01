@@ -61,6 +61,10 @@ CONFIDENCE
   defined     an in-text definition whose initials reconstruct the designation
   candidate   a definition-shaped construction that did NOT verify — a machine
               guess, shown so a human can confirm or reject it, never relied on
+  defined     an in-text definition whose initials reconstruct the designation,
+              or a meaning the documents state plainly. Where they state more
+              than one, scope is per-document, the expansion is left empty,
+              and meanings_by_document carries each reading
   unresolved  the corpus never expands it
 
 Requires: pdftotext (Poppler).
@@ -78,7 +82,8 @@ SKIP_DIRS = ('_archive', '_superseded', '_to_delete', 'UPLOAD_STAGING', '.git')
 MIN_HYPHEN = 2   # a compound token used once is an equipment tag, not a designation
 
 # Hyphenated instrument designations: DBA-ES-GC-FC4, FD-BL-D1, CB-IB
-RE_HYPHEN = re.compile(r'(?<![A-Za-z0-9_-])[A-Z][A-Z0-9]{1,6}(?:[-_][A-Z0-9]{1,6}){1,3}(?![A-Za-z0-9_-])')
+# A segment may carry a decimal suffix: ANS-5.1 is one designation, not ANS-5.
+RE_HYPHEN = re.compile(r'(?<![A-Za-z0-9_-])[A-Z][A-Z0-9]{1,6}(?:[-_][A-Z0-9]{1,6}(?:\.[0-9]{1,3})?){1,3}(?![A-Za-z0-9_-])')
 # Bare acronyms: ASSC, SCADA, NERC
 RE_BARE = re.compile(r'(?<![A-Za-z0-9_-])[A-Z]{2,6}(?![A-Za-z0-9_-])')
 
@@ -246,12 +251,57 @@ def harvest(text):
 
 
 def member_labels(code, texts):
-    """{document: label} from 'CODE (Label)' occurrences, per document."""
-    pat = re.compile(r"(?<![A-Za-z0-9_-])%s\s*\(([^)]{3,60})\)" % re.escape(code))
+    """{document: label} for one member code, per document.
+
+    Three forms are read, because the corpus uses all three:
+      CODE (Label)        parenthetical gloss
+      CODE - Label:       dash form, as in "CE-3 - Protection relay malfunction:"
+      CODE                table form - the code alone on a line, its label the
+      <blank>             next short paragraph. This is the dominant convention
+      Label               in the event-code tables, and reading only parentheses
+                          left members undefined that their documents define
+                          plainly.
+    """
+    esc = re.escape(code)
+    pat_paren = re.compile(r"(?<![A-Za-z0-9_-])%s\s*\(([^)]{3,60})\)" % esc)
+    pat_dash = re.compile(
+        r"(?<![A-Za-z0-9_-])%s[ ]+[\u2014\u2013][ ]+([^:.\n]{3,60})[:.]" % esc)
+    pat_cell = re.compile(
+        r"(?m)^[ \t]*%s[ \t]*$\n+((?:[^\n]+\n){1,3}?)[ \t]*\n" % esc)
+
+    # The parenthetical and dash forms are explicit glosses the author wrote,
+    # so they are trusted on the original terms. The table form is inferred
+    # from layout, so it is held to a stricter test: pdftotext puts running
+    # headers and footers on their own lines, and a code sitting above one
+    # would otherwise adopt it as its meaning.
+    FURNITURE = re.compile(
+        r"(?i)\b(draft|version|page|revision|confidential)\b"
+        r"|\bv\d+\.\d|\u00a7|^see\b|^and\b")
+
+    def gloss(lab):
+        lab = " ".join(lab.split())
+        if not lab or lab[0].isdigit() or len(lab.split()) > 9:
+            return ''
+        return lab
+
+    def cell(lab):
+        lab = gloss(lab)
+        if not lab or len(lab) > 60 or len(lab.split()) < 2:
+            return ''
+        if RE_HYPHEN.fullmatch(lab):           # the next code in the table
+            return ''
+        if FURNITURE.search(lab):              # running header or footer
+            return ''
+        if lab.count(')') != lab.count('('):   # clipped mid-parenthesis
+            return ''
+        return lab
+
     out = {}
     for rel, txt in texts.items():
-        labs = [" ".join(m.group(1).split()) for m in pat.finditer(txt)]
-        labs = [l for l in labs if not l[0].isdigit() and len(l.split()) <= 9]
+        labs = []
+        for pat in (pat_paren, pat_dash):
+            labs += [l for l in (gloss(m.group(1)) for m in pat.finditer(txt)) if l]
+        labs += [l for l in (cell(m.group(1)) for m in pat_cell.finditer(txt)) if l]
         if labs:
             out[rel] = Counter(labs).most_common(1)[0][0]
     return out
@@ -406,8 +456,12 @@ def main():
         distinct = [_seen[_k] for _k in sorted(_seen)]
         scope = 'per-document' if len(distinct) > 1 else ('global' if distinct else '')
         if not expansion and distinct and confidence == 'unresolved':
+            # A member the documents instantiate differently is defined, not
+            # undefined - the corpus states its meaning several times over. The
+            # expansion is left empty because no single one is true corpus-wide;
+            # the scope and meanings_by_document columns carry the readings.
             expansion = distinct[0] if len(distinct) == 1 else ''
-            confidence = 'defined' if len(distinct) == 1 else 'unresolved'
+            confidence = 'defined'
 
         rows.append({
             'designation': code,

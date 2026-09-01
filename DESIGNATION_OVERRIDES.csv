@@ -43,3 +43,23 @@ CDB-6,Command Broker continuity,accepted,DBA-MA-CDB v0.2 §2; absorbed from form
 CDB-7,Verification cadence,accepted,DBA-MA-CDB v0.2 §2; absorbed from former CB-4
 DBA-MA-CDB,Military Action Communications Design Basis,accepted,Sector-agnostic machinery reference; owns CDB-1..CDB-7
 DBA-MA-AF,MA Applicability Framework - Four-Filter Applicability Gate,accepted,"Shared machinery module; owns the applicability gate at §2, the determination at §3"
+AGC,automatic generation control,accepted,NERC BAL standard term
+ANSI,american national standards institute,accepted,U.S. voluntary standards and conformity assessment system
+APC-SIS,advanced process control - safety instrumented system,accepted,
+BAL-001-2,Real Power Balancing Control Performance,accepted,"NERC Reliability Standard BAL-001, version 2"
+BAL-003,Frequency Response and Frequency Bias Setting,accepted,NERC Reliability Standard BAL-003
+BAL-003-2,Frequency Response and Frequency Bias Setting,accepted,"NERC Reliability Standard BAL-003, version 2"
+BCC,balance control center,accepted,monitoring/managing the balance of electricity within a specific ACE
+BESS,battery energy storage system,accepted,store excess electricity and release during peak demand
+BKR,breaker,accepted,
+BMS,battery management system,accepted,monitors and controls batteries used to store energy
+BSEE,Bureau of Safety and Environmental Enforcement,accepted,regulation of the offshore oil and gas exploration and production
+BWR,boiling water reactor,accepted,one of two primary light water reactor designs
+CA,cyber asset,accepted,"one of many tabs in the NERC CIP evidence request tool, and in general for NERC CIP"
+CB-UC,command broker series - use case,accepted,The Command Broker series governs the Bright Line and Command Broker architecture applied in DI-FC5
+CCEI,civilian critical energy infrastructure,accepted,The civilian version of defense-critical energy infrastructure
+CCGT,combined cycle gas turbine,accepted,uses both gas and steam turbines to produce electricity
+ANS-5.1,"ANSI/ANS-5.1, Decay Heat Power in Light Water Reactors",accepted,ANS decay heat standard
+CE-3,control and communications events,accepted,Loss of gas control center situational awareness
+CE-4,control and communications events,accepted,GenCo — pipeline operator communications failure
+CFATS,Chemical Facility Anti-Terrorism Standards,accepted,"This program expired on July 28, 2023"
