@@ -21,24 +21,24 @@
 # without complaint. Only a run where NO root resolves is reported.
 
 ~/OneDrive/Desktop/Temporary folder Project 0 - Cross Project Alignment
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 0 - Cross Project Alignment
+$HOME/mnt/Desktop/Temporary folder Project 0 - Cross Project Alignment
 ~/OneDrive/Desktop/Temporary folder Project 1 - Democratic Safeguards
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 1 - Democratic Safeguards
+$HOME/mnt/Desktop/Temporary folder Project 1 - Democratic Safeguards
 ~/OneDrive/Desktop/Temporary folder Project 2 - Industrial QA
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 2 - Industrial QA
+$HOME/mnt/Desktop/Temporary folder Project 2 - Industrial QA
 ~/OneDrive/Desktop/Temporary folder Project 3 -Analysis WorkBench
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 3 -Analysis WorkBench
+$HOME/mnt/Desktop/Temporary folder Project 3 -Analysis WorkBench
 ~/OneDrive/Desktop/Temporary folder Project 4 - Consulting Services
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 4 - Consulting Services
+$HOME/mnt/Desktop/Temporary folder Project 4 - Consulting Services
 ~/OneDrive/Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
+$HOME/mnt/Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
 ~/OneDrive/Desktop/Temporary folder Project 6 - DBA-MA
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 6 - DBA-MA
+$HOME/mnt/Desktop/Temporary folder Project 6 - DBA-MA
 ~/OneDrive/Desktop/Temporary folder Project 7 -Foundational Synthesis
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 7 -Foundational Synthesis
+$HOME/mnt/Desktop/Temporary folder Project 7 -Foundational Synthesis
 ~/OneDrive/Desktop/Temporary folder Project 8 - DBA Energy Sector
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 8 - DBA Energy Sector
+$HOME/mnt/Desktop/Temporary folder Project 8 - DBA Energy Sector
 ~/OneDrive/Desktop/Temporary folder Project 9 - DBA CIKR Sectors
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 9 - DBA CIKR Sectors
+$HOME/mnt/Desktop/Temporary folder Project 9 - DBA CIKR Sectors
 ~/OneDrive/Desktop/Temporary folder Project 10 - Utility Companion Tools
-$HOME/mnt/OneDrive--Desktop/Temporary folder Project 10 - Utility Companion Tools
+$HOME/mnt/Desktop/Temporary folder Project 10 - Utility Companion Tools

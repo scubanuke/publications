@@ -396,7 +396,14 @@ def main():
 
         fam = family_of(code, families)
         labels = member_labels(code, texts) if (fam or '-' in code) else {}
-        distinct = sorted(set(labels.values()))
+        # Group meanings case-insensitively: "Verification cadence" and
+        # "verification cadence" are one meaning, not a per-document conflict.
+        # Keeps the first spelling seen for display. Matches the case-insensitive
+        # comparison already used for alternates above.
+        _seen = {}
+        for _v in labels.values():
+            _seen.setdefault(_v.casefold(), _v)
+        distinct = [_seen[_k] for _k in sorted(_seen)]
         scope = 'per-document' if len(distinct) > 1 else ('global' if distinct else '')
         if not expansion and distinct and confidence == 'unresolved':
             expansion = distinct[0] if len(distinct) == 1 else ''

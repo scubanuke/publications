@@ -59,6 +59,7 @@ The parent series: nuclear design basis methodology extended to deliberate milit
 |---|---|---|
 | [DBA-MA Introduction](dba-ma/DBA-MA_Introduction.pdf) | v1.9 | The parent series introduction covering the nuclear Design Basis Accident framework and the methodology that the DBA-EN energy series inherits and extends. |
 | [DBA-MA ONG Series Introduction](dba-ma/DBA-MA_ONG_Series_Introduction.pdf) | v1.0 FINAL | Predecessor orientation document for the oil and natural gas series. |
+| [DBA-MA-CDB: Military Action Communications Design Basis](dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf) | v0.3 | Sector-agnostic machinery module. The seven communications design basis requirements CDB-1–CDB-7, which hold when a military-grade adversary degrades or denies communications. Supersedes the CB-1–CB-5 working enumeration; CDB-6 and CDB-7 carry forward former CB-3 and CB-4. Instantiated by the electric, gas, and petroleum MA companions rather than restated. |
 
 ## DBA-DC — Data Center Design Basis
 
