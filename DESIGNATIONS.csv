@@ -258,7 +258,7 @@ LCOE,term,,,,Levelized Cost of Energy,candidate,63,2,papers/GenMix_Optimization_
 LDC,term,,,,,accepted,52,5,dba-en/DBA-GAS-FC4_Local_Distribution.pdf,,Standard in the field (local distribution company)
 LNG,term,,,,,accepted,319,13,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,Universally known in the field
 LPT,term,,,,,unresolved,28,8,dba-en/DBA-ES-TX-FC2_EHV_Substation.pdf,,
-LWR,term,,,,light water reactor,accepted,9,2,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,one of two primary light water reactors
+LWR,term,,,,light water reactor,accepted,9,2,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,the reactor family comprising the BWR and PWR designs
 MA,term,,,,Military Action,accepted,329,20,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
 MA-1,term,,global,,state estimator corruption,defined,33,6,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
 MA-2,term,,global,,SCADA availability attack,defined,19,1,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
