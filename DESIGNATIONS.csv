@@ -5,17 +5,17 @@ AF,term,,,,Availability Factor,defined,84,1,papers/GenMix_Optimization_Whitepape
 AGA,term,,,,American Gas Association,defined,14,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,
 AGC,term,,,,automatic generation control,accepted,13,4,awb/BES_Asset_Nomenclature_Specification.pdf,,NERC BAL standard term
 AI,term,,,,gen AI,accepted,1008,45,command-broker/CB_Implementation_Guide.pdf,,Author's call — used throughout in the generative-AI sense
-ANS-5.1,term,,,,"ANSI/ANS-5.1, decay heat power in light water reactors",accepted,5,1,dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,,ANS decay heat standard
-ANSI,term,,,,american national standards institute,accepted,13,3,awb/BES_Asset_Nomenclature_Specification.pdf,,U.S. voluntary standards and conformity assessment system
+ANS-5.1,term,,,,"ANSI/ANS-5.1, Decay Heat Power in Light Water Reactors",accepted,5,1,dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,,ANS decay heat standard
+ANSI,term,,,,American National Standards Institute,accepted,13,3,awb/BES_Asset_Nomenclature_Specification.pdf,,U.S. voluntary standards and conformity assessment system
 AOO,term,,,,Asset Owners and Operators,defined,117,9,command-broker/DBA-VC_Vendor_Companion.pdf,,
 APC,term,,,,Advanced Process Control,defined,71,7,dba-en/DBA-GAS-FC2_Natural_Gas_Processing.pdf,,
 APC-SIS,term,,,,advanced process control - safety instrumented system,accepted,3,1,dba-en/DBA-GAS-FC2_Natural_Gas_Processing.pdf,,
 API,term,,,,and the American Petroleum Institute,defined,21,7,awb/ERT_Companion_Proposal.pdf,,
 ASSC,term,,,,Autonomous Safe Shutdown Condition,defined,99,4,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,SMR Autonomous Safe Shutdown Condition | Autonomous Safe Shutdown Condition The Autonomous Safe Shutdown Condition,
 BA,term,,,,Balancing Authority,defined,72,9,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
-BAL-001-2,term,,,,real power balancing control performance,accepted,2,2,command-broker/CB-UC-1_BA_Integrated_Interface.pdf,,"NERC Reliability Standard BAL-001, version 2"
-BAL-003,term,,global,,frequency response and frequency bias setting,accepted,6,1,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,NERC Reliability Standard BAL-003
-BAL-003-2,term,,,,frequency response and frequency bias setting,accepted,2,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,"NERC Reliability Standard BAL-003, version 2"
+BAL-001-2,term,,,,Real Power Balancing Control Performance,accepted,2,2,command-broker/CB-UC-1_BA_Integrated_Interface.pdf,,"NERC Reliability Standard BAL-001, version 2"
+BAL-003,term,,global,,Frequency Response and Frequency Bias Setting,accepted,6,1,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,NERC Reliability Standard BAL-003
+BAL-003-2,term,,,,Frequency Response and Frequency Bias Setting,accepted,2,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,"NERC Reliability Standard BAL-003, version 2"
 BCC,term,,,,balance control center,accepted,17,2,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,monitoring/managing the balance of electricity within a specific ACE
 BCSI,term,,,,BES Cyber System Information,defined,14,1,awb/ERT_Companion_Proposal.pdf,,
 BES,term,,,,bulk electric system,accepted,104,13,awb/BES_Asset_Nomenclature_Specification.pdf,,Expanded in the BES Asset Nomenclature Specification
@@ -23,19 +23,19 @@ BESS,term,,,,battery energy storage system,accepted,128,7,dba-en/DBA-ES-GN-FC8_R
 BKR,term,,,,breaker,accepted,10,1,awb/BES_Asset_Nomenclature_Specification.pdf,,
 BLEVE,term,,,,Boiling Liquid Expanding Vapor Explosion,defined,22,4,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,
 BMS,term,,,,battery management system,accepted,19,1,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,,monitors and controls batteries used to store energy
-BSEE,term,,,,bureau of safety and environmental enforcement,accepted,19,4,dba-en/DBA-OIL-FC2_Offshore_Crude_Production.pdf,,regulation of the offshore oil and gas exploration and production
+BSEE,term,,,,Bureau of Safety and Environmental Enforcement,accepted,19,4,dba-en/DBA-OIL-FC2_Offshore_Crude_Production.pdf,,regulation of the offshore oil and gas exploration and production
 BWR,term,,,,boiling water reactor,accepted,8,2,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,one of two primary light water reactor designs
 BWRX-300,term,,global,,"approximately 300 MWe per module, a boiling-water variant",defined,3,1,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,
 CA,term,,,,cyber asset,accepted,12,2,awb/ERT_Companion_Proposal.pdf,,"one of many tabs in the NERC CIP evidence request tool, and in general for NERC CIP"
 CB,term,,,,Command Broker,defined,126,11,command-broker/CB-IB_Qualification_Standard.pdf,for the Command Broker,
 CB-1,term,,global,,superseded working vocabulary - communications backup channel; see DBA-MA-CDB CDB-1..CDB-7,accepted,63,15,dba-en/DBA-ES-TX-FC3_HVDC_Interconnect.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-2,term,,global,,superseded working vocabulary - local authority; see DBA-MA-CDB CDB-1..CDB-7,accepted,22,9,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
-CB-3,term,,global,,superseded working vocabulary - command broker continuity; carried across as DBA-MA-CDB CDB-6,accepted,24,10,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
+CB-3,term,,global,,superseded working vocabulary - Command Broker continuity; carried across as DBA-MA-CDB CDB-6,accepted,24,10,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-4,term,,global,,superseded working vocabulary - verification cadence; carried across as DBA-MA-CDB CDB-7,accepted,12,10,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-5,term,,global,,superseded working vocabulary - degraded-mode procedures; see DBA-MA-CDB CDB-1..CDB-7,accepted,53,15,dba-en/DBA-ES-GN-FC7_Oil_Fired_Generation.pdf,,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-CT,term,,,,Commissioning and Joint Training,manifest,16,7,CB-CT_Commissioning_and_Joint_Training.pdf,,
 CB-IB,term,,,,CB-IB Qualification Standard,manifest,31,6,CB-IB_Qualification_Standard.pdf,,
-CB-UC,term,,,,command broker series - use case,accepted,7,2,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,The Command Broker series governs the Bright Line and Command Broker architecture applied in DI-FC5
+CB-UC,term,,,,Command Broker series - use case,accepted,7,2,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,The Command Broker series governs the Bright Line and Command Broker architecture applied in DI-FC5
 CB-UC-1,term,,global,,BA Integrated Interface,manifest,39,6,CB-UC-1_BA_Integrated_Interface.pdf,,
 CCEI,term,,,,civilian critical energy infrastructure,accepted,14,1,papers/UA_Grid_Defense_Cyber_Kinetic.pdf,,The civilian version of defense-critical energy infrastructure
 CCGT,term,,,,combined cycle gas turbine,accepted,31,2,papers/GenMix_Optimization_Whitepaper.pdf,,uses both gas and steam turbines to produce electricity
@@ -43,7 +43,7 @@ CCR,term,,,,coal combustion residual,accepted,49,3,dba-en/DBA-ES-GN-FC6_Coal_Gen
 CDB-1,term,,global,,degradation as baseline,accepted,12,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2
 CDB-4,term,,global,,verified independent channels,accepted,5,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2; intersects the Command Broker
 CDB-5,term,,global,,coordination without shared connectivity,accepted,7,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2
-CDB-6,term,,global,,command broker continuity,accepted,10,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2; absorbed from former CB-3
+CDB-6,term,,global,,Command Broker continuity,accepted,10,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2; absorbed from former CB-3
 CDB-7,term,,global,,verification cadence,accepted,12,1,dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,,DBA-MA-CDB v0.2 §2; absorbed from former CB-4
 CDU,term,,,,Crude Distillation Unit,defined,15,1,dba-en/DBA-OIL-FC1_Petroleum_Refining.pdf,,
 CE,family,,,,Control and Communications Events,defined,31,7,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,
@@ -52,7 +52,7 @@ CE-2,member,CE,per-document,DBA-DC-FC1_Hyperscale_Design_Basis.pdf = Area-wide c
 CE-3,member,CE,per-document,DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf = Protection relay malfunction | DBA-ES-GC-FC4_Compressor_Station.pdf = Loss of gas control center situational awareness | DBA-ES-TX-FC2_EHV_Substation.pdf = EMS failure at CntlCo,control and communications events,accepted,8,5,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,Loss of gas control center situational awareness
 CE-4,member,CE,per-document,DBA-EN-SF_Energy_Sector_Framework.pdf = cyber intrusion | DBA-ES-GC-FC4_Compressor_Station.pdf = GenCo-pipeline operator communications failure | DBA-ES-TX-FC2_EHV_Substation.pdf = Cyber intrusion into substation controls,control and communications events,accepted,5,3,dba-en/DBA-ES-GC-FC4_Compressor_Station.pdf,,GenCo — pipeline operator communications failure
 CF,term,,,,Capacity Factor,defined,94,1,papers/GenMix_Optimization_Whitepaper.pdf,,
-CFATS,term,,,,chemical facility anti-terrorism standards,accepted,14,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,"This program expired on July 28, 2023"
+CFATS,term,,,,Chemical Facility Anti-Terrorism Standards,accepted,14,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,"This program expired on July 28, 2023"
 CFR,term,,,,,accepted,85,20,dba-en/DBA-OIL_Sector_Framework.pdf,,Standard citation form (Code of Federal Regulations)
 CIKR,term,,,,Critical Infrastructure and Key Resources,defined,8,2,dba-ma/DBA-MA_ONG_Series_Introduction.pdf,,
 CIP,term,,,,Critical Infrastructure Protection,defined,101,18,awb/ERT_Companion_Proposal.pdf,NERC Critical Infrastructure Protection,
@@ -167,8 +167,8 @@ DI-6,term,,global,,Dual-DB AI governance interaction points,defined,12,6,dba-en/
 DI-7,term,,,,,unresolved,10,3,dba-en/DBA-ES_Sector_Framework.pdf,,
 DI-FC5,term,,,,,unresolved,2,1,dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf,,
 DNG-ISAC,term,,,,,unresolved,3,2,dba-en/DBA-GAS-FC1_Natural_Gas_Transmission.pdf,,
-DOD,term,,,,department of defense,accepted,23,14,dba-en/DBA-GAS-POL_Deterrence.pdf,,
-DOE,term,,,,department of energy,accepted,95,24,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,,
+DOD,term,,,,Department of Defense,accepted,23,14,dba-en/DBA-GAS-POL_Deterrence.pdf,,
+DOE,term,,,,Department of Energy,accepted,95,24,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,,
 DOI,term,,,,,unresolved,25,15,fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf,,
 DTT-CH1,term,,,,,unresolved,2,1,awb/BES_Asset_Nomenclature_Specification.pdf,,
 EAP,term,,,,Emergency Action Plan,defined,19,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,Electronic Access Point,
@@ -192,7 +192,7 @@ ESF-12,term,,global,,Emergency Support Function 12 (Energy),defined,31,12,dba-en
 ESP,term,,,,electronic security perimeter,accepted,15,2,awb/ERT_Companion_Proposal.pdf,,NERC CIP term
 ETL,term,,,,"extract, transform, load",accepted,38,1,awb/ERT_Companion_Proposal.pdf,,Standard data-engineering term; ERT and SCRM companions
 EU,term,,,,,unresolved,23,4,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,
-FAA,term,,,,federal aviation administration,accepted,15,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,
+FAA,term,,,,Federal Aviation Administration,accepted,15,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,
 FAC-001-3,term,,,,,unresolved,3,3,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
 FAC-002,term,,global,,Facility Ratings,candidate,3,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
 FAC-002-3,term,,,,,unresolved,3,3,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
@@ -203,7 +203,7 @@ FC5-AI-1,term,,,,,unresolved,4,1,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generati
 FC5-AI-2,term,,global,,Microgrid controller ML optimization,defined,2,1,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,
 FCC,term,,,,Fluid Catalytic Cracker,defined,29,1,dba-en/DBA-OIL-FC1_Petroleum_Refining.pdf,,
 FD,term,,,,Foundational Definitions,defined,17,7,fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf,Foundational Definitions August,
-FD-BL,term,,per-document,"DBA-EN-SF_Energy_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-EN_Series_Introduction.pdf = Foundational Definition — The Bright Line | DBA-ES-CntlCo_Control_Company.pdf = placement | DBA-ES-GC-FC4_Compressor_Station.pdf = placement | DBA-ES-GN-FC6_Coal_Generation.pdf = placement | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = placement | DBA-ES-TX-FC2_EHV_Substation.pdf = placement | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = placement | DBA-ES_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = placement, by consequence per action | DBA-GAS-FC3_Underground_Storage.pdf = placement | DBA-GAS-FC4_Local_Distribution.pdf = placement | DBA-GAS-UC-LNG_LNG_Terminal.pdf = placement | DBA-GAS_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-OIL-FC1_Petroleum_Refining.pdf = placement — consequence, per action | DBA-OIL-FC2_Offshore_Crude_Production.pdf = placement | DBA-OIL-FC3_Terminals_Storage.pdf = placement | DBA-OIL-FC4_Crude_Product_Transport.pdf = placement | DBA-OIL_Sector_Framework.pdf = Foundational Definition — The Bright Line | 01_FD-BL_The_Bright_Line_v0_3.pdf = The Bright Line · v0 | 02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf = §4.2 | 03_FD-EV_The_Envelope_v0_1.pdf = the Bright Line | 04_FD-BR_The_Broker_v0_1.pdf = The Bright Line | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = not a Foundational Definition — see §2 | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = not a Foundational Definition — see §2",foundational definition — the bright line,accepted,178,36,fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,,The governing definition; instruments cite it for placement
+FD-BL,term,,per-document,"DBA-EN-SF_Energy_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-EN_Series_Introduction.pdf = Foundational Definition — The Bright Line | DBA-ES-CntlCo_Control_Company.pdf = placement | DBA-ES-GC-FC4_Compressor_Station.pdf = placement | DBA-ES-GN-FC6_Coal_Generation.pdf = placement | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = placement | DBA-ES-TX-FC2_EHV_Substation.pdf = placement | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = placement | DBA-ES_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = placement, by consequence per action | DBA-GAS-FC3_Underground_Storage.pdf = placement | DBA-GAS-FC4_Local_Distribution.pdf = placement | DBA-GAS-UC-LNG_LNG_Terminal.pdf = placement | DBA-GAS_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-OIL-FC1_Petroleum_Refining.pdf = placement — consequence, per action | DBA-OIL-FC2_Offshore_Crude_Production.pdf = placement | DBA-OIL-FC3_Terminals_Storage.pdf = placement | DBA-OIL-FC4_Crude_Product_Transport.pdf = placement | DBA-OIL_Sector_Framework.pdf = Foundational Definition — The Bright Line | 01_FD-BL_The_Bright_Line_v0_3.pdf = The Bright Line · v0 | 02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf = §4.2 | 03_FD-EV_The_Envelope_v0_1.pdf = the Bright Line | 04_FD-BR_The_Broker_v0_1.pdf = The Bright Line | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = not a Foundational Definition — see §2 | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = not a Foundational Definition — see §2",foundational definition — the Bright Line,accepted,178,36,fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,,The governing definition; instruments cite it for placement
 FD-BL-D1,term,,per-document,CB-UC-1_BA_Integrated_Interface.pdf = R1–R3 | CB_Implementation_Guide.pdf = Mode of Discharge: Pre-Authorization by Verified Gatekeeper | DBA-ES-CntlCo_Control_Company.pdf = mode of discharge | DBA-ES-GC-FC4_Compressor_Station.pdf = mode of discharge | DBA-ES-GN-FC6_Coal_Generation.pdf = mode of discharge | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = mode of discharge | DBA-ES-TX-FC2_EHV_Substation.pdf = mode of discharge | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = mode of discharge | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = mode of discharge | DBA-GAS-FC3_Underground_Storage.pdf = mode of discharge | DBA-GAS-FC4_Local_Distribution.pdf = mode of discharge | DBA-GAS-UC-LNG_LNG_Terminal.pdf = mode of discharge | DBA-OIL-FC1_Petroleum_Refining.pdf = mode of discharge | DBA-OIL-FC2_Offshore_Crude_Production.pdf = mode of discharge | DBA-OIL-FC3_Terminals_Storage.pdf = mode of discharge | DBA-OIL-FC4_Crude_Product_Transport.pdf = mode of discharge | 01_FD-BL_The_Bright_Line_v0_3.pdf = Mode of Discharge: Pre-Authorization by Verified Gatekeeper | 03_FD-EV_The_Envelope_v0_1.pdf = mode of discharge | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = Mode of Discharge | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = mode of discharge,Mode of Discharge,candidate,102,29,fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf,,
 FD-BL-D2,term,,global,,Indication Integrity,candidate,55,21,fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf,,
 FD-BLD1,term,,,,,unresolved,2,2,dba-en/DBA-GAS-FC1_Natural_Gas_Transmission.pdf,,
@@ -234,7 +234,7 @@ HL-5,term,,,,,unresolved,2,1,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
 HV,term,,,,,unresolved,10,3,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,
 HVDC,term,,,,high-voltage direct current,accepted,130,8,dba-en/DBA-ES-TX-FC3_HVDC_Interconnect.pdf,,Expanded in DBA-ES-TX-FC3
 HY-FC1,term,,,,,unresolved,4,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
-IAEA,term,,,,international atomic energy agency,accepted,38,16,dba-ma/DBA-MA_Introduction.pdf,,
+IAEA,term,,,,International Atomic Energy Agency,accepted,38,16,dba-ma/DBA-MA_Introduction.pdf,,
 IB,term,,,,Influence Broker,defined,104,2,command-broker/CB-IB_Qualification_Standard.pdf,and Influencer Broker | and the Influence Broker,
 IBR,term,,,,inverter-based resource,accepted,48,5,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,,Expanded in DBA-ES-GN-FC8
 IC-1,term,,global,,SABD,defined,10,1,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,

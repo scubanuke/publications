@@ -24,7 +24,7 @@ SCRM,supply chain risk management,accepted,
 DBA-ES-MA-QB,electric sector - military action - quantitative design basis,accepted,
 DBA-ES-MA-SF,electric sector - military action - sector framework,accepted,
 FC,facility class,accepted,
-IAEA,international atomic energy agency,accepted,
+IAEA,International Atomic Energy Agency,accepted,
 IEC,,accepted,Standards body; appears in the corpus alongside ISA as ISA/IEC
 MW,megawatts,accepted,Unit of power; used throughout as a facility-class threshold
 AC,alternating current,accepted,Standard term
@@ -32,42 +32,42 @@ ETL,"extract, transform, load",accepted,Standard data-engineering term; ERT and 
 CB-1,superseded working vocabulary - communications backup channel; see DBA-MA-CDB CDB-1..CDB-7,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-5,superseded working vocabulary - degraded-mode procedures; see DBA-MA-CDB CDB-1..CDB-7,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-2,superseded working vocabulary - local authority; see DBA-MA-CDB CDB-1..CDB-7,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
-CB-3,superseded working vocabulary - command broker continuity; carried across as DBA-MA-CDB CDB-6,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
+CB-3,superseded working vocabulary - Command Broker continuity; carried across as DBA-MA-CDB CDB-6,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CB-4,superseded working vocabulary - verification cadence; carried across as DBA-MA-CDB CDB-7,accepted,"SUPERSEDED. DBA-MA-CDB v0.2 §1.2 (""Naming Note: CDB versus CB"") replaces the CB-1-CB-5 communications enumeration with CDB-1-CDB-7, expressly to avoid collision with the Command Broker (CB) construct. Mapping is not one-to-one: CDB-1-CDB-5 were newly drafted; only former CB-3 and CB-4 carried across, as CDB-6 and CDB-7."
 CDB-1,degradation as baseline,accepted,DBA-MA-CDB v0.2 §2
 CDB-2,local protective and safety autonomy,accepted,DBA-MA-CDB v0.2 §2
 CDB-3,field-executable emergency procedures,accepted,DBA-MA-CDB v0.2 §2
 CDB-4,verified independent channels,accepted,DBA-MA-CDB v0.2 §2; intersects the Command Broker
 CDB-5,coordination without shared connectivity,accepted,DBA-MA-CDB v0.2 §2
-CDB-6,command broker continuity,accepted,DBA-MA-CDB v0.2 §2; absorbed from former CB-3
+CDB-6,Command Broker continuity,accepted,DBA-MA-CDB v0.2 §2; absorbed from former CB-3
 CDB-7,verification cadence,accepted,DBA-MA-CDB v0.2 §2; absorbed from former CB-4
 DBA-MA-CDB,military action communications design basis,accepted,Sector-agnostic machinery reference; owns CDB-1..CDB-7
 DBA-MA-AF,MA applicability framework - four-filter applicability gate,accepted,"Shared machinery module; owns the applicability gate at §2, the determination at §3"
 AGC,automatic generation control,accepted,NERC BAL standard term
-ANSI,american national standards institute,accepted,U.S. voluntary standards and conformity assessment system
+ANSI,American National Standards Institute,accepted,U.S. voluntary standards and conformity assessment system
 APC-SIS,advanced process control - safety instrumented system,accepted,
-BAL-001-2,real power balancing control performance,accepted,"NERC Reliability Standard BAL-001, version 2"
-BAL-003,frequency response and frequency bias setting,accepted,NERC Reliability Standard BAL-003
-BAL-003-2,frequency response and frequency bias setting,accepted,"NERC Reliability Standard BAL-003, version 2"
+BAL-001-2,Real Power Balancing Control Performance,accepted,"NERC Reliability Standard BAL-001, version 2"
+BAL-003,Frequency Response and Frequency Bias Setting,accepted,NERC Reliability Standard BAL-003
+BAL-003-2,Frequency Response and Frequency Bias Setting,accepted,"NERC Reliability Standard BAL-003, version 2"
 BCC,balance control center,accepted,monitoring/managing the balance of electricity within a specific ACE
 BESS,battery energy storage system,accepted,store excess electricity and release during peak demand
 BKR,breaker,accepted,
 BMS,battery management system,accepted,monitors and controls batteries used to store energy
-BSEE,bureau of safety and environmental enforcement,accepted,regulation of the offshore oil and gas exploration and production
+BSEE,Bureau of Safety and Environmental Enforcement,accepted,regulation of the offshore oil and gas exploration and production
 BWR,boiling water reactor,accepted,one of two primary light water reactor designs
 CA,cyber asset,accepted,"one of many tabs in the NERC CIP evidence request tool, and in general for NERC CIP"
-CB-UC,command broker series - use case,accepted,The Command Broker series governs the Bright Line and Command Broker architecture applied in DI-FC5
+CB-UC,Command Broker series - use case,accepted,The Command Broker series governs the Bright Line and Command Broker architecture applied in DI-FC5
 CCEI,civilian critical energy infrastructure,accepted,The civilian version of defense-critical energy infrastructure
 CCGT,combined cycle gas turbine,accepted,uses both gas and steam turbines to produce electricity
-ANS-5.1,"ANSI/ANS-5.1, decay heat power in light water reactors",accepted,ANS decay heat standard
+ANS-5.1,"ANSI/ANS-5.1, Decay Heat Power in Light Water Reactors",accepted,ANS decay heat standard
 CE-3,control and communications events,accepted,Loss of gas control center situational awareness
 CE-4,control and communications events,accepted,GenCo — pipeline operator communications failure
-CFATS,chemical facility anti-terrorism standards,accepted,"This program expired on July 28, 2023"
-DOD,department of defense,accepted,
-DOE,department of energy,accepted,
+CFATS,Chemical Facility Anti-Terrorism Standards,accepted,"This program expired on July 28, 2023"
+DOD,Department of Defense,accepted,
+DOE,Department of Energy,accepted,
 EDG,emergency diesel generator,accepted,
 ESP,electronic security perimeter,accepted,NERC CIP term
-FAA,federal aviation administration,accepted,
-FD-BL,foundational definition — the bright line,accepted,The governing definition; instruments cite it for placement
+FAA,Federal Aviation Administration,accepted,
+FD-BL,foundational definition — the Bright Line,accepted,The governing definition; instruments cite it for placement
 LWR,light water reactor,accepted,the reactor family comprising the BWR and PWR designs
 UFLS,under frequency load shed,accepted,
