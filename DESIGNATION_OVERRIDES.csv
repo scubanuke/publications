@@ -63,3 +63,11 @@ ANS-5.1,"ANSI/ANS-5.1, Decay Heat Power in Light Water Reactors",accepted,ANS de
 CE-3,control and communications events,accepted,Loss of gas control center situational awareness
 CE-4,control and communications events,accepted,GenCo — pipeline operator communications failure
 CFATS,Chemical Facility Anti-Terrorism Standards,accepted,"This program expired on July 28, 2023"
+DOD,department of defense,accepted,
+DOE,department of energy,accepted,
+EDG,emergency diesel generator,accepted,
+ESP,electronic security perimeter,accepted,NERC CIP term
+FAA,federal aviation administration,accepted,
+FD-BL,foundational definition — the Bright Line,accepted,The governing definition; instruments cite it for placement
+LWR,light water reactor,accepted,one of two primary light water reactors
+UFLS,under frequency load shed,accepted,

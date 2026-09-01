@@ -167,12 +167,12 @@ DI-6,term,,global,,Dual-DB AI governance interaction points,defined,12,6,dba-en/
 DI-7,term,,,,,unresolved,10,3,dba-en/DBA-ES_Sector_Framework.pdf,,
 DI-FC5,term,,,,,unresolved,2,1,dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf,,
 DNG-ISAC,term,,,,,unresolved,3,2,dba-en/DBA-GAS-FC1_Natural_Gas_Transmission.pdf,,
-DOD,term,,,,,unresolved,23,14,dba-en/DBA-GAS-POL_Deterrence.pdf,,
-DOE,term,,,,Department of Energy,candidate,95,24,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,and Emergency Response,
+DOD,term,,,,department of defense,accepted,23,14,dba-en/DBA-GAS-POL_Deterrence.pdf,,
+DOE,term,,,,department of energy,accepted,95,24,dba-en/DBA-ES-GN-FC8_Renewable_Generation_BESS.pdf,,
 DOI,term,,,,,unresolved,25,15,fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf,,
 DTT-CH1,term,,,,,unresolved,2,1,awb/BES_Asset_Nomenclature_Specification.pdf,,
 EAP,term,,,,Emergency Action Plan,defined,19,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,Electronic Access Point,
-EDG,term,,,,,unresolved,17,1,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,
+EDG,term,,,,emergency diesel generator,accepted,17,1,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,
 EEI,term,,,,Edison Electric Institute,defined,14,1,awb/SCRM_Companion_Agent.pdf,,
 EF,family,,,,Equipment Failure,defined,19,6,dba-en/DBA-GAS-FC3_Underground_Storage.pdf,and Process-Safety Failure | Equipment and Infrastructure Failure,
 EF-1,member,EF,per-document,DBA-GAS-FC2_Natural_Gas_Processing.pdf = single inlet compressor | DBA-GAS-FC3_Underground_Storage.pdf = Storage well casing integrity failure and blowout | DBA-GAS-FC4_Local_Distribution.pdf = City gate station failure and distribution depressurization | DBA-OIL-FC2_Offshore_Crude_Production.pdf = Platform fire and explosion / loss of well control | DBA-OIL-FC3_Terminals_Storage.pdf = Tank farm fire and boilover | DBA-OIL-FC4_Crude_Product_Transport.pdf = rupture at nonmajor crossing,,defined,39,6,dba-en/DBA-GAS-FC3_Underground_Storage.pdf,,
@@ -189,10 +189,10 @@ ERCOT,term,,,,and the Electric Reliability Council of Texas,candidate,21,8,dba-d
 ERT,term,,,,AI-enhanced Evidence Request Tool,defined,134,3,awb/ERT_Companion_Proposal.pdf,,
 ESD,term,,,,,unresolved,27,5,dba-en/DBA-OIL-FC1_Petroleum_Refining.pdf,,
 ESF-12,term,,global,,Emergency Support Function 12 (Energy),defined,31,12,dba-en/DBA-OIL-FC4_Crude_Product_Transport.pdf,,
-ESP,term,,,,,unresolved,15,2,awb/ERT_Companion_Proposal.pdf,,
+ESP,term,,,,electronic security perimeter,accepted,15,2,awb/ERT_Companion_Proposal.pdf,,NERC CIP term
 ETL,term,,,,"extract, transform, load",accepted,38,1,awb/ERT_Companion_Proposal.pdf,,Standard data-engineering term; ERT and SCRM companions
 EU,term,,,,,unresolved,23,4,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,
-FAA,term,,,,,unresolved,15,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,
+FAA,term,,,,federal aviation administration,accepted,15,4,dba-en/DBA-GAS-POL_Deterrence.pdf,,
 FAC-001-3,term,,,,,unresolved,3,3,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
 FAC-002,term,,global,,Facility Ratings,candidate,3,2,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
 FAC-002-3,term,,,,,unresolved,3,3,dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf,,
@@ -203,7 +203,7 @@ FC5-AI-1,term,,,,,unresolved,4,1,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generati
 FC5-AI-2,term,,global,,Microgrid controller ML optimization,defined,2,1,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,
 FCC,term,,,,Fluid Catalytic Cracker,defined,29,1,dba-en/DBA-OIL-FC1_Petroleum_Refining.pdf,,
 FD,term,,,,Foundational Definitions,defined,17,7,fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf,Foundational Definitions August,
-FD-BL,term,,per-document,"DBA-EN-SF_Energy_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-EN_Series_Introduction.pdf = Foundational Definition — The Bright Line | DBA-ES-CntlCo_Control_Company.pdf = placement | DBA-ES-GC-FC4_Compressor_Station.pdf = placement | DBA-ES-GN-FC6_Coal_Generation.pdf = placement | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = placement | DBA-ES-TX-FC2_EHV_Substation.pdf = placement | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = placement | DBA-ES_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = placement, by consequence per action | DBA-GAS-FC3_Underground_Storage.pdf = placement | DBA-GAS-FC4_Local_Distribution.pdf = placement | DBA-GAS-UC-LNG_LNG_Terminal.pdf = placement | DBA-GAS_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-OIL-FC1_Petroleum_Refining.pdf = placement — consequence, per action | DBA-OIL-FC2_Offshore_Crude_Production.pdf = placement | DBA-OIL-FC3_Terminals_Storage.pdf = placement | DBA-OIL-FC4_Crude_Product_Transport.pdf = placement | DBA-OIL_Sector_Framework.pdf = Foundational Definition — The Bright Line | 01_FD-BL_The_Bright_Line_v0_3.pdf = The Bright Line · v0 | 02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf = §4.2 | 03_FD-EV_The_Envelope_v0_1.pdf = the Bright Line | 04_FD-BR_The_Broker_v0_1.pdf = The Bright Line | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = not a Foundational Definition — see §2 | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = not a Foundational Definition — see §2",Bright Line,candidate,178,36,fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,Foundational Definition | Bright Line Foundational Definition,
+FD-BL,term,,per-document,"DBA-EN-SF_Energy_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-EN_Series_Introduction.pdf = Foundational Definition — The Bright Line | DBA-ES-CntlCo_Control_Company.pdf = placement | DBA-ES-GC-FC4_Compressor_Station.pdf = placement | DBA-ES-GN-FC6_Coal_Generation.pdf = placement | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = placement | DBA-ES-TX-FC2_EHV_Substation.pdf = placement | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = placement | DBA-ES_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = placement, by consequence per action | DBA-GAS-FC3_Underground_Storage.pdf = placement | DBA-GAS-FC4_Local_Distribution.pdf = placement | DBA-GAS-UC-LNG_LNG_Terminal.pdf = placement | DBA-GAS_Sector_Framework.pdf = Foundational Definition — The Bright Line | DBA-OIL-FC1_Petroleum_Refining.pdf = placement — consequence, per action | DBA-OIL-FC2_Offshore_Crude_Production.pdf = placement | DBA-OIL-FC3_Terminals_Storage.pdf = placement | DBA-OIL-FC4_Crude_Product_Transport.pdf = placement | DBA-OIL_Sector_Framework.pdf = Foundational Definition — The Bright Line | 01_FD-BL_The_Bright_Line_v0_3.pdf = The Bright Line · v0 | 02_FD-LD_Layer_Decomposition_and_Determinism_v0_1.pdf = §4.2 | 03_FD-EV_The_Envelope_v0_1.pdf = the Bright Line | 04_FD-BR_The_Broker_v0_1.pdf = The Bright Line | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = not a Foundational Definition — see §2 | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = not a Foundational Definition — see §2",foundational definition — the Bright Line,accepted,178,36,fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,,The governing definition; instruments cite it for placement
 FD-BL-D1,term,,per-document,CB-UC-1_BA_Integrated_Interface.pdf = R1–R3 | CB_Implementation_Guide.pdf = Mode of Discharge: Pre-Authorization by Verified Gatekeeper | DBA-ES-CntlCo_Control_Company.pdf = mode of discharge | DBA-ES-GC-FC4_Compressor_Station.pdf = mode of discharge | DBA-ES-GN-FC6_Coal_Generation.pdf = mode of discharge | DBA-ES-GN-FC7_Oil_Fired_Generation.pdf = mode of discharge | DBA-ES-TX-FC2_EHV_Substation.pdf = mode of discharge | DBA-ES-TX-FC3_HVDC_Interconnect.pdf = mode of discharge | DBA-GAS-FC1_Natural_Gas_Transmission.pdf = mode of discharge | DBA-GAS-FC3_Underground_Storage.pdf = mode of discharge | DBA-GAS-FC4_Local_Distribution.pdf = mode of discharge | DBA-GAS-UC-LNG_LNG_Terminal.pdf = mode of discharge | DBA-OIL-FC1_Petroleum_Refining.pdf = mode of discharge | DBA-OIL-FC2_Offshore_Crude_Production.pdf = mode of discharge | DBA-OIL-FC3_Terminals_Storage.pdf = mode of discharge | DBA-OIL-FC4_Crude_Product_Transport.pdf = mode of discharge | 01_FD-BL_The_Bright_Line_v0_3.pdf = Mode of Discharge: Pre-Authorization by Verified Gatekeeper | 03_FD-EV_The_Envelope_v0_1.pdf = mode of discharge | 05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf = Mode of Discharge | 06_FD-BL-D2_Indication_Integrity_v0_2.pdf = mode of discharge,Mode of Discharge,candidate,102,29,fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf,,
 FD-BL-D2,term,,global,,Indication Integrity,candidate,55,21,fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf,,
 FD-BLD1,term,,,,,unresolved,2,2,dba-en/DBA-GAS-FC1_Natural_Gas_Transmission.pdf,,
@@ -258,7 +258,7 @@ LCOE,term,,,,Levelized Cost of Energy,candidate,63,2,papers/GenMix_Optimization_
 LDC,term,,,,,accepted,52,5,dba-en/DBA-GAS-FC4_Local_Distribution.pdf,,Standard in the field (local distribution company)
 LNG,term,,,,,accepted,319,13,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,Universally known in the field
 LPT,term,,,,,unresolved,28,8,dba-en/DBA-ES-TX-FC2_EHV_Substation.pdf,,
-LWR,term,,,,,unresolved,9,2,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,
+LWR,term,,,,light water reactor,accepted,9,2,dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,,one of two primary light water reactors
 MA,term,,,,Military Action,accepted,329,20,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
 MA-1,term,,global,,state estimator corruption,defined,33,6,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
 MA-2,term,,global,,SCADA availability attack,defined,19,1,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
@@ -401,7 +401,7 @@ UAS,term,,,,Uncrewed Aerial System,defined,160,17,dba-uxs/DBA-UxS_Cross_Sector.p
 UAS-USV,term,,,,,unresolved,3,2,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,
 UAS-UUV,term,,,,,unresolved,2,1,dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf,,
 UC-2,term,,,,,unresolved,5,2,dba-en/DBA-ES-CntlCo_Control_Company.pdf,,
-UFLS,term,,,,,unresolved,21,6,dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf,,
+UFLS,term,,,,under frequency load shed,accepted,21,6,dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf,,
 UK,term,,,,,unresolved,10,5,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,
 UPS,term,,,,,unresolved,11,7,dba-en/DBA-ES-DI-FC5_Distribution_Edge_Generation.pdf,,
 USA,term,,,,,unresolved,12,2,dba-en/DBA-GAS-UC-LNG_LNG_Terminal.pdf,,
