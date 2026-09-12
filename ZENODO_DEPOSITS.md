@@ -28,10 +28,11 @@ that, so each document is exported exactly once.
 
 - **Title:** Tiered Assessment Framework for Cognitive Errors in Generative AI Systems: A Quality Assurance Methodology for Industrial Control Systems
 - **Resource type:** Publication → Report
-- **Version:** v2.7
+- **Version:** v2.8
 - **Publication date:** 2026-09
 - **Reconciliation status:** **Done** — conformed to FD-BL by reference; re-versioned and published as v2.6 (version DOI `10.5281/zenodo.21813691`, 5 Aug 2026), superseding v2.5 (`10.5281/zenodo.21363866`).
-- **Current version:** **v2.7**, version DOI `10.5281/zenodo.22726006`, published September 2026, superseding v2.6. It repairs the determinism/placement fusion at §2.4, qualifies the Mid band at six sites, reconciles the band definitions on the maloperation and loss-of-service entry routes, and carries an erratum notice naming both DOI-bearing predecessors. **Neither published record is edited**: a version DOI names a fixed text, and the successor's notice is the remedy for a fixed text that is wrong.
+- **v2.7**, version DOI `10.5281/zenodo.22726006`, published 12 September 2026, superseding v2.6. It repairs the determinism/placement fusion at §2.4, qualifies the Mid band at six sites, reconciles the band definitions on the maloperation and loss-of-service entry routes, and carries an erratum notice naming both DOI-bearing predecessors. Its own revision history is defective: it holds no entry for v2.6 and its v2.7 entry retains an unremoved drafting sentence. Both are corrected by the successor and neither is edited in place.
+- **Current version:** **v2.8**, version DOI `10.5281/zenodo.22726480`, published 12 September 2026, superseding v2.7. It conforms the error-axis vocabulary at thirty sites including five section headings, restoring the terms the Critical Infrastructure variant has carried since February 2026; removes the last use of *tier* on the application axis at §2.2; writes the missing v2.6 revision entry and records when the §2.2 bridging clause entered the lineage; and repairs a sentence fragment in the fourth objective proposed to NIST at §11.1. It carries a second erratum notice naming the revision-history defects of v2.7. **No published record is edited**: a version DOI names a fixed text, and the successor's notice is the remedy for a fixed text that is wrong.
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/Tiered_Assessment_Framework.pdf`
 - **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line; FD-BL
@@ -182,6 +183,7 @@ The regenerated PDFs are already in the `publications` repo at the paths below.
 |---|---|---|---|---|
 | Tiered Assessment Framework → **v2.6** | `10.5281/zenodo.21363865` | `10.5281/zenodo.21363866` | **DONE** — published, version DOI `10.5281/zenodo.21813691` | `awb/Tiered_Assessment_Framework.pdf` |
 | Tiered Assessment Framework → **v2.7** | `10.5281/zenodo.21363865` | `10.5281/zenodo.21813691` | **DONE** — published, version DOI `10.5281/zenodo.22726006` | `awb/Tiered_Assessment_Framework.pdf` |
+| Tiered Assessment Framework → **v2.8** | `10.5281/zenodo.21363865` | `10.5281/zenodo.22726006` | **DONE** — published 12 September 2026, version DOI `10.5281/zenodo.22726480`; vocabulary conformance and revision-history repair | `awb/Tiered_Assessment_Framework.pdf` |
 | SMR Facility-Class Design Basis — DBA-MA-SMR-FC1 → **v0.5** | `10.5281/zenodo.21430410` | `10.5281/zenodo.21430411` | **DONE** — published, version DOI `10.5281/zenodo.21814883` | `dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf` |
 | BES Asset Nomenclature Specification → **v1.1** | `10.5281/zenodo.21365014` | `10.5281/zenodo.21365015` | **DONE** — published 30 Aug 2026, version DOI `10.5281/zenodo.22178898`; TOC removed, placeholder replaced with the real DOI | `awb/BES_Asset_Nomenclature_Specification.pdf` |
 
@@ -204,6 +206,7 @@ publish. Record the new version DOI in the table below.
 | **DBA-MA-SMR-FC1 v0.5 — reconciliation re-version** | 10.5281/zenodo.21814883 | 10.5281/zenodo.21430410 |
 | **BES v1.1 — TOC-removal re-version** | 10.5281/zenodo.22178898 | 10.5281/zenodo.21365014 |
 | **TAF v2.7 — placement/derivation re-version** | 10.5281/zenodo.22726006 | 10.5281/zenodo.21363865 |
+| **TAF v2.8 — vocabulary and revision-history re-version** | 10.5281/zenodo.22726480 | 10.5281/zenodo.21363865 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
