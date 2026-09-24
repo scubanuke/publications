@@ -4,7 +4,7 @@ Prepared 24 September 2026. Copy-paste source for four deposit forms. The order 
 
     reserve DOI → edit cover + citation block → export PDF → upload → publish → record concept DOI
 
-**Status, 24 September 2026:** the four masters are issued as final and sit in `Temporary folder Project 6 - DBA-MA/DBA-MA-Nuclear/`: `L1_DBA-MA_IAEA_Framework_v2_0.docx`, `L2_DBA-MA_IAEA_Accident_Description_v3_0.docx`, `L3_DBA-MA_IAEA_Trigger_Framework_v3_0.docx` and `L4_DBA-MA_IAEA_Monitoring_Guidance_v3_0.docx`. No DOI is reserved yet. Next step is Tim's: create the four drafts, reserve a DOI on each, and fill in the table at the bottom.
+**Status, 24 September 2026: PUBLISHED.** All four records are live. Files verified byte-identical to the mirror for L1, L2 and L3 by MD5 from the live record pages (L4 page unread, rate-limited). Concept DOIs recorded below follow Zenodo's first-deposit pattern (version DOI minus one), to be confirmed by Tim against each record's "Cite all versions" line before this commit is pushed. Index cards added under "DBA-MA international ladder"; MANIFEST rows added.
 
 All four are **first deposits**, not New Versions. None of these documents has a Zenodo record or a file in the mirror today.
 
@@ -14,7 +14,7 @@ These four go together because they cite one another. The parent (L1) defines th
 
 ## Applies to all four records
 
-- **Creator:** Roxey, Timothy E — ORCID `0009-0002-9482-8679` (no trailing period)
+- **Creator:** Roxey, Timothy E — ORCID 0009-0002-9482-8679 (type the digits only, no backticks, label or URL) (no trailing period)
 - **Affiliation:** Eclectic Technologies *(free text)*
 - **Publisher:** Eclectic Technologies
 - **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
@@ -23,8 +23,8 @@ These four go together because they cite one another. The parent (L1) defines th
 - **Resource type:** Publication → Report
 - **Publication date:** 2026-09
 - **Version:** L1 `v2.0`; L2, L3 and L4 `v3.0`. Type the leading "v" and check the field after saving: the BES draft showed "a1.1" in August.
-- **Related identifiers, all four:** *is identical to* → the mirror URL given in each record.
-- **Related identifiers, family:** each record *references* the others it cites, listed per record. Zenodo does not add the reciprocal, so each is entered by hand on both records once all four DOIs exist.
+- **Related works, all four:** one row, relation *Is identical to*, scheme URL, the mirror URL given in each record. Enter these under **Related works**, not the free-text **References** box, which prints on the public record as typed and should stay empty.
+- **Related works, family:** each record *references* the others it cites, listed per record. Zenodo does not add the reciprocal, so each is entered by hand on both records once all four DOIs exist.
 - **Series folder in the mirror:** `dba-ma/`, beside DBA-MA-CDB and the DBA-MA Introduction. Filenames carry identity, not version.
 
 **A caution that applies to the titles and descriptions.** The filenames and running headers of this ladder use "IAEA" as a level designation, meaning the international, jurisdiction-neutral tier above the national children. On Zenodo that word could be read as authorship. None of the titles below uses it, and every description states that the document is an independent proposal written in the vocabulary of the IAEA standards, not an IAEA publication. Keep it that way in any field you edit.
@@ -36,7 +36,7 @@ These four go together because they cite one another. The parent (L1) defines th
 - **Title:** Expanding the Design Basis for Nuclear Power Plants to Address Military Action Against Nuclear Facilities: An International Framework
 - **Version:** v2.0 (first final version)
 - **Mirror URL:** `https://scubanuke.github.io/publications/dba-ma/L1_DBA-MA_IAEA_Framework.pdf` (new)
-- **References:** L2, L3, L4 (this batch); DBA-MA-SMR-FC1, concept DOI `10.5281/zenodo.21430410`
+- **Related works (References):** now — DOI 10.5281/zenodo.21430410 (DBA-MA-SMR-FC1); after all four DOIs exist — L2, L3, L4
 - **Keywords:** nuclear safety; military action; design basis; design extension condition; Zaporizhzhia; Autonomous Safe Shutdown Condition; local sovereignty; uncrewed aerial systems; geopolitical siting; critical infrastructure
 
 **Description:**
@@ -49,7 +49,7 @@ The parent framework of the DBA-MA series. It proposes bringing military action 
 - **Title:** Design Basis Accident: Military Action Against Nuclear Facilities — Formal Accident Description and Design Requirements
 - **Version:** v3.0 (first final version)
 - **Mirror URL:** `https://scubanuke.github.io/publications/dba-ma/L2_DBA-MA_IAEA_Accident_Description.pdf` (new)
-- **References:** L1, L3, L4 (this batch); DBA-MA-SMR-FC1, concept DOI `10.5281/zenodo.21430410`
+- **Related works (References):** now — DOI 10.5281/zenodo.21430410 (DBA-MA-SMR-FC1); after all four DOIs exist — L1, L3, L4
 - **Keywords:** design basis accident; military action; nuclear power plant; Autonomous Safe Shutdown Condition; acceptance criteria; decay heat removal; spent fuel pool; hardening; post-occupation recovery
 
 **Description:**
@@ -62,7 +62,7 @@ The formal accident description for military action against nuclear power facili
 - **Title:** Trigger Framework for Military Action Design Basis Accident: Observable Indicators and Decision Criteria for Transition to Autonomous Safe Shutdown Condition
 - **Version:** v3.0 (first final version)
 - **Mirror URL:** `https://scubanuke.github.io/publications/dba-ma/L3_DBA-MA_IAEA_Trigger_Framework.pdf` (new)
-- **References:** L1, L2, L4 (this batch)
+- **Related works (References):** after all four DOIs exist — L1, L2, L4
 - **Keywords:** trigger framework; military action; nuclear power plant; observable indicators; shutdown decision; decision authority; local sovereignty; uncrewed aerial systems; grid coordination
 
 **Description:**
@@ -75,7 +75,7 @@ The trigger framework for the DBA-MA accident. It resolves the dilemma of a plan
 - **Title:** Monitoring Sources and Data-Sharing Guidance for DBA-MA Trigger Observables
 - **Version:** v3.0 (first final version)
 - **Mirror URL:** `https://scubanuke.github.io/publications/dba-ma/L4_DBA-MA_IAEA_Monitoring_Guidance.pdf` (new)
-- **References:** L1, L2, L3 (this batch)
+- **Related works (References):** after all four DOIs exist — L1, L2, L3
 - **Keywords:** threat monitoring; information sharing; ISAC; nuclear power plant; asset owner/operator; security clearance; readiness assessment; uncrewed systems; review cycle
 
 **Description:**
@@ -101,10 +101,10 @@ A concept DOI does not exist until a record is first published, so it is not pri
 
 | # | Document | Reserved version DOI | Concept DOI (after publish) |
 |---|---|---|---|
-| 1 | L1 — DBA-MA International Framework v2.0 | | |
-| 2 | L2 — Formal Accident Description and Design Requirements v3.0 | | |
-| 3 | L3 — Trigger Framework v3.0 | | |
-| 4 | L4 — Monitoring Sources and Data-Sharing Guidance v3.0 | | |
+| 1 | L1 — DBA-MA International Framework v2.0 | 10.5281/zenodo.22944855 | 10.5281/zenodo.22944854 |
+| 2 | L2 — Formal Accident Description and Design Requirements v3.0 | 10.5281/zenodo.22945300 | 10.5281/zenodo.22945299 |
+| 3 | L3 — Trigger Framework v3.0 | 10.5281/zenodo.22945421 | 10.5281/zenodo.22945420 |
+| 4 | L4 — Monitoring Sources and Data-Sharing Guidance v3.0 | 10.5281/zenodo.22945520 | 10.5281/zenodo.22945519 |
 
 ## Sequence after reservation
 
