@@ -173,6 +173,18 @@ narrative references use.
 
 ---
 
+## 7. FD — Foundational Definitions, September 2026 Edition
+
+- **Title:** FD — Foundational Definitions, September 2026 Edition
+- **Resource type:** Publication → Report
+- **Version:** September 2026 Edition
+- **Publication date:** 2026-09-27
+- **Version DOI:** `10.5281/zenodo.23000686` · **Concept DOI:** `10.5281/zenodo.22181028` (shared with the August edition)
+- **Status:** **PUBLISHED** 27 Sep 2026. Nine files: front matter, seven instruments, and FD-REG v0.21 as a dated companion. The form fields and file MD5s are in `ZENODO_DEPOSITS_BATCH_4.md`. The mirror is at `fd/september-2026-edition/`. The live-record MD5 check is pending.
+- **Supersedes as current:** the August 2026 Edition (`10.5281/zenodo.22181029`), which is not withdrawn and remains citable for what it contains.
+
+---
+
 ## Reconciliation re-versions (post-conformance)
 
 These deposits carry content the reconciliation **changed**, so each needs a **new version** published
