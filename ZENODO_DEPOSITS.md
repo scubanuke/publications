@@ -203,6 +203,7 @@ publish. Record the new version DOI in the table below.
 | UA Grid Defense: Cyber-Kinetic v1.0 | 10.5281/zenodo.21365171 | 10.5281/zenodo.21365170 |
 | ERT Companion Proposal v5.3 | 10.5281/zenodo.21365218 | 10.5281/zenodo.21365217 |
 | SCRM Companion Agent v1.0 | 10.5281/zenodo.21365262 | 10.5281/zenodo.21365261 |
+| SCRM Companion Agent v1.2 | 10.5281/zenodo.22772172 | 10.5281/zenodo.21365261 |
 | **TAF v2.6 — reconciliation re-version** | 10.5281/zenodo.21813691 | 10.5281/zenodo.21363865 |
 | **DBA-MA-SMR-FC1 v0.5 — reconciliation re-version** | 10.5281/zenodo.21814883 | 10.5281/zenodo.21430410 |
 | **BES v1.1 — TOC-removal re-version** | 10.5281/zenodo.22178898 | 10.5281/zenodo.21365014 |
