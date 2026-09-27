@@ -4,7 +4,7 @@ Prepared 27 September 2026. This is the copy-paste source for one deposit form, 
 
     reserve DOI → edit cover + citation block → export PDF → upload → publish → record concept DOI
 
-**Status, 27 September 2026: PUBLISHED** at https://doi.org/10.5281/zenodo.23000686, on Tim's report of the live link. The live record could not be read from the session, because Zenodo blocks automated fetches, so the file MD5s below have **not yet been checked against the record page**. Check them against the record's file list at the next opportunity. Before publishing, the seven August files that the New Version draft carried forward were deleted from the draft, which leaves the published August record untouched.
+**Status, 27 September 2026: PUBLISHED** at https://doi.org/10.5281/zenodo.23000686, on Tim's report of the live link. The live record could not be read from the session, because Zenodo blocks automated fetches, so the file MD5s were checked from Tim's screenshot of the record's file list instead. **All nine match the table below exactly**, and the file names and order are as uploaded. Before publishing, the seven August files that the New Version draft carried forward were deleted from the draft, which leaves the published August record untouched.
 
 *Originally:* **DOI RESERVED, NOT YET PUBLISHED.** The version DOI `10.5281/zenodo.23000686` was reserved by Tim on the New Version draft of the FD edition record. Every file below prints that DOI in its citation block, and the cover and citation block were cut with it in place. The files were verified byte-identical between `Project 0/FD Governing Stack/production/September_2026_Edition/` and this mirror's `fd/september-2026-edition/` before this sheet was written.
 
