@@ -221,6 +221,7 @@ publish. Record the new version DOI in the table below.
 | **BES v1.1 — TOC-removal re-version** | 10.5281/zenodo.22178898 | 10.5281/zenodo.21365014 |
 | **TAF v2.7 — placement/derivation re-version** | 10.5281/zenodo.22726006 | 10.5281/zenodo.21363865 |
 | **TAF v2.8 — vocabulary and revision-history re-version** | 10.5281/zenodo.22726480 | 10.5281/zenodo.21363865 |
+| **The Asset and the Target v0.13 — DBA-MA-DiD v0.2 conformance re-version** | 10.5281/zenodo.23017306 | 10.5281/zenodo.22818331 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
