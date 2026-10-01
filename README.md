@@ -28,7 +28,7 @@ Versions shown are the texts as published. Where a later working draft exists an
 
 | Document | Version | Description |
 |---|---|---|
-| [DBA-EN Series Introduction](dba-en/DBA-EN_Series_Introduction.pdf) | v0.1 · dated draft | The Energy sector series — why it was built, what is analytically new, how the AI governance design basis works, and the complete document inventory. Start here. |
+| [DBA-EN Series Introduction](dba-en/DBA-EN_Series_Introduction.pdf) | v0.5 | The Energy sector series — why it was built, what is analytically new, how the AI governance design basis works, and the complete document inventory. Start here. |
 | [DBA-EN-SF: Energy Sector Framework](dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf) | v0.18 | The governing parent document for all three sub-sector series. Establishes the DB→DBA→DBA-MA three-layer progression, cross-sector cascade, and the Bright Line requirement series-wide. |
 | [DBA-ES Sector Framework](dba-en/DBA-ES_Sector_Framework.pdf) | v0.8 · dated draft | Electric sub-sector parent. GenCo / TransCo / DisCo / CntlCo taxonomy, RT_HVLLC metric, GN sub-series register. |
 | [DBA-ES-HY-FC1: Large Hydroelectric Storage](dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf) | v0.4 · dated draft | Bulk generation and downstream dam-failure consequence chain. >500 MW. |
