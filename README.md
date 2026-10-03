@@ -16,7 +16,7 @@ An orientation to the whole series before the individual instruments.
 
 | Document | Version | Description |
 |---|---|---|
-| [Design Basis for AI Governance: An Overview](AI_Governance_Series_Overview.pdf) | v0.1 | The map of the entire AI Governance series — the design-basis method applied to AI governance, the gap it fills, and the full document inventory (ISA Parent Framework, Tiered Assessment Framework, the Command Broker corpus, the DBA sector series) and how the pieces relate. New readers start here. |
+| [Design Basis for AI Governance: An Overview](AI_Governance_Series_Overview.pdf) | v0.1 · dated record | The map of the entire AI Governance series — the design-basis method applied to AI governance, the gap it fills, and the full document inventory (ISA Parent Framework, Tiered Assessment Framework, the Command Broker corpus, the DBA sector series) and how the pieces relate. New readers start here. |
 
 ---
 
@@ -79,8 +79,8 @@ Versions shown are the texts as published. Where a later working draft exists an
 
 | Document | Version | Description |
 |---|---|---|
-| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.3 | Bright Line principle, criticality-band framework, Command Broker / Influence Broker distinction. The foundational governance architecture document. |
-| [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | V0.2 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
+| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.4 | Bright Line principle, criticality-band framework, Command Broker / Influence Broker distinction. The foundational governance architecture document. |
+| [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | V0.3 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
 | [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.1 · dated draft | Command Broker / Influence Broker qualification and onboarding standard for above-Bright-Line roles. |
 | [CB-UC-1: BA Integrated Interface](command-broker/CB-UC-1_BA_Integrated_Interface.pdf) | v0.3 | Command Broker use case for Balancing Authority integrated interface operations. |
 | [CB-CT: Commissioning and Joint Training](command-broker/CB-CT_Commissioning_and_Joint_Training.pdf) | v0.2 · dated draft | The commissioning-time and lifecycle procedure for standing up a Command Broker on a specific product at a facility — the vendor–AOO seam, gates, joint training, and re-qualification triggers. |
@@ -101,7 +101,7 @@ Evidentiary and position papers that the design basis series draw upon.
 
 | Document | Version | Description |
 |---|---|---|
-| [GenAI Risk in ICS](papers/GenAI_Risk_ICS.pdf) | V29 | GenAI risk analysis for industrial control systems. Foundational evidentiary reference for the AI governance design basis across the DBA-EN series. |
+| [GenAI Risk in ICS](papers/GenAI_Risk_ICS.pdf) | V29 · dated record | GenAI risk analysis for industrial control systems. Foundational evidentiary reference for the AI governance design basis across the DBA-EN series. |
 | [GenMix Optimization Whitepaper](papers/GenMix_Optimization_Whitepaper.pdf) | v0.3 | Origin of the RT_HVLLC metric. Table 1 RT_HVLLC values for all generation types. |
 | [UA Grid Defense: Cyber-Kinetic](papers/UA_Grid_Defense_Cyber_Kinetic.pdf) | v1.0 | Ukrainian grid defense analysis. Primary evidentiary anchor for DBA-ES kinetic attack scenarios. CANONICAL COPY — the one cited in published work. |
 | [Powering the Always-On Economy](papers/Powering_the_Always_On_Economy.pdf) | v0.4 | Energy sector policy context. |

@@ -28,13 +28,13 @@ dba-ma,DBA-MA_ONG_Series_Introduction.pdf,DBA-MA ONG Series Introduction,v1.0 FI
 dba-ma,DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf,"DBA-MA-CDB: Military Action Communications Design Basis",v0.3,,76962,https://scubanuke.github.io/publications/dba-ma/DBA-MA-CDB_Military_Action_Communications_Design_Basis.pdf
 dba-dc,DBA-DC-FC1_Hyperscale_Design_Basis.pdf,DBA-DC-FC1: Hyperscale Data Center,v1.1,1XhNqjcRt67GOHmgC3NWrCAPOpF6jp6sL,304190,https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf
 dba-dc,DBA-DC-POL_Policy_Companion.pdf,"DBA-DC-POL: The Regulatory Gap in Commercial Data Center Physical Security",v1.7,,271435,https://scubanuke.github.io/publications/dba-dc/DBA-DC-POL_Policy_Companion.pdf
-command-broker,CB-Framework_Cross_Sector.pdf,CB-Framework: Cross-Sector,v0.3,1zlQYtMI_UnqgUOcCpPu1gTrNkmpRiEgT,164515,https://scubanuke.github.io/publications/command-broker/CB-Framework_Cross_Sector.pdf
-command-broker,CB_Implementation_Guide.pdf,Command Broker Implementation Guide,V0.2,1AyxrW_U09msZRC4qZ3z-Ar66j4oSw6Dq,154083,https://scubanuke.github.io/publications/command-broker/CB_Implementation_Guide.pdf
+command-broker,CB-Framework_Cross_Sector.pdf,CB-Framework: Cross-Sector,v0.4,1zlQYtMI_UnqgUOcCpPu1gTrNkmpRiEgT,177893,https://scubanuke.github.io/publications/command-broker/CB-Framework_Cross_Sector.pdf
+command-broker,CB_Implementation_Guide.pdf,Command Broker Implementation Guide,V0.3,1AyxrW_U09msZRC4qZ3z-Ar66j4oSw6Dq,181623,https://scubanuke.github.io/publications/command-broker/CB_Implementation_Guide.pdf
 command-broker,CB-IB_Qualification_Standard.pdf,CB-IB Qualification Standard,v0.1,1YeZa9RQ-jKEeMaIoXA7-aDE6McH_Zu30,150820,https://scubanuke.github.io/publications/command-broker/CB-IB_Qualification_Standard.pdf
 command-broker,CB-UC-1_BA_Integrated_Interface.pdf,CB-UC-1: BA Integrated Interface,v0.3,1TvGEpY89GcvcIwDMtscS7xFil9hXL-2o,189923,https://scubanuke.github.io/publications/command-broker/CB-UC-1_BA_Integrated_Interface.pdf
 dba-uxs,DBA-UxS_Cross_Sector.pdf,DBA-UxS: Cross-Sector Uncrewed Systems,v1.1,1X8bCPK6zguTq7JmJ1z0cZGTbE26etBff,228969,https://scubanuke.github.io/publications/dba-uxs/DBA-UxS_Cross_Sector.pdf
 dba-uxs,DBA-MA-UxS-NA_Nuclear_Annex.pdf,DBA-MA-UxS-NA: Nuclear Annex,v1.1,1VuPjcN9bln--Ly9Cza9Rmm6A0BAfE_F_,233054,https://scubanuke.github.io/publications/dba-uxs/DBA-MA-UxS-NA_Nuclear_Annex.pdf
-papers,GenAI_Risk_ICS.pdf,GenAI Risk in ICS,V29,1GZteXYkofS_hgdl02pzzwfH7T13u7oZc,171642,https://scubanuke.github.io/publications/papers/GenAI_Risk_ICS.pdf
+papers,GenAI_Risk_ICS.pdf,GenAI Risk in ICS,V29,1GZteXYkofS_hgdl02pzzwfH7T13u7oZc,101169,https://scubanuke.github.io/publications/papers/GenAI_Risk_ICS.pdf
 papers,GenMix_Optimization_Whitepaper.pdf,Generation Mix Optimization Under Competing Objectives,v0.7,1TbGmIgAs8dYHoZyB72qS71k3gCoj6xOA,408049,https://scubanuke.github.io/publications/papers/GenMix_Optimization_Whitepaper.pdf
 papers,UA_Grid_Defense_Cyber_Kinetic.pdf,UA Grid Defense: Cyber-Kinetic,v1.0,1W1lzZWYXGXvKiHhAvODnfuWOYhKXBBbb,481245,https://scubanuke.github.io/publications/papers/UA_Grid_Defense_Cyber_Kinetic.pdf
 papers,Powering_the_Always_On_Economy.pdf,Powering the Always-On Economy,v0.7,10JhIhSG2X0y-JdTkmvqJPfUG0PcHWY9k,208851,https://scubanuke.github.io/publications/papers/Powering_the_Always_On_Economy.pdf
@@ -48,7 +48,7 @@ awb,SCRM_Companion_Agent.pdf,SCRM Companion Agent,v1.2,1WC1RjC0F5VIpGiwKHXJQrnsQ
 awb,BES_Asset_Nomenclature_Specification.pdf,BES Asset Nomenclature Specification,v1.1,15gHhHNU5ZqLCRw-i98ID1vEnXwnTY1eF,343633,https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf
 dba-ma-smr,DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,DBA-MA-SMR-FC1: SMR Facility-Class Design Basis,v0.9,,433917,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf
 dba-ma-smr,DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,DBA-MA-SMR-FC1-TB1: Multi-Module Simultaneous ASSC Adequacy,v0.1,,199554,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf
-overview,AI_Governance_Series_Overview.pdf,Design Basis for AI Governance: An Overview,v0.1,1Za8G5mtX2dP76S5mdG2bRBPBzH2lVnpI,166824,https://scubanuke.github.io/publications/AI_Governance_Series_Overview.pdf
+overview,AI_Governance_Series_Overview.pdf,Design Basis for AI Governance: An Overview,v0.1,1Za8G5mtX2dP76S5mdG2bRBPBzH2lVnpI,166189,https://scubanuke.github.io/publications/AI_Governance_Series_Overview.pdf
 command-broker,CB-CT_Commissioning_and_Joint_Training.pdf,CB-CT: Commissioning and Joint Training,v0.2,,118734,https://scubanuke.github.io/publications/command-broker/CB-CT_Commissioning_and_Joint_Training.pdf
 command-broker,DBA-VC_Vendor_Companion.pdf,DBA-VC: Vendor Companion,v0.8,,263708,https://scubanuke.github.io/publications/command-broker/DBA-VC_Vendor_Companion.pdf
 fd,00_FD_Foundational_Definitions_August_2026_Edition.pdf,"FD — Foundational Definitions, August 2026 Edition",August 2026 Edition,,125837,https://scubanuke.github.io/publications/fd/00_FD_Foundational_Definitions_August_2026_Edition.pdf
