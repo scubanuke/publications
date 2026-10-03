@@ -28,25 +28,27 @@ that, so each document is exported exactly once.
 
 - **Title:** Tiered Assessment Framework for Cognitive Errors in Generative AI Systems: A Quality Assurance Methodology for Industrial Control Systems
 - **Resource type:** Publication → Report
-- **Version:** v2.9
-- **Publication date:** 2026-09
+- **Version:** v2.10
+- **Publication date:** 2026-10
 - **Reconciliation status:** **Done** — conformed to FD-BL by reference; re-versioned and published as v2.6 (version DOI `10.5281/zenodo.21813691`, 5 Aug 2026), superseding v2.5 (`10.5281/zenodo.21363866`).
 - **v2.7**, version DOI `10.5281/zenodo.22726006`, published 12 September 2026, superseding v2.6. It repairs the determinism/placement fusion at §2.4, qualifies the Mid band at six sites, reconciles the band definitions on the maloperation and loss-of-service entry routes, and carries an erratum notice naming both DOI-bearing predecessors. Its own revision history is defective: it holds no entry for v2.6 and its v2.7 entry retains an unremoved drafting sentence. Both are corrected by the successor and neither is edited in place.
 - **v2.8**, version DOI `10.5281/zenodo.22726480`, published 12 September 2026, superseding v2.7. It conforms the error-axis vocabulary at thirty sites including five section headings, restoring the terms the Critical Infrastructure variant has carried since February 2026; removes the last use of *tier* on the application axis at §2.2; writes the missing v2.6 revision entry and records when the §2.2 bridging clause entered the lineage; and repairs a sentence fragment in the fourth objective proposed to NIST at §11.1. It carries a second erratum notice naming the revision-history defects of v2.7. **No published record is edited**: a version DOI names a fixed text, and the successor's notice is the remedy for a fixed text that is wrong.
-- **Current version:** **v2.9**, version DOI `10.5281/zenodo.23022762`, published 28 September 2026, superseding v2.8. It corrects the framework against the placement rule after an end-to-end reading of v2.8: §11.5 no longer exempts deterministic machine learning from the Bright Line; §2.1 states the premise a band-keyed obligation rests on (the facility's severity threshold at or below the band's floor — always at Highest, at Mid only where the facility sets it there), carried into §2.2, §11.1, §11.3 and §11.4; framing passages that keyed autonomy or architecture to the band are restated per action; §10 maps the grading schemes it cites to the bands, not the error tiers; the Bright Line Criteria are attributed to the author and their take-up by the ISAGCA Supplier Working Group; and the companion is cited as the published GenAI Risk in ICS V29. It carries a third erratum notice naming v2.7 and v2.8. **No published record is edited.**
+- **v2.9**, version DOI `10.5281/zenodo.23022762`, published 28 September 2026, superseding v2.8. It corrects the framework against the placement rule after an end-to-end reading of v2.8: §11.5 no longer exempts deterministic machine learning from the Bright Line; §2.1 states the premise a band-keyed obligation rests on (the facility's severity threshold at or below the band's floor — always at Highest, at Mid only where the facility sets it there), carried into §2.2, §11.1, §11.3 and §11.4; framing passages that keyed autonomy or architecture to the band are restated per action; §10 maps the grading schemes it cites to the bands, not the error tiers; the Bright Line Criteria are attributed to the author and their take-up by the ISAGCA Supplier Working Group; and the companion is cited as the published GenAI Risk in ICS V29. It carries a third erratum notice naming v2.7 and v2.8. **No published record is edited.**
+- **Current version:** **v2.10**, version DOI `10.5281/zenodo.23121413`, 3 October 2026, superseding v2.9. It conforms the framework to the October 2026 Edition of the Foundational Definitions (`10.5281/zenodo.23117612`): scope of the Command Broker obligation is cited to FD-LD §4.3 at §2.2, §2.4, §11.1 and §11.5 rather than stated as generative AI; new §2.7 states that the error tiers and sample-size logic are built for generative behavior and that the framework does not cover non-generative in-scope components; §8 points to it. It carries a fourth erratum notice naming v2.7, v2.8 and v2.9. **No published record is edited.**
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/awb/Tiered_Assessment_Framework.pdf`
-- **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line; FD-BL
+- **Keywords:** generative AI; industrial control systems; quality assurance; cognitive error; critical infrastructure; NQA-1; IEC 61508; ISA/IEC 62443; NIST AI RMF; Bright Line; FD-BL; FD-LD; Command Broker
 
 **Description:**
 A quality assurance methodology for cognitive errors in generative AI systems deployed in industrial
-control environments. Establishes a tiered criticality model, testing methodology, and statistical
-acceptance criteria. It is the cognitive-error layer of a two-layer hybrid quality assurance
-architecture, paired with formal verification for deterministic infrastructure components. Written
-against ASME NQA-1, NRC Regulatory Guides, NERC CIP, IEEE 1012, IEC 61508, ISA/IEC 62443, and the
+control environments. It establishes a tiered cognitive error model (safety-critical, quality-of-service
+and compliance-driven), a testing methodology and statistical acceptance criteria, with assessment rigor
+set by the application's criticality band. It is the cognitive-error layer of a two-layer hybrid quality
+assurance architecture, paired with formal verification for deterministic infrastructure components.
+Written against ASME NQA-1, NRC Regulatory Guides, NERC CIP, IEEE 1012, IEC 61508, ISA/IEC 62443 and the
 NIST AI Risk Management Framework, with the intent of converting framework content into enforceable
-standards. Placement of the Bright Line is governed by FD-BL (consequence, per action), with the
-criticality-tier framing an application of that definition.
+standards. Placement of the Bright Line is governed by FD-BL, on the consequence of each action; scope of
+the Command Broker obligation is governed by FD-LD.
 
 ---
 
