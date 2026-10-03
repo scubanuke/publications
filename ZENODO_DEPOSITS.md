@@ -184,6 +184,16 @@ narrative references use.
 - **Status:** **PUBLISHED** 27 Sep 2026. Nine files: front matter, seven instruments, and FD-REG v0.21 as a dated companion. The form fields and file MD5s are in `ZENODO_DEPOSITS_BATCH_4.md`. The mirror is at `fd/september-2026-edition/`. All nine live-record MD5s were verified equal to the mirror on 27 Sep 2026.
 - **Supersedes as current:** the August 2026 Edition (`10.5281/zenodo.22181029`), which is not withdrawn and remains citable for what it contains.
 
+## 8. FD — Foundational Definitions, October 2026 Edition
+
+- **Title:** FD — Foundational Definitions, October 2026 Edition
+- **Resource type:** Publication → Report
+- **Version:** October 2026 Edition
+- **Publication date:** 2026-10-02
+- **Version DOI:** `10.5281/zenodo.23117612` · **Concept DOI:** `10.5281/zenodo.22181028` (shared with the August and September editions)
+- **Status:** **PUBLISHED**, reported by Tim on 3 Oct 2026 from the live record, which lists it as the current of three versions under the concept DOI. Nine files: front matter, seven instruments, and FD-REG v0.22 as a dated companion. The form fields and file MD5s are in `ZENODO_DEPOSITS_BATCH_5.md`. The mirror is at `fd/october-2026-edition/`. The live record's file list has not yet been checked against the sheet's MD5s.
+- **Supersedes as current:** the September 2026 Edition (`10.5281/zenodo.23000686`), which is not withdrawn and remains citable for what it contains.
+
 ---
 
 ## Reconciliation re-versions (post-conformance)
