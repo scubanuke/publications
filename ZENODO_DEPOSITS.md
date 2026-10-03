@@ -191,7 +191,7 @@ narrative references use.
 - **Version:** October 2026 Edition
 - **Publication date:** 2026-10-02
 - **Version DOI:** `10.5281/zenodo.23117612` · **Concept DOI:** `10.5281/zenodo.22181028` (shared with the August and September editions)
-- **Status:** **PUBLISHED**, reported by Tim on 3 Oct 2026 from the live record, which lists it as the current of three versions under the concept DOI. Nine files: front matter, seven instruments, and FD-REG v0.22 as a dated companion. The form fields and file MD5s are in `ZENODO_DEPOSITS_BATCH_5.md`. The mirror is at `fd/october-2026-edition/`. The live record's file list has not yet been checked against the sheet's MD5s.
+- **Status:** **PUBLISHED**, reported by Tim on 3 Oct 2026 from the live record, which lists it as the current of three versions under the concept DOI. Nine files: front matter, seven instruments, and FD-REG v0.22 as a dated companion. The form fields and file MD5s are in `ZENODO_DEPOSITS_BATCH_5.md`. The mirror is at `fd/october-2026-edition/`. The live record's file list was checked on 3 Oct 2026 from Tim's screenshot: all nine names, MD5s and sizes match the sheet.
 - **Supersedes as current:** the September 2026 Edition (`10.5281/zenodo.23000686`), which is not withdrawn and remains citable for what it contains.
 
 ---
