@@ -238,6 +238,10 @@ publish. Record the new version DOI in the table below.
 | **TAF v2.8 — vocabulary and revision-history re-version** | 10.5281/zenodo.22726480 | 10.5281/zenodo.21363865 |
 | **TAF v2.9 — placement-rule correction re-version** | 10.5281/zenodo.23022762 | 10.5281/zenodo.21363865 |
 | **The Asset and the Target v0.13 — DBA-MA-DiD v0.2 conformance re-version** | 10.5281/zenodo.23017306 | 10.5281/zenodo.22818331 |
+| **Predictive UFLS Ride-Through v0.8 — October 2026 Edition (FD-LS) successor with erratum** | 10.5281/zenodo.23122842 | 10.5281/zenodo.22818437 |
+| **The Asset and the Target v0.14 — October 2026 Edition (FD-LS) successor with erratum** | 10.5281/zenodo.23122903 | 10.5281/zenodo.22818331 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
+
+**3 October 2026.** Predictive UFLS Ride-Through v0.8 and The Asset and the Target v0.14 published the same day and mirrored at their existing paths. Each mirror file is byte-identical to its Zenodo file (md5 `b181cdc55f03a3d41b695f5308de3f54` and `d3d37a5ddcd25b0646e763a8b39dc9b7`, read from the Zenodo records API). Both PDFs were exported before the version DOIs were stamped into the masters, so each deposited cover prints its concept DOI rather than its version DOI. The concept DOI resolves correctly, and the masters were returned to the deposited text so that master and deposit agree; the version DOIs are recorded here and on the site cards.
