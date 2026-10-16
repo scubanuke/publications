@@ -46,7 +46,7 @@ awb,Tiered_Assessment_Framework.pdf,Tiered Assessment Framework,v2.10,1K039vZxQU
 awb,ERT_Companion_Proposal.pdf,ERT Companion Proposal,v5.3,1F-ZYDirHKbwtMkpSmzdPpM_whxLoKF-t,402020,https://scubanuke.github.io/publications/awb/ERT_Companion_Proposal.pdf
 awb,SCRM_Companion_Agent.pdf,SCRM Companion Agent,v1.2,1WC1RjC0F5VIpGiwKHXJQrnsQiHpF-hdf,328796,https://scubanuke.github.io/publications/awb/SCRM_Companion_Agent.pdf
 awb,BES_Asset_Nomenclature_Specification.pdf,BES Asset Nomenclature Specification,v1.1,15gHhHNU5ZqLCRw-i98ID1vEnXwnTY1eF,343633,https://scubanuke.github.io/publications/awb/BES_Asset_Nomenclature_Specification.pdf
-dba-ma-smr,DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,DBA-MA-SMR-FC1: SMR Facility-Class Design Basis,v0.10,,376292,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf
+dba-ma-smr,DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf,DBA-MA-SMR-FC1: SMR Facility-Class Design Basis,v0.11,,387193,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1_SMR_Facility_Class_Design_Basis.pdf
 dba-ma-smr,DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf,DBA-MA-SMR-FC1-TB1: Multi-Module Simultaneous ASSC Adequacy,v0.1,,199554,https://scubanuke.github.io/publications/dba-ma-smr/DBA-MA-SMR-FC1-TB1_Multi_Module_ASSC_Adequacy.pdf
 overview,AI_Governance_Series_Overview.pdf,Design Basis for AI Governance: An Overview,v0.1,1Za8G5mtX2dP76S5mdG2bRBPBzH2lVnpI,166189,https://scubanuke.github.io/publications/AI_Governance_Series_Overview.pdf
 command-broker,CB-CT_Commissioning_and_Joint_Training.pdf,CB-CT: Commissioning and Joint Training,v0.2,,118734,https://scubanuke.github.io/publications/command-broker/CB-CT_Commissioning_and_Joint_Training.pdf
@@ -58,7 +58,7 @@ fd,03_FD-EV_The_Envelope_v0_1.pdf,FD-EV: The Envelope,v0.1,,175634,https://scuba
 fd,04_FD-BR_The_Broker_v0_1.pdf,FD-BR: The Broker,v0.1,,179855,https://scubanuke.github.io/publications/fd/04_FD-BR_The_Broker_v0_1.pdf
 fd,05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf,FD-BL-D1: Mode of Discharge,v0.3,,178915,https://scubanuke.github.io/publications/fd/05_FD-BL-D1_Mode_of_Discharge_v0_3.pdf
 fd,06_FD-BL-D2_Indication_Integrity_v0_2.pdf,FD-BL-D2: Indication Integrity,v0.2,,180555,https://scubanuke.github.io/publications/fd/06_FD-BL-D2_Indication_Integrity_v0_2.pdf
-dba-ma,L1_DBA-MA_IAEA_Framework.pdf,"DBA-MA International Framework (L1)",v2.0,,170998,https://scubanuke.github.io/publications/dba-ma/L1_DBA-MA_IAEA_Framework.pdf
+dba-ma,L1_DBA-MA_IAEA_Framework.pdf,"DBA-MA International Framework (L1)",v2.2,,210222,https://scubanuke.github.io/publications/dba-ma/L1_DBA-MA_IAEA_Framework.pdf
 dba-ma,L2_DBA-MA_IAEA_Accident_Description.pdf,"DBA-MA L2: Formal Accident Description and Design Requirements",v3.0,,128053,https://scubanuke.github.io/publications/dba-ma/L2_DBA-MA_IAEA_Accident_Description.pdf
 dba-ma,L3_DBA-MA_IAEA_Trigger_Framework.pdf,"DBA-MA L3: Trigger Framework",v3.0,,105586,https://scubanuke.github.io/publications/dba-ma/L3_DBA-MA_IAEA_Trigger_Framework.pdf
 dba-ma,L4_DBA-MA_IAEA_Monitoring_Guidance.pdf,"DBA-MA L4: Monitoring Sources and Data-Sharing Guidance",v3.0,,183023,https://scubanuke.github.io/publications/dba-ma/L4_DBA-MA_IAEA_Monitoring_Guidance.pdf
