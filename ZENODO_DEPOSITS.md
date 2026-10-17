@@ -243,8 +243,14 @@ publish. Record the new version DOI in the table below.
 | **The Asset and the Target v0.13 — DBA-MA-DiD v0.2 conformance re-version** | 10.5281/zenodo.23017306 | 10.5281/zenodo.22818331 |
 | **Predictive UFLS Ride-Through v0.8 — October 2026 Edition (FD-LS) successor with erratum** | 10.5281/zenodo.23122842 | 10.5281/zenodo.22818437 |
 | **The Asset and the Target v0.14 — October 2026 Edition (FD-LS) successor with erratum** | 10.5281/zenodo.23122903 | 10.5281/zenodo.22818331 |
+| **The Asset and the Target v0.15 — citation-form re-version (UFLS pointer no longer names a version)** | 10.5281/zenodo.23439583 | 10.5281/zenodo.22818331 |
+| **Keeping the Lights On v0.10 — conformance to the 3 October corrections and DBA-MA-DiD v0.2** | 10.5281/zenodo.23439566 | 10.5281/zenodo.22818371 |
+| **Fuel Cell Technologies v0.5 — islanding requirement conformed to the 3 October corrections** | 10.5281/zenodo.23439556 | 10.5281/zenodo.22818384 |
+| **Predictive UFLS Ride-Through v0.8 — re-issue with its own version DOI on the cover (text unchanged from 23122842)** | 10.5281/zenodo.23439571 | 10.5281/zenodo.22818437 |
 
 Once the version DOIs are reserved, the citation block goes into each Word source, the PDFs are
 exported once, uploaded to the reserved deposits, and published.
 
 **3 October 2026.** Predictive UFLS Ride-Through v0.8 and The Asset and the Target v0.14 published the same day and mirrored at their existing paths. Each mirror file is byte-identical to its Zenodo file (md5 `b181cdc55f03a3d41b695f5308de3f54` and `d3d37a5ddcd25b0646e763a8b39dc9b7`, read from the Zenodo records API). Both PDFs were exported before the version DOIs were stamped into the masters, so each deposited cover prints its concept DOI rather than its version DOI. The concept DOI resolves correctly, and the masters were returned to the deposited text so that master and deposit agree; the version DOIs are recorded here and on the site cards.
+
+**17 October 2026.** The Asset and the Target v0.15, Keeping the Lights On v0.10 and Fuel Cell v0.5 published as new versions, and mirrored at their existing paths. Predictive UFLS Ride-Through v0.8 was deposited a second time (10.5281/zenodo.23439571) after a session wrongly read the 3 October deposit as missing; the author kept it as the current v0.8, with a record description identifying it as a re-issue of 10.5281/zenodo.23122842 whose cover prints its own version DOI and whose text is unchanged. The mirror serves the re-issue. All four PDFs were exported with LibreOffice embedding Times New Roman, since Acrobat is no longer available, and the four Word masters carry both concept and version DOIs on their covers.
