@@ -104,15 +104,118 @@
   <p class="groupnote">These instruments own the concepts the rest of the series applies. Sector
      frameworks, facility-class design bases, application guides and vendor companions apply them
      <em>by reference</em>; they do not define them. Published as dated <em>editions</em>. The current
-     edition is October 2026. The September and August 2026 editions below it remain citable for what they contain.</p>
+     edition is November 2026. The October, September and August 2026 editions below it remain citable for what they contain.</p>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/00_FD_Foundational_Definitions_November_2026_Edition.pdf">FD — Foundational Definitions, November 2026 Edition</a></h3>
+    <p class="meta">November 2026 Edition · 2026-10 <span class="type">Report</span></p>
+    <p>Front matter for the current edition: the contents table, what changed since October, precedence and propagation, what this edition asserts and what it does not, what is not in it, how to cite, and the revision policy. The edition adds an eighth member, Design Basis Layers, and takes into three existing members the author’s answers to questions the sector work put to the family. The nine documents below are the edition and its companion register.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/00_FD_Foundational_Definitions_November_2026_Edition.pdf">Read PDF →</a>
+      <span><span class="label">Cite (current): </span><a class="doi" href="https://doi.org/10.5281/zenodo.22181028">10.5281/zenodo.22181028</a></span>
+      <span><span class="label">Nov 2026 Edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/01_FD-BL_The_Bright_Line_v0_6.pdf">FD-BL — The Bright Line</a></h3>
+    <p class="meta">Version 0.6 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>The placement criterion. The Bright Line is drawn on the consequence of each individual action, not on the criticality band, the technology class or the architectural layer. §4.3 defines one action, and now states how a vendor’s release, each widening of a staged release, and a change to an enterprise network are placed; §4.4 cites FD-LD for scope; §4.5 states that the Command Broker discharges in the moment or in advance.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/01_FD-BL_The_Bright_Line_v0_6.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/02_FD-LD_Layer_Decomposition_and_Determinism_v0_5.pdf">FD-LD — Layer Decomposition and Determinism</a></h3>
+    <p class="meta">Version 0.5 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>The companion root that owns scope. Bright Line analysis and the Command Broker obligation apply to every component not shown to be deterministic within a stated input bound and formally testable as deployed; generative components are the principal case, not the definition. The carve-out is not a grant of autonomy, does not decide where the line falls, and does not cover a component running a configuration other than the one formally tested.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/02_FD-LD_Layer_Decomposition_and_Determinism_v0_5.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/03_FD-EV_The_Envelope_v0_2.pdf">FD-EV — The Envelope</a></h3>
+    <p class="meta">Version 0.2 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>Reserves “envelope” for the authorization sense and names the operational sense “operating band,” with a sector’s established term permitted in its place. Carried unchanged from the October 2026 edition.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/03_FD-EV_The_Envelope_v0_2.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/04_FD-BR_The_Broker_v0_11.pdf">FD-BR — The Broker</a></h3>
+    <p class="meta">Version 0.11 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>The qualified human role that discharges a Bright Line’s authorization obligation, in the moment or in advance: one Broker per Line, competence set by the Line’s placement criterion. The Gate is the enforcement interlock and never authorizes; a verified gatekeeper may stand in for the Broker’s presence, not its judgment. Carried unchanged from the October 2026 edition.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/04_FD-BR_The_Broker_v0_11.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/05_FD-BL-D1_Mode_of_Discharge_v0_5.pdf">FD-BL-D1 — Mode of Discharge</a></h3>
+    <p class="meta">Version 0.5 · 2026-10 <span class="type">Determination under FD-BL</span></p>
+    <p>When the Command Broker may discharge the authorization in advance, by accepting a pre-authorized envelope and its proof, with a verified gatekeeper admitting each action: R1 to R3, and changes to the envelope or the gatekeeper excluded under any construction. Carried unchanged from the October 2026 edition.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/05_FD-BL-D1_Mode_of_Discharge_v0_5.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/06_FD-BL-D2_Indication_Integrity_v0_5.pdf">FD-BL-D2 — Indication Integrity</a></h3>
+    <p class="meta">Version 0.5 · 2026-10 <span class="type">Determination under FD-BL</span></p>
+    <p>Output of any in-scope component that can ground an above-line authorization, or feed placement or discharge, must be traceable to independently verifiable values and must not be its sole basis. An indication can be correct and insufficient, and what is missing is identified and sought before an authorization relies on it.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/06_FD-BL-D2_Indication_Integrity_v0_5.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/07_FD-LS_Local_Sovereignty_v0_6.pdf">FD-LS — Local Sovereignty</a></h3>
+    <p class="meta">Version 0.6 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>A protective function that executes on physical law, colocated with the asset: at the time of acting nothing on the reachable side can withhold, delay or induce its action, and ahead of acting nothing there can alter what it acts on except through a governed act. Originated by Project 5 of the portfolio. Carried unchanged from the October 2026 edition.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/07_FD-LS_Local_Sovereignty_v0_6.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/08_FD-DBL_Design_Basis_Layers_v0_16.pdf">FD-DBL — Design Basis Layers</a></h3>
+    <p class="meta">Version 0.16 · 2026-10 <span class="type">Foundational definition</span></p>
+    <p>New in this edition. The three layers of design basis analysis on which the corpus rests — the Design Basis layer, the accident layer and the adversary layer — as three analyses of one service function. An actor reaches the adversary layer only by showing all four canonical characteristics: intentionality, persistence, precision and denial. At that layer success means the facility reaches and holds a protected state using only resources present at it.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/08_FD-DBL_Design_Basis_Layers_v0_16.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <div class="doc">
+    <h3><a href="fd/november-2026-edition/09_FD-REG_Governing_Stack_Register_v0_33.pdf">FD-REG — The Governing Stack Register</a></h3>
+    <p class="meta">Version 0.33 · 2026-10 <span class="type">Companion register (dated copy)</span></p>
+    <p>The version state of the family as of the edition date. Bare FD citations resolve against it.</p>
+    <div class="links">
+      <a href="fd/november-2026-edition/09_FD-REG_Governing_Stack_Register_v0_33.pdf">Read PDF →</a>
+      <span><span class="label">In edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23401272">10.5281/zenodo.23401272</a></span>
+    </div>
+  </div>
+
+  <p class="grouplabel">Earlier edition — October 2026</p>
+  <p class="groupnote">Superseded as the current statement of the family by the November 2026 edition, and not withdrawn. Cite it only to pin what the family held in October.</p>
 
   <div class="doc">
     <h3><a href="fd/october-2026-edition/00_FD_Foundational_Definitions_October_2026_Edition.pdf">FD — Foundational Definitions, October 2026 Edition</a></h3>
     <p class="meta">October 2026 Edition · 2026-10 <span class="type">Report</span></p>
-    <p>Front matter for the current edition: the contents table, what changed since September, precedence and propagation, what this edition asserts and what it does not, what is not in it, how to cite, and the revision policy. A repair edition, closing the findings of an independent review of the September edition under five author determinations of 2 October 2026. The eight documents below are the edition and its companion register.</p>
+    <p>Front matter for the edition: the contents table, what changed since September, precedence and propagation, what this edition asserts and what it does not, what is not in it, how to cite, and the revision policy. A repair edition, closing the findings of an independent review of the September edition under five author determinations of 2 October 2026. The eight documents below are the edition and its companion register.</p>
     <div class="links">
       <a href="fd/october-2026-edition/00_FD_Foundational_Definitions_October_2026_Edition.pdf">Read PDF →</a>
-      <span><span class="label">Cite (current): </span><a class="doi" href="https://doi.org/10.5281/zenodo.22181028">10.5281/zenodo.22181028</a></span>
       <span><span class="label">Oct 2026 Edition: </span><a class="doi" href="https://doi.org/10.5281/zenodo.23117612">10.5281/zenodo.23117612</a></span>
     </div>
   </div>
