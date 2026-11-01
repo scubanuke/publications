@@ -208,6 +208,17 @@ narrative references use.
 
 ---
 
+## 10. CIKR Design Basis Examples, Edition 1 (November 2026)
+
+- **Title:** CIKR Design Basis Examples, Edition 1 (November 2026). The live record was first published with a dash in place of the comma; the author was asked on 1 Nov 2026 to correct it by a metadata edit so that it matches the citation block printed in every file.
+- **Resource type:** Publication → Report
+- **Version:** Edition 1
+- **Publication date:** 2026-11-01
+- **Version DOI:** `10.5281/zenodo.23863986` · **Concept DOI:** `10.5281/zenodo.23863985`
+- **Status:** **PUBLISHED** 1 Nov 2026, a first deposit. Forty-six PDFs, 13.1 MB, no source files: for each of fifteen sectors the sector framework, one facility class and one reference event, and for Energy also the Natural Gas Sector Framework. Rendered in Word from freeze copies of the masters named in Project 0's `CIKR_Edition_1_Freeze_Manifest`, with nothing added but the suggested-citation block; the masters' MD5s were confirmed unchanged after stamping. No use case is deposited. License CC BY 4.0. The mirror is at `cikr/edition-1/`, byte-identical to the uploaded renders, with forty-six `cikr` rows in `MANIFEST.csv`. The edition is the frozen source for the public site scubanuke/cikr-design-basis.
+
+---
+
 ## Reconciliation re-versions (post-conformance)
 
 These deposits carry content the reconciliation **changed**, so each needs a **new version** published
