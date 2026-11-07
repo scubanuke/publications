@@ -29,7 +29,7 @@ Versions shown are the texts as published. Where a later working draft exists an
 | Document | Version | Description |
 |---|---|---|
 | [DBA-EN Series Introduction](dba-en/DBA-EN_Series_Introduction.pdf) | v0.5 | The Energy sector series — why it was built, what is analytically new, how the AI governance design basis works, and the complete document inventory. Start here. |
-| [DBA-EN-SF: Energy Sector Framework](dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf) | v0.18 | The governing parent document for all three sub-sector series. Establishes the DB→DBA→DBA-MA three-layer progression, cross-sector cascade, and the Bright Line requirement series-wide. |
+| [DBA-EN-SF: Energy Sector Framework](dba-en/DBA-EN-SF_Energy_Sector_Framework.pdf) | v0.19 | The governing parent document for all three sub-sector series. Establishes the DB→DBA→DBA-MA three-layer progression, cross-sector cascade, and the Bright Line requirement series-wide. |
 | [DBA-ES Sector Framework](dba-en/DBA-ES_Sector_Framework.pdf) | v0.8 · dated draft | Electric sub-sector parent. GenCo / TransCo / DisCo / CntlCo taxonomy, RT_HVLLC metric, GN sub-series register. |
 | [DBA-ES-HY-FC1: Large Hydroelectric Storage](dba-en/DBA-ES-HY-FC1_Hydroelectric_Storage.pdf) | v0.4 · dated draft | Bulk generation and downstream dam-failure consequence chain. >500 MW. |
 | [DBA-ES-TX-FC2: EHV Transmission Substation](dba-en/DBA-ES-TX-FC2_EHV_Substation.pdf) | v0.1 · dated draft | 345–500 kV metropolitan ring configuration. RT_HVLLC: large power transformer 18–24 months. CIP-014 reference facility class. |
@@ -69,7 +69,7 @@ Physical and AI design basis for hyperscale data center facility classes.
 
 | Document | Version | Description |
 |---|---|---|
-| [DBA-DC-FC1: Hyperscale Data Center](dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf) | v1.1 | Design basis for the hyperscale data center facility class. NOT PREVIOUSLY LINKED — the site card of this name served the wrong file; corrected in this mirror. |
+| [DBA-DC-L1: Design Basis Framework](dba-dc/DBA-DC-L1_Design_Basis_Framework.pdf) | v1.15 | The design basis for the hyperscale data center facility class, DBA-DC-FC1, and the register of the data center classes. It replaces DBA-DC-FC1_Hyperscale_Design_Basis.pdf (v1.1), withdrawn on 12 October 2026 as an abandoned May 2026 branch of this document and removed from the mirror on 7 November 2026. |
 
 ## Command Broker
 

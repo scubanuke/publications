@@ -45,7 +45,7 @@ Replacement table for `index.html` in `scubanuke/dba-en-navigation`. Each Drive 
 
 ## Corrections applied in this map
 
-**DBA-DC: Hyperscale Data Center.** The card currently points at `1bujz44…`, which is a second copy of the Command Broker Implementation Guide. It is re-pointed at `https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf`.
+**DBA-DC: Hyperscale Data Center.** The card currently points at `1bujz44…`, which is a second copy of the Command Broker Implementation Guide. It is re-pointed at `https://scubanuke.github.io/publications/dba-dc/DBA-DC-FC1_Hyperscale_Design_Basis.pdf`. *Later correction, 7 November 2026:* the FC1 file was withdrawn on 12 October 2026 and removed from the mirror; the hyperscale class is now served by `https://scubanuke.github.io/publications/dba-dc/DBA-DC-L1_Design_Basis_Framework.pdf`.
 
 **UA Grid Defense: Cyber-Kinetic.** The card currently points at `1S9Rc3…`, the Energy-sector copy. The canonical artifact is the "Reports " copy `1W1lzZ…`, which is what appears in published citations. The mirror carries the canonical copy; the card resolves to it.
 
