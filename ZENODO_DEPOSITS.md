@@ -219,6 +219,23 @@ narrative references use.
 
 ---
 
+## 11. Defense-in-Depth Under Military Action (DBA-MA-DiD)
+
+- **Title:** Defense-in-Depth Under Military Action (DBA-MA-DiD)
+- **Resource type:** Publication → Report
+- **Version:** v0.4
+- **Publication date:** 2026-11-08
+- **Version DOI:** `10.5281/zenodo.24056933` · **Concept DOI:** `10.5281/zenodo.24056932`
+- **Status:** **PUBLISHED** 8 Nov 2026, a first deposit, on the author's ruling recorded in Project 0's `Determination_2026-11-08_Item_B4_Waits_for_the_Re-cut_and_DBA-MA-DiD_Is_Published_After_the_Author_Reads_It_v0_1` and his statement in a Project 6 session the same day that v0.4 was read and might be deposited. One file, `DBA-MA-DiD_Defense_in_Depth.pdf`, 158,325 bytes, MD5 `ee86b0b677ade7f02e7e9def3842e00f`, 17 pages, rendered by LibreOffice from the stamped master. The live-record MD5 was read back and equals the mirror. Versions 0.1 to 0.3 were working drafts and were not deposited. The master `DBA-MA-DiD_Defense_in_Depth_v0_4.docx` (Project 6 root) was stamped with the suggested-citation block before rendering and has no version bump, by house practice: SHA-256 `e1312b4a…7461` before the stamp, `879c403a6bb06cca508a6ad45261481528d10479bcfda6c5b2af56a027f33d4e` after.
+- **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Publisher:** Eclectic Technologies · **Language:** English
+- **Related identifiers:**
+  - *is identical to* → `https://scubanuke.github.io/publications/dba-ma/DBA-MA-DiD_Defense_in_Depth.pdf`
+  - *is referenced by* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1). The forward *references* relation on the Edition 1 record is Project 0's to add.
+- **Keywords:** defense in depth; critical infrastructure; military action; design basis; common-cause failure; correlated barriers; adversary-selected cutset; robust, diverse and independent; DBA-MA
+- **Description:** states the method and its place as shared machinery, and closes: "The nuclear application, DBA-NUC-DiD (*Defense-in-Depth Under Military Action: Nuclear Sector Application*), is available on request." The application is named by designation and title only, as the author ruled.
+
+---
+
 ## Reconciliation re-versions (post-conformance)
 
 These deposits carry content the reconciliation **changed**, so each needs a **new version** published
