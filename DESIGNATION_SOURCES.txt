@@ -13,32 +13,56 @@
 # register for the author's own lookup. See scripts/build_designations.py,
 # "TWO REGISTERS".
 #
-# TWO SPELLINGS PER ROOT, DELIBERATELY
+# THREE SPELLINGS PER ROOT, DELIBERATELY
 # The same folder is reached by different paths depending on where this script
-# runs: directly on the machine (~/OneDrive/Desktop/...) or inside the desktop
-# workspace, where connected folders are mounted under $HOME/mnt/. Both are
+# runs: directly on the machine (~/OneDrive/Desktop/Projects/...), or inside the
+# desktop workspace, where connected folders are mounted under $HOME/mnt/ --
+# as $HOME/mnt/Projects/... when the Projects folder is connected, or as
+# $HOME/mnt/Desktop/Projects/... when the whole Desktop is. All three are
 # listed; whichever resolves is used, and paths that do not resolve are skipped
 # without complaint. Only a run where NO root resolves is reported.
+# Connect either Projects or Desktop for a workspace run, not both: the script
+# does not de-duplicate, so two resolving spellings of one folder count its
+# masters twice.
+#
+# Updated 8 November 2026. The project folders moved from the Desktop into
+# Desktop\Projects and several were renamed, so no root resolved and the
+# working sweep had silently become a published-only sweep. Paths re-taken
+# from the folder listing of that date; Project 11 added.
 
-~/OneDrive/Desktop/Temporary folder Project 0 - Cross Project Alignment
-$HOME/mnt/Desktop/Temporary folder Project 0 - Cross Project Alignment
-~/OneDrive/Desktop/Temporary folder Project 1 - Democratic Safeguards
-$HOME/mnt/Desktop/Temporary folder Project 1 - Democratic Safeguards
-~/OneDrive/Desktop/Temporary folder Project 2 - Industrial QA
-$HOME/mnt/Desktop/Temporary folder Project 2 - Industrial QA
-~/OneDrive/Desktop/Temporary folder Project 3 -Analysis WorkBench
-$HOME/mnt/Desktop/Temporary folder Project 3 -Analysis WorkBench
-~/OneDrive/Desktop/Temporary folder Project 4 - Consulting Services
-$HOME/mnt/Desktop/Temporary folder Project 4 - Consulting Services
-~/OneDrive/Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
-$HOME/mnt/Desktop/Temporary folder Project 5 - Grid Operations & Energy Policy
-~/OneDrive/Desktop/Temporary folder Project 6 - DBA-MA
-$HOME/mnt/Desktop/Temporary folder Project 6 - DBA-MA
-~/OneDrive/Desktop/Temporary folder Project 7 -Foundational Synthesis
-$HOME/mnt/Desktop/Temporary folder Project 7 -Foundational Synthesis
-~/OneDrive/Desktop/Temporary folder Project 8 - DBA Energy Sector
-$HOME/mnt/Desktop/Temporary folder Project 8 - DBA Energy Sector
-~/OneDrive/Desktop/Temporary folder Project 9 - DBA CIKR Sectors
-$HOME/mnt/Desktop/Temporary folder Project 9 - DBA CIKR Sectors
-~/OneDrive/Desktop/Temporary folder Project 10 - Utility Companion Tools
-$HOME/mnt/Desktop/Temporary folder Project 10 - Utility Companion Tools
+~/OneDrive/Desktop/Projects/Temporary folder Project 0 - Cross-Project Alignment
+$HOME/mnt/Projects/Temporary folder Project 0 - Cross-Project Alignment
+$HOME/mnt/Desktop/Projects/Temporary folder Project 0 - Cross-Project Alignment
+~/OneDrive/Desktop/Projects/Temporary folder Project 1 - Democratic Safeguards
+$HOME/mnt/Projects/Temporary folder Project 1 - Democratic Safeguards
+$HOME/mnt/Desktop/Projects/Temporary folder Project 1 - Democratic Safeguards
+~/OneDrive/Desktop/Projects/Temporary folder Project 2 - AI Governance Standards Track
+$HOME/mnt/Projects/Temporary folder Project 2 - AI Governance Standards Track
+$HOME/mnt/Desktop/Projects/Temporary folder Project 2 - AI Governance Standards Track
+~/OneDrive/Desktop/Projects/Temporary folder Project 3 - Analyst's WorkBench
+$HOME/mnt/Projects/Temporary folder Project 3 - Analyst's WorkBench
+$HOME/mnt/Desktop/Projects/Temporary folder Project 3 - Analyst's WorkBench
+~/OneDrive/Desktop/Projects/Temporary folder Project 4 - Consulting Services
+$HOME/mnt/Projects/Temporary folder Project 4 - Consulting Services
+$HOME/mnt/Desktop/Projects/Temporary folder Project 4 - Consulting Services
+~/OneDrive/Desktop/Projects/Temporary folder Project 5 - Grid Operations and Energy Policy
+$HOME/mnt/Projects/Temporary folder Project 5 - Grid Operations and Energy Policy
+$HOME/mnt/Desktop/Projects/Temporary folder Project 5 - Grid Operations and Energy Policy
+~/OneDrive/Desktop/Projects/Temporary folder Project 6 - DBA-MA
+$HOME/mnt/Projects/Temporary folder Project 6 - DBA-MA
+$HOME/mnt/Desktop/Projects/Temporary folder Project 6 - DBA-MA
+~/OneDrive/Desktop/Projects/Temporary folder Project 7 - Foundational Synthesis
+$HOME/mnt/Projects/Temporary folder Project 7 - Foundational Synthesis
+$HOME/mnt/Desktop/Projects/Temporary folder Project 7 - Foundational Synthesis
+~/OneDrive/Desktop/Projects/Temporary folder Project 8 - DBA Energy Sector
+$HOME/mnt/Projects/Temporary folder Project 8 - DBA Energy Sector
+$HOME/mnt/Desktop/Projects/Temporary folder Project 8 - DBA Energy Sector
+~/OneDrive/Desktop/Projects/Temporary folder Project 9 - DBA CIKR Sectors
+$HOME/mnt/Projects/Temporary folder Project 9 - DBA CIKR Sectors
+$HOME/mnt/Desktop/Projects/Temporary folder Project 9 - DBA CIKR Sectors
+~/OneDrive/Desktop/Projects/Temporary folder Project 10 - Utility Companion Tools
+$HOME/mnt/Projects/Temporary folder Project 10 - Utility Companion Tools
+$HOME/mnt/Desktop/Projects/Temporary folder Project 10 - Utility Companion Tools
+~/OneDrive/Desktop/Projects/Temporary folder Project 11 - DBA Reference Events
+$HOME/mnt/Projects/Temporary folder Project 11 - DBA Reference Events
+$HOME/mnt/Desktop/Projects/Temporary folder Project 11 - DBA Reference Events
