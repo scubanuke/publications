@@ -142,6 +142,20 @@ def working_roots():
     return out
 
 
+def cache_key(fp, roots):
+    """Cache label for a working master: its project folder name plus its path
+    inside that folder. The same file gets the same label on the machine and in
+    any desktop workspace, so a cache built in one place is reused in the other.
+    The full path is not used because inside a workspace it includes a session
+    folder that changes every session, which made every earlier cache unusable."""
+    for r in roots:
+        r = r.rstrip('/\\')
+        if fp.startswith(r + os.sep):
+            rel = os.path.basename(r) + '/' + os.path.relpath(fp, r)
+            return hashlib.md5(rel.replace('\\', '/').encode('utf-8')).hexdigest()
+    return hashlib.md5(fp.encode('utf-8')).hexdigest()
+
+
 def docx_text(path):
     """Working masters are .docx. Third-party material in these folders is
     overwhelmingly PDF, so restricting the working sweep to .docx keeps
@@ -358,7 +372,7 @@ def main():
     os.makedirs(wcache, exist_ok=True)
     wtexts = {}
     for i, fp in enumerate(work_files):
-        key = hashlib.md5(fp.encode('utf-8')).hexdigest()
+        key = cache_key(fp, roots)
         cf = os.path.join(wcache, key + '.txt')
         if os.path.exists(cf) and os.path.getmtime(cf) >= os.path.getmtime(fp):
             wtexts[fp] = open(cf, encoding='utf-8', errors='replace').read()
@@ -367,6 +381,16 @@ def main():
             open(cf, 'w', encoding='utf-8').write(wtexts[fp])
         if work_files and (i + 1) % 50 == 0:
             print('  ...%d/%d masters read' % (i + 1, len(work_files)))
+    # Remove cache files this run did not use, so labels from moved, renamed or
+    # deleted masters do not pile up. Only when roots resolved: a published-only
+    # run reads no masters and must not empty the cache.
+    if work_files:
+        used = {cache_key(fp, roots) + '.txt' for fp in work_files}
+        stale = [n for n in os.listdir(wcache) if n.endswith('.txt') and n not in used]
+        for n in stale:
+            os.remove(os.path.join(wcache, n))
+        if stale:
+            print('  removed %d unused working-cache file(s)' % len(stale))
 
     fam_decl = {}
     for m in FAMILY_DECL.finditer(corpus):
