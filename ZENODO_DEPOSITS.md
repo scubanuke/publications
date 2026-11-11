@@ -236,6 +236,23 @@ narrative references use.
 
 ---
 
+## 12. DBA-W-FC2 — Distribution Pump Station
+
+- **Title:** DBA-W-FC2 — Distribution Pump Station
+- **Resource type:** Publication → Report
+- **Version:** v0.7
+- **Publication date:** 2026-11-11
+- **Version DOI:** `10.5281/zenodo.24146826` · **Concept DOI:** not yet recorded; read it from the live record.
+- **Status:** **PUBLISHED** 11 Nov 2026, a first deposit, on the author's determination of 10 November 2026 that the class is deposited on its own and that CIKR Edition 2 later carries whatever version then stands (recorded in `Return_Note_2026-11-10g_to_Project_10_Copied_to_Project_9_FD-LS_Is_Citable_Now_and_the_Pump_Station_Publishes_After_One_Revision`). One file, `DBA-W-FC2_Distribution_Pump_Station_v0_7.pdf`, 281,416 bytes, MD5 `d88fdd6bba26127011f4f4d667b0bc5c`, 22 pages, US Letter. The live-record MD5 was read back and equals the mirror. Rendered by LibreOffice, at the author's direction, from a deposit copy of the Project 9 master, with Times New Roman taken from the author's own system and embedded. The copy adds the suggested-citation block in Edition 1's form, and for rendering only it rebuilds the footer's right-aligned page number and sets the revision-history columns to the house widths; no text differs from the master. The master `DBA-W-FC2_Distribution_Pump_Station_v0_7.docx` (Project 9, `DBA-W Water Sector/`) is unchanged.
+- **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Publisher:** Eclectic Technologies
+- **Related identifiers:**
+  - *references* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1)
+  - *references* → `10.5281/zenodo.23401272` (FD — Foundational Definitions, November 2026 Edition)
+  - *is identical to* → `https://scubanuke.github.io/publications/cikr/DBA-W-FC2_Distribution_Pump_Station.pdf` — not yet on the record; a metadata edit for the author.
+- **Keywords:** design basis; water sector; distribution pump station; critical infrastructure; military action; Bright Line; Command Broker; local sovereignty
+
+---
+
 ## Reconciliation re-versions (post-conformance)
 
 These deposits carry content the reconciliation **changed**, so each needs a **new version** published
