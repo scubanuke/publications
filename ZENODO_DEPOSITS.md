@@ -248,7 +248,7 @@ narrative references use.
 - **Related identifiers:**
   - *references* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1)
   - *references* → `10.5281/zenodo.23401272` (FD — Foundational Definitions, November 2026 Edition)
-  - *is identical to* → `https://scubanuke.github.io/publications/cikr/DBA-W-FC2_Distribution_Pump_Station.pdf` — not yet on the record; a metadata edit for the author.
+  - *is identical to* → `https://scubanuke.github.io/publications/cikr/DBA-W-FC2_Distribution_Pump_Station.pdf` — added by the author's metadata edit of 11 Nov 2026 and seen on the live record.
 - **Keywords:** design basis; water sector; distribution pump station; critical infrastructure; military action; Bright Line; Command Broker; local sovereignty
 
 ---
