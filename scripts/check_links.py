@@ -24,6 +24,8 @@ with open(MANIFEST, newline='') as fh:
                 bad.append((r['file'], 'pages', p.status_code))
         except Exception as e:
             bad.append((r['file'], 'pages', str(e)))
+        if not r['drive_id'].strip():
+            continue
         try:
             d = requests.get(DRIVE.format(r['drive_id']), timeout=30, stream=True)
             body = next(d.iter_content(1024), b'')
