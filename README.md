@@ -80,7 +80,7 @@ Versions shown are the texts as published. Where a later working draft exists an
 
 | Document | Version | Description |
 |---|---|---|
-| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.4 | Bright Line principle, criticality-band framework, Command Broker / Influence Broker distinction. The foundational governance architecture document. |
+| [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.5 | Bright Line principle, criticality-band framework, Command Broker / Influence Broker distinction. The foundational governance architecture document. |
 | [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | V0.3 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
 | [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.1 · dated draft | Command Broker / Influence Broker qualification and onboarding standard for above-Bright-Line roles. |
 | [CB-UC-1: BA Integrated Interface](command-broker/CB-UC-1_BA_Integrated_Interface.pdf) | v0.3 | Command Broker use case for Balancing Authority integrated interface operations. |
