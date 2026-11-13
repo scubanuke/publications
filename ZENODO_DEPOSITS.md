@@ -261,7 +261,7 @@ narrative references use.
 - **Publication date:** 2026-11
 - **Version DOI:** `10.5281/zenodo.24199026` · **Concept DOI:** `10.5281/zenodo.24199025`
 - **Status:** **PUBLISHED** 13 Nov 2026, a first deposit (a search of Zenodo for "DBA-VC" found no earlier record). One file, `DBA-VC_Vendor_Companion_v0_20.pdf`, 462,713 bytes, MD5 `1bc85196fd71b09ad341ba13fcc7af40`, 52 pages, US Letter, rendered by LibreOffice from the stamped master with Times New Roman taken from the author's own system and embedded. The live-record MD5 was read back and equals the mirror, whose SHA-256 `12360c8a4dc23e81d7af0f8b60ca3b299f8ed3ba93b09ce789eab7f07ee13b6f` was read from the published site after the push of 13 Nov 2026; the mirror previously held a v0.8 render of 5 Aug 2026 (263,708 bytes). The master `DBA-VC_Vendor_Companion_v0_20.docx` (Project 8, Command Broker folder) was stamped with the suggested-citation block before rendering and has no version bump, by house practice: MD5 `cccdb65017f211aac8826e48738e0f93` before the stamp, `65f796bf61e2b882d18e7a956025a7c4` after. The deposit sheet is `claude/DBA-VC_Vendor_Companion_v0_20_Zenodo_Deposit_Sheet.md` in the Project 8 library.
-- **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Language:** English
+- **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Publisher:** Eclectic Technologies, confirmed by Tim from the live record on 13 Nov 2026 · **Language:** English
 - **Related identifiers:**
   - *references* → `10.5281/zenodo.23401272` (FD — Foundational Definitions, November 2026 Edition)
   - *references* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1)
