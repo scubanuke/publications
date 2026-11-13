@@ -82,9 +82,9 @@ Versions shown are the texts as published. Where a later working draft exists an
 |---|---|---|
 | [CB-Framework: Cross-Sector](command-broker/CB-Framework_Cross_Sector.pdf) | v0.5 | Bright Line principle, criticality-band framework, Command Broker / Influence Broker distinction. The foundational governance architecture document. |
 | [Command Broker Implementation Guide](command-broker/CB_Implementation_Guide.pdf) | V0.3 | Practical implementation of the Bright Line and Command Broker architecture across facility classes. |
-| [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.1 · dated draft | Command Broker / Influence Broker qualification and onboarding standard for above-Bright-Line roles. |
-| [CB-UC-1: BA Integrated Interface](command-broker/CB-UC-1_BA_Integrated_Interface.pdf) | v0.3 | Command Broker use case for Balancing Authority integrated interface operations. |
-| [CB-CT: Commissioning and Joint Training](command-broker/CB-CT_Commissioning_and_Joint_Training.pdf) | v0.2 · dated draft | The commissioning-time and lifecycle procedure for standing up a Command Broker on a specific product at a facility — the vendor–AOO seam, gates, joint training, and re-qualification triggers. |
+| [CB-IB Qualification Standard](command-broker/CB-IB_Qualification_Standard.pdf) | v0.3 | Command Broker / Influence Broker qualification and onboarding standard for above-Bright-Line roles. |
+| [CB-UC-1: BA Integrated Interface](command-broker/CB-UC-1_BA_Integrated_Interface.pdf) | v0.4 | Command Broker use case for Balancing Authority integrated interface operations. |
+| [CB-CT: Commissioning and Joint Training](command-broker/CB-CT_Commissioning_and_Joint_Training.pdf) | v0.4 | The commissioning-time and lifecycle procedure for standing up a Command Broker on a specific product at a facility — the vendor–AOO seam, gates, joint training, and re-qualification triggers. |
 | [DBA-VC: Vendor Companion](command-broker/DBA-VC_Vendor_Companion.pdf) | v0.20 · DOI [10.5281/zenodo.24199026](https://doi.org/10.5281/zenodo.24199026) | The vendor product-conformance companion — product-specification obligations, Bright Line architectural separation, operator independence, and the vendor-supplied artifacts an asset owner needs. |
 
 ## DBA-UxS — Uncrewed Systems
