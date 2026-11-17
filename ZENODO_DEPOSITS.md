@@ -223,9 +223,10 @@ narrative references use.
 
 - **Title:** Defense-in-Depth Under Military Action (DBA-MA-DiD)
 - **Resource type:** Publication → Report
-- **Version:** v0.4
-- **Publication date:** 2026-11-08
-- **Version DOI:** `10.5281/zenodo.24056933` · **Concept DOI:** `10.5281/zenodo.24056932`
+- **Version:** v0.6 (current); v0.4 superseded
+- **Publication date:** 2026-11-17 (v0.6); 2026-11-08 (v0.4)
+- **Version DOI:** `10.5281/zenodo.24324434` (v0.6) · `10.5281/zenodo.24056933` (v0.4) · **Concept DOI:** `10.5281/zenodo.24056932`
+- **v0.6:** deposited 17 Nov 2026 as a new version under the concept, on the author's reading of v0.6 on 16 November 2026, which cleared the gate of the 8 November ruling, and his instruction of 17 November 2026 to go ahead. One file, `DBA-MA-DiD_Defense_in_Depth.pdf`, 166,277 bytes, MD5 `cb3e69ae9ec26a52821da543daf6d47b`, 18 pages, rendered by LibreOffice from the stamped master. Version 0.5 was a working revision and was not deposited. The master `DBA-MA-DiD_Defense_in_Depth_v0_6.docx` (Project 6 root) was stamped in its citation block and has no version bump, by house practice: SHA-256 `25fe418c…e6b1` before the stamp, `02f4b04908efca2dcabb1705e0ebf9fbb22bd23636112dc76e0e925cf9fecc41` after. The Zenodo description adds that versions 0.1 to 0.3 and 0.5 were not deposited, and what v0.6 settles.
 - **Status:** **PUBLISHED** 8 Nov 2026, a first deposit, on the author's ruling recorded in Project 0's `Determination_2026-11-08_Item_B4_Waits_for_the_Re-cut_and_DBA-MA-DiD_Is_Published_After_the_Author_Reads_It_v0_1` and his statement in a Project 6 session the same day that v0.4 was read and might be deposited. One file, `DBA-MA-DiD_Defense_in_Depth.pdf`, 158,325 bytes, MD5 `ee86b0b677ade7f02e7e9def3842e00f`, 17 pages, rendered by LibreOffice from the stamped master. The live-record MD5 was read back and equals the mirror. Versions 0.1 to 0.3 were working drafts and were not deposited. The master `DBA-MA-DiD_Defense_in_Depth_v0_4.docx` (Project 6 root) was stamped with the suggested-citation block before rendering and has no version bump, by house practice: SHA-256 `e1312b4a…7461` before the stamp, `879c403a6bb06cca508a6ad45261481528d10479bcfda6c5b2af56a027f33d4e` after.
 - **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Publisher:** Eclectic Technologies · **Language:** English
 - **Related identifiers:**
