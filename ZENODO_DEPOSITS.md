@@ -231,7 +231,7 @@ narrative references use.
 - **License:** CC BY 4.0 · **Creator:** Roxey, Timothy E (ORCID `0009-0002-9482-8679`), Eclectic Technologies · **Publisher:** Eclectic Technologies · **Language:** English
 - **Related identifiers:**
   - *is identical to* → `https://scubanuke.github.io/publications/dba-ma/DBA-MA-DiD_Defense_in_Depth.pdf`
-  - *is referenced by* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1). The forward *references* relation on the Edition 1 record is Project 0's to add.
+  - *is referenced by* → `10.5281/zenodo.23863986` (CIKR Design Basis Examples, Edition 1). The forward *references* relation stands on the Edition 1 record to both versions, v0.4 (`10.5281/zenodo.24056933`) and v0.6 (`10.5281/zenodo.24324434`); Project 0 added the v0.6 relation by a metadata-only edit on 17 Nov 2026 and read both back from the live record. The Edition 1 files are unchanged.
 - **Keywords:** defense in depth; critical infrastructure; military action; design basis; common-cause failure; correlated barriers; adversary-selected cutset; robust, diverse and independent; DBA-MA
 - **Description:** states the method and its place as shared machinery, and closes: "The nuclear application, DBA-NUC-DiD (*Defense-in-Depth Under Military Action: Nuclear Sector Application*), is available on request." The application is named by designation and title only, as the author ruled.
 
